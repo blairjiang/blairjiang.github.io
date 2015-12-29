@@ -2,7 +2,7 @@
 .topnav_bd{ padding:0 5%; margin:0 auto;}
 .topnav .logo{ width:230px; margin:0 auto; padding-top:100px; padding-bottom:40px;}
 
-.navlist{ position:fixed; top:0; left:0; right:0; width:100%; background:rgba(255,255,255,.9); box-shadow:rgba(0,0,0,.3) 0 0 3px;
+.navlist{ position:fixed; top:0; left:0; right:0; width:100%; background:rgba(255,255,255,.7); box-shadow:rgba(0,0,0,.3) 0 0 3px;
     -webkit-backdrop-filter:saturate(180%) blur(10px);
 }
 .navlist .item{ float:left; padding-top:10px}
