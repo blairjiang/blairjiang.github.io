@@ -24,12 +24,16 @@
 	background-image: linear-gradient(to bottom, #43d6ec, #0ac9e5);
 	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#43d6ec,endColorStr=#0ac9e5); 
 }
-.pg_banner_bd{ padding:3.5% 5%; margin:0 auto; background:url(../assets/images/pg_banner_weshow.png) center center no-repeat;}
+.pg_banner_bd{ height:175px; padding:3.5% 5%; margin:0 auto; background:url(../assets/images/pg_banner_weshow.png) center center no-repeat; background-size:cover;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
 .pg_banner .tit{ font-size:1.5em;}
 .pg_banner .subtit{ font-size:1.125em}
 .pg_banner .tit,
 .pg_banner .subtit{ text-shadow:rgba(0,106,131,.3) 1px 1px 3px;}
 .pg_banner .dc{ line-height:1.5em}
+.pg_banner .com{ margin-top:5px}
 
 .mod{}
 .mod_bd{ padding:3.5% 5%; margin:0 auto; text-align:justify;}
@@ -43,8 +47,13 @@
 	.navlist{ position:static; width:auto; background:none; box-shadow:none; float:right;-webkit-backdrop-filter:none;}
 	.navlist .item{ float:left; padding-top:30px}
 	.navlist .lk{ font-size:1.25em}
-	.pg_banner_bd{ padding:121px 0 0; height:229px; max-width:1600px;}
+	.pg_banner_bd{ padding:121px 0 0; height:229px; max-width:1600px;
+		-webkit-box-sizing:content-box;
+		box-sizing:content-box;
+	}
 	.pg_banner .tit{ font-size:3.5em;}
 	.pg_banner .subtit{ margin-top:-15px; font-size:1.25em}
+	.pg_banner .com{ margin-top:25px}
+
 	.mod_bd{ width:62.5%; padding-left:0; padding-right:0; max-width:1000px;}
 }
