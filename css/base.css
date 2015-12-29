@@ -1,0 +1,154 @@
+body,img{ margin:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td,header,footer,nav,article{margin:0;padding:0}
+html,body{ height:100%}
+header,footer,nav,article{ display: block;}
+table{border-collapse:collapse;border-spacing:0}
+img,video{border:0; max-width:100%; vertical-align:top}
+iframe{ vertical-align:top;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+body{ font:16px/1.7 Helvetica,Arial,sans-serif;}
+input,textarea,select,button{ outline: none; resize:none; font:16px/1.7 Helvetica,Arial,sans-serif;}
+button{line-height:1.7;white-space:nowrap;vertical-align:middle;cursor:pointer}
+strong{font-weight:800}
+a{ text-decoration: none; outline: none; cursor: pointer;}
+a:link,label,body{ -webkit-tap-highlight-color:transparent; -webkit-focus-ring-color:transparent;}
+a:hover{ text-decoration:none;}
+a:active{ background:none;}
+.container{ max-width:768px; margin:0 auto;}
+img{ vertical-align:top; max-width:100%;}
+
+/* 布局
+----------------------------------------------------------------*/
+
+/* 浮动 */
+.clearfix:after,
+.msgBox:after{content:'.';clear:both;display:block;height:0;visibility:hidden;line-height:0}
+.clearfix,
+.msgBox{zoom:1}
+.left{float:left}
+.right{float:right}
+
+/* DISPLAY */
+.dis_b{ display:block; *zoom:1;}
+.dis_in{ display:inline}
+.dis_inb{ display:inline-block; *display:inline; *zoom:1}
+.vis_on{ visibility: visible;}
+.vis_off{ visibility: hidden;}
+
+/* 边距 */
+.mt5{ margin-top:5px}
+.mr5{ margin-right:5px}
+.mb5{ margin-bottom:5px}
+.ml5{ margin-left:5px}
+.mt10{ margin-top:10px}
+.mr10{ margin-right:10px}
+.mb10{ margin-bottom:10px}
+.ml10{ margin-left:10px}
+.mt15{ margin-top:15px}
+.mr15{ margin-right:15px}
+.mb15{ margin-bottom:15px}
+.ml15{ margin-left:15px}
+.mt20{ margin-top:20px}
+.mr20{ margin-right:20px}
+.mb20{ margin-bottom:20px}
+.ml20{ margin-left:20px}
+.mt25{ margin-top:25px}
+.mr25{ margin-right:25px}
+.mb25{ margin-bottom:25px}
+.ml25{ margin-left:25px}
+.mt30{ margin-top:30px}
+.mr30{ margin-right:30px}
+.mb30{ margin-bottom:30px}
+.ml30{ margin-left:30px}
+
+.pt5{ padding-top:5px}
+.pr5{ padding-right:5px}
+.pb5{ padding-bottom:5px}
+.pl5{ padding-left:5px}
+.pt10{ padding-top:10px}
+.pr10{ padding-right:10px}
+.pb10{ padding-bottom:10px}
+.pl10{ padding-left:10px}
+.pt15{ padding-top:15px}
+.pr15{ padding-right:15px}
+.pb15{ padding-bottom:15px}
+.pl15{ padding-left:15px}
+.pt20{ padding-top:20px}
+.pr20{ padding-right:20px}
+.pb20{ padding-bottom:20px}
+.pl20{ padding-left:20px}
+
+body .mt0{ margin-top:0!important}
+body .mr0{ margin-right:0!important}
+body .mb0{ margin-bottom:0!important}
+body .ml0{ margin-left:0!important}
+body .pt0{ padding-top:0!important}
+body .pr0{ padding-right:0!important}
+body .pb0{ padding-bottom:0!important}
+body .pl0{ padding-left:0!important}
+
+/* 对齐 */
+.vt_t{ vertical-align:top}
+.vt_m{ vertical-align:middle}
+.vt_b{ vertical-align:bottom}
+.vt_bl{ vertical-align:baseline;}
+
+/* 文字
+----------------------------------------------------------------*/
+
+/* 字体 */
+.tx_song{font-family:SimSun,Helvetica}
+.tx_yh{font-family:Microsoft YaHei,Mingliu,Helvetica,sans-serif}
+.tx_ar{ font-family:Arial}
+.tx_ss{ font-family:sans-serif}
+.tx_code{ font-family:Courier New}
+.tx_cg{ font-family:century_gothicregular,century gothic,Helvetica,sans-serif}
+
+/* 字号 */
+.tx_12{ font-size:.75em;}
+.tx_14{ font-size:.875em;}
+.tx_16{ font-size:1em;}
+.tx_18{ font-size:1.125em;}
+.tx_20{ font-size:1.25em;}
+.tx_22{ font-size:1.375em;}
+.tx_24{ font-size:1.5em;}
+.tx_26{ font-size:1.625em;}
+.tx_28{ font-size:1.75em;}
+.tx_30{ font-size:1.875em;}
+
+/* 字重 */
+.tx_b{ font-weight: 800}
+.tx_n{ font-weight:normal}
+
+/* 字体样式 */
+.tx_udl{ text-decoration:underline}
+.tx_del{ text-decoration:line-through}
+
+/* 对齐 */
+.tx_l{ text-align:left}
+.tx_c{ text-align:center}
+.tx_r{ text-align:right}
+
+/* 折行 */
+.tx_br{ word-wrap:break-word; word-break:break-all}
+.tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+@font-face {
+    font-family: 'century_gothicregular';
+    src: url('../assets/font/century-gothic-webfont.eot');
+    src: url('../assets/font/century-gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/font/century-gothic-webfont.woff2') format('woff2'),
+         url('../assets/font/century-gothic-webfont.woff') format('woff'),
+         url('../assets/font/century-gothic-webfont.ttf') format('truetype'),
+         url('../assets/font/century-gothic-webfont.svg#century_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (min-width:768px){
+	
+}

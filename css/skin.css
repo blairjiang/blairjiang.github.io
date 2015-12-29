@@ -1,0 +1,69 @@
+/* 1 文字
+================================================================*/
+
+
+/* 文字色
+----------------------------------------------------------------*/
+
+/* 默认文字色 */
+.c_t0,body{ color:#000}
+/* 强文字色 */
+.c_t1{ color:#364450}
+/* 强文字色2 */
+.c_t2{ color:#1c81c1}
+/* 弱文字色 */
+.c_t3{ color:#999;}
+/* 弱文字色2 */
+.c_t4{ color:#abf3ff;}
+/* 白色 */
+.c_tw{ color:#fff;}
+
+/* 链接色
+----------------------------------------------------------------*/
+
+/* 默认链接色 */
+a.c_a0,a{ color:#366;}
+a.c_a0:active,a:active{ color:#366}
+/* 强链接色 */
+a.c_a1{ color:#366}
+a.c_a1:active{ color:#366}
+/* 弱链接色 */
+a.c_a2{ color:#366}
+a.c_a2:active{ color:#366}
+
+/* 表单元素色
+----------------------------------------------------------------*/
+
+:root ::-webkit-input-placeholder{ color:#ccc;}
+:root :-webkit-input-placeholder{ color:#ccc;}
+
+
+
+
+
+/* 2 边框
+================================================================*/
+
+.c_bor1{ border-color:#ccc}
+.c_bor2{ border-color:#ddd}
+.c_bor3{ border-color:#d9d9d9}
+
+
+
+
+
+/* 3 背景
+================================================================*/
+
+/* 背景色
+----------------------------------------------------------------*/
+.c_bg0,body{ background-color:#fff}/* 默认页面背景色 */
+.c_bg1{ background-color:#e7edee}
+.c_bg2{ background-color:#ffc000}
+.c_bg3{ background-color:#364450}
+.c_bg4{ background-color:#f65}
+.c_bg5{ background-color:#364450}
+
+/* 底纹 */
+.img_bg1{ background:#3c1d0d url(../assets/images/img_bg1.jpg) center center no-repeat; background-size:cover;}
+.img_bg2{}
