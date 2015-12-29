@@ -42,8 +42,8 @@
 
 .imgWrap{ padding:10px 5% 0; text-align:center;}
 
-.pos_dots{ position:fixed; right:0; top:50%; margin-top:-170px}
-.pos_dots .c1{ padding:20px 0; background:rgba(0,0,0,.5); border-radius:18px 0 0 18px}
+.pos_dots{ position:fixed; right:0; bottom:30px;}
+.pos_dots .c1{ display:none; padding:20px 0; background:rgba(0,0,0,.5); border-radius:18px 0 0 18px}
 .pos_dots .c1 .lk{ display:block; padding:10px 20px;}
 .pos_dots .c1 .lk .dot{ display:block; width:10px; height:10px; font-size:0; overflow:hidden; border-radius:5px; background-color:#999}
 .pos_dots .c1 .active .dot{ background-color:#fff}
@@ -79,6 +79,9 @@
 	.mod .desc{ margin:5px auto 0; width:62.5%; max-width:1000px;}
 
 	.imgWrap{ padding:25px 20px 0;}
+
+	.pos_dots{ bottom:auto; top:50%; margin-top:-170px}
+	.pos_dots .c1{ display:block}
 
 	.selfIntro{ background:url(../assets/images/spacer1.png) center center repeat-y; background-size:2px 30px; margin:0 auto; width:48%; max-width:880px;}
 	.selfIntro .c1,
