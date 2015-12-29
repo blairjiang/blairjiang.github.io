@@ -1,9 +1,11 @@
-.topnav{ position:fixed; top:0; left:0; right:0; width:100%; background:rgba(255,255,255,.75);}
-.topnav_bd{ width:75%; max-width:1200px; padding:0 20px; margin:0 auto;}
-.topnav .logo{ float:left; padding-top:30px}
+.topnav{ background:rgba(255,255,255,.75);}
+.topnav_bd{ padding:0 5%; margin:0 auto;}
+.topnav .logo{ width:230px; margin:0 auto; padding-top:100px; padding-bottom:40px;}
 
-.navlist{ float:right}
-.navlist .item{ float:left; padding-top:30px}
+.navlist{ position:fixed; top:0; left:0; right:0; width:100%; background:rgba(255,255,255,.9); box-shadow:rgba(0,0,0,.3) 0 0 3px;
+    -webkit-backdrop-filter:saturate(180%) blur(10px);
+}
+.navlist .item{ float:left; padding-top:10px}
 .navlist .lk{ display:block; height:26px; line-height:26px; white-space:nowrap; padding:12px 20px; font-family:century_gothicregular; color:#666}
 .navlist .select .lk,
 .navlist .lk:active,
@@ -22,17 +24,27 @@
 	background-image: linear-gradient(to bottom, #43d6ec, #0ac9e5);
 	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#43d6ec,endColorStr=#0ac9e5); 
 }
-.pg_banner_bd{ height:229px; padding-top:121px; max-width:1600px; margin:0 auto; background:url(../assets/images/pg_banner_weshow.png) center center no-repeat;}
-.pg_banner .tit{ font-size:56px;}
-.pg_banner .subtit{ margin-top:-15px}
+.pg_banner_bd{ padding:3.5% 5%; margin:0 auto; background:url(../assets/images/pg_banner_weshow.png) center center no-repeat;}
+.pg_banner .tit{ font-size:1.5em;}
+.pg_banner .subtit{ font-size:1.125em}
 .pg_banner .tit,
 .pg_banner .subtit{ text-shadow:rgba(0,106,131,.3) 1px 1px 3px;}
 .pg_banner .dc{ line-height:1.5em}
 
 .mod{}
-.mod_bd{ width:62.5%; margin:0 auto; padding-top:3.5%; padding-bottom:3.5%; max-width:1000px; text-align:justify;}
+.mod_bd{ padding:3.5% 5%; margin:0 auto; text-align:justify;}
 .mod .tit{ font-family:century_gothicregular}
 
 @media screen and (min-width:768px){
-	
+	.topnav{ position:absolute; top:0; left:0; right:0; width:100%;}
+	.topnav_bd{ width:75%; max-width:1200px; padding:0 20px;}
+	.topnav .logo{ float:left; padding-top:30px; padding-bottom:0}
+
+	.navlist{ position:static; width:auto; background:none; box-shadow:none; float:right;-webkit-backdrop-filter:none;}
+	.navlist .item{ float:left; padding-top:30px}
+	.navlist .lk{ font-size:1.25em}
+	.pg_banner_bd{ padding:121px 0 0; height:229px; max-width:1600px;}
+	.pg_banner .tit{ font-size:3.5em;}
+	.pg_banner .subtit{ margin-top:-15px; font-size:1.25em}
+	.mod_bd{ width:62.5%; padding-left:0; padding-right:0; max-width:1000px;}
 }
