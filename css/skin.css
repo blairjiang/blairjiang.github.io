@@ -67,3 +67,9 @@ a.c_a2:active{ color:#366}
 /* 底纹 */
 .img_bg1{ background:#3c1d0d url(../assets/images/img_bg1.jpg) center center no-repeat; background-size:cover;}
 .img_bg2{}
+
+.hr1{ height:2px; width:180px; margin:20px auto; background:url(../assets/images/spacer2.png) 0 0 repeat-x; background-size:30px 2px;}
+
+@media screen and (min-width:768px){
+	.hr1{ width:240px; margin:35px auto;}
+}

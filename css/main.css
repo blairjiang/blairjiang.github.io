@@ -53,10 +53,10 @@
 .pos_dots .c2 .lk:active .arr,
 .pos_dots .c2 .lk:hover .arr{ background-position:0 0}
 
-.selfIntro{ margin:0 auto; padding:0 5%; line-height:1.8em}
+.selfIntro{ margin:0 auto; padding:0 5%; line-height:1.8em; text-align:left;}
 .selfIntro .c1,
 .selfIntro .c2{ width:100%; float:left;}
-.selfIntro .t{ float:left; text-align:right; width:35%; padding-right:5%; font-weight:bold}
+.selfIntro .t{ float:left; text-align:right; width:35%; padding-right:3%; font-weight:bold}
 .selfIntro .c{ overflow:hidden}
 
 @media screen and (min-width:768px){
@@ -80,8 +80,14 @@
 
 	.imgWrap{ padding:25px 20px 0;}
 
-	.selfIntro{ background:url(../assets/images/spacer1.png) center center repeat-y; margin:0 auto; width:48%; max-width:770px;}
+	.selfIntro{ background:url(../assets/images/spacer1.png) center center repeat-y; background-size:2px 30px; margin:0 auto; width:48%; max-width:880px;}
 	.selfIntro .c1,
 	.selfIntro .c2{ width:50%}
+	.selfIntro .t{ width:97%; padding-left:5%; text-align:left}
+	.selfIntro .c{ padding-left:5%}
 
+}
+@media screen and (min-width:1200px){
+	.selfIntro .t{ width:25%; padding-left:3%; text-align:right}
+	.selfIntro .c{ padding-left:3%; padding-right:3%}
 }
