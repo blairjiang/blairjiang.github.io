@@ -17,7 +17,6 @@ a{ text-decoration: none; outline: none; cursor: pointer;}
 a:link,label,body{ -webkit-tap-highlight-color:transparent; -webkit-focus-ring-color:transparent;}
 a:hover{ text-decoration:none;}
 a:active{ background:none;}
-.container{ max-width:768px; margin:0 auto;}
 img{ vertical-align:top; max-width:100%;}
 
 /* 布局
