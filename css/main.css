@@ -42,7 +42,7 @@
 
 .imgWrap{ padding:10px 5% 0; text-align:center;}
 
-.pos_dots{ position:fixed; right:0; bottom:30px;}
+.pos_dots{ position:fixed; right:0; bottom:30px; width:50px;}
 .pos_dots .c1{ display:none; padding:20px 0; background:rgba(0,0,0,.5); border-radius:18px 0 0 18px}
 .pos_dots .c1 .lk{ display:block; padding:10px 20px;}
 .pos_dots .c1 .lk .dot{ display:block; width:10px; height:10px; font-size:0; overflow:hidden; border-radius:5px; background-color:#999}
