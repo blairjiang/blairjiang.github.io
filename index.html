@@ -194,7 +194,7 @@ function onScroll(){
     var scrollPos = $(document).scrollTop();
     $('.pos_dots .c1 .lk').each(function(){
     	var mod = $(this).attr('href');
-    	if($(mod).offset().top <= scrollPos){
+    	if($(mod).offset().top <= scrollPos && $(mod).offset().top + $(mod).height() > scrollPos){
     		$('.pos_dots .c1 .lk').removeClass('active');
     		$(this).addClass('active');
     	}else{
