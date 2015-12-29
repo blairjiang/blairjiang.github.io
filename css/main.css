@@ -36,8 +36,11 @@
 .pg_banner .com{ margin-top:5px}
 
 .mod{}
-.mod_bd{ padding:3.5% 5%; margin:0 auto; text-align:justify;}
+.mod_bd{ padding:3.5% 5%; text-align:justify;}
+.mod .desc{ margin:5px auto 0;}
 .mod .tit{ font-family:century_gothicregular}
+
+.imgWrap{ text-align:center;}
 
 @media screen and (min-width:768px){
 	.topnav{ position:absolute; top:0; left:0; right:0; width:100%;}
@@ -55,5 +58,6 @@
 	.pg_banner .subtit{ margin-top:-15px; font-size:1.25em}
 	.pg_banner .com{ margin-top:25px}
 
-	.mod_bd{ width:62.5%; padding-left:0; padding-right:0; max-width:1000px;}
+	.mod_bd{ padding:30px 0;}
+	.mod .desc{ margin:5px auto 0; width:62.5%; max-width:1000px;}
 }
