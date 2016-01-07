@@ -110,10 +110,17 @@ $(function() {
 		<h2 class="tit tx_c tx_24 tx_cg">Keywords</h2>
 		<div class="desc tx_14 tx_cg">We investigated a certain number of active users of the APP, who were representative in many aspects, such as their ages, jobs, locations, frequency of use,etc. Meanwhile, we interviewed several experts of visual design in the industry, and collected and summarized their feedbacks. These information laid a solid foundation for our further discussion and brainstorm. Consequently, we drew a conclusion of the following keywords.</div>
 		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/weshow_keywords.png" />
-			<noscript>
-			    <img src="assets/images/weshow_keywords.png" />
-			</noscript>
+			<div class="inner">
+				<img class="lazy placer" src="assets/images/loading.png" data-original="assets/images/weshow_keywords.png" />
+				<div class="imgAni">
+					<img class="lazy ani1" src="assets/images/loading.png" data-original="assets/images/weshow_keyword1.png" />
+					<img class="lazy ani2" src="assets/images/loading.png" data-original="assets/images/weshow_keyword2.png" />
+					<img class="lazy ani3" src="assets/images/loading.png" data-original="assets/images/weshow_keyword3.png" />
+				</div>
+				<noscript>
+				    <img src="assets/images/weshow_keywords.png" />
+				</noscript>
+			</div>
 		</div>
 	</div>
 </div>
@@ -190,7 +197,7 @@ $(function() {
 			<div class="desc tx_14 tx_cg">This video shows the major function and flow of WeShow, which basically means sectional shooting video, editing video, beautifying it with filter, etc.</div>
 			<div class="videoWrap">
 				<img class="placer" src="assets/images/placer.png" />
-				<video id="supportVideo" class="video">
+				<video id="supportVideo" class="video" loop="loop">
 					<source src="assets/media/weishi_fin.mp4" type="video/mp4" />
 				</video>
 				<div id="videocontrol" class="control"></div>
@@ -212,10 +219,11 @@ if(hasVideo){
 }
 
 $(function(){
-	var $video = $('#supportVideo');
+	var video = $('#supportVideo')[0];
+	video.currentTime = 0;
 	$('#videocontrol').on('click',function(){
 		$(this).css('display','none');
-		$video[0].play();
+		video.play();
 	});
 
 });
