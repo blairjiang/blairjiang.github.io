@@ -41,6 +41,10 @@
 .mod .tit{ font-family:century_gothicregular}
 
 .imgWrap{ padding:10px 5% 0; text-align:center;}
+.videoWrap{ position:relative; margin:10px auto 0; text-align:center;}
+.videoWrap .placer{ display:none; width:100%}
+.videoWrap .control{ position:absolute; width:100%; height:100%; top:0; left:0; background:rgba(0,0,0,.5) url(../assets/images/play@2x.png) center center no-repeat; background-size:80px 80px}
+.videoWrap .video{ width:100%}
 
 .pos_dots{ position:fixed; right:0; bottom:30px; width:50px;}
 .pos_dots .c1{ display:none; padding:20px 0; background:rgba(0,0,0,.5); border-radius:18px 0 0 18px}
@@ -79,6 +83,9 @@
 	.mod .desc{ margin:5px auto 0; width:62.5%; max-width:1000px;}
 
 	.imgWrap{ padding:25px 20px 0;}
+	.videoWrap{ width:100%; max-width:900px}
+	.videoWrap .placer{ display:block; opacity:0}
+	.videoWrap .video{ position:absolute; left:0; top:0; width:100%; height:100%}
 
 	.pos_dots{ bottom:auto; top:50%; margin-top:-170px}
 	.pos_dots .c1{ display:block}

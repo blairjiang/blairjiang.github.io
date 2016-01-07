@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/skin.css" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css" />
+<![endif]-->
 <script type="text/javascript" src="script/jquery.min.js"></script>
 <script type="text/javascript" src="script/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="script/ScrollMagic.min.js"></script>
@@ -185,11 +188,13 @@ $(function() {
 		<div class="mod_bd">
 			<h2 class="tit tx_c tx_24 tx_cg">Video</h2>
 			<div class="desc tx_14 tx_cg">This video shows the major function and flow of WeShow, which basically means sectional shooting video, editing video, beautifying it with filter, etc.</div>
-			<div class="tx_c">
-				<video id="supportVideo" width="50%" controls="controls">
+			<div class="videoWrap">
+				<img class="placer" src="assets/images/placer.png" />
+				<video id="supportVideo" class="video">
 					<source src="assets/media/weishi_fin.mp4" type="video/mp4" />
 				</video>
-				<embed id="supportFlash" src="http://player.youku.com/player.php/sid/XMTQzNzU0OTI2MA==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+				<div id="videocontrol" class="control"></div>
+				<embed id="supportFlash" class="video" src="http://player.youku.com/player.php/sid/XMTQzNzU0OTI2MA==/v.swf" allowFullScreen="true" quality="high" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 			</div>
 		</div>
 	</div>
@@ -205,6 +210,15 @@ if(hasVideo){
 }else{
 	$('#supportVideo').remove();
 }
+
+$(function(){
+	var $video = $('#supportVideo');
+	$('#videocontrol').on('click',function(){
+		$(this).css('display','none');
+		$video[0].play();
+	});
+
+});
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
