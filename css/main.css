@@ -41,7 +41,7 @@
 .mod .tit{ font-family:century_gothicregular}
 
 .imgWrap{ padding:10px 5% 0; text-align:center;}
-.imgWrap .inner{ position:relative;}
+.imgWrap .inner{ position:relative; display:inline-block; vertical-align:top}
 .imgWrap .inner .imgAni{ position:absolute; width:100%; height:100%; left:0; top:0}
 .imgWrap .inner .imgAni img{ max-width:100%; max-height:100%}
 .imgWrap .inner .placer{ opacity:0; visibility:hidden;}
@@ -50,17 +50,6 @@
 .videoWrap .control{ cursor:pointer; position:absolute; width:100%; height:100%; top:0; left:0; background:#000 url(../assets/images/play@2x.png) center center no-repeat; background-size:80px 80px}
 .videoWrap .video{ width:100%}
 
-.mod_2 .ani1,
-.mod_2 .ani3{ opacity:0; position:absolute; top:0;
-	-webkit-transition:all .5s ease-in-out;
-	-webkit-transition-delay:.5s;
-}
-.mod_2 .ani2{ position:relative; z-index:1}
-.mod_2 .ani1{ left:50%}
-.mod_2 .ani3{ right:50%}
-.mod_2.active .ani1{ opacity:1; left:0}
-.mod_2.active .ani3{ opacity:1; right:0}
-
 .pos_dots{ position:fixed; right:0; bottom:30px; width:50px;}
 .pos_dots .c1{ display:none; padding:20px 0; background:rgba(0,0,0,.5); border-radius:18px 0 0 18px}
 .pos_dots .c1 .lk{ display:block; padding:10px 20px;}
@@ -68,7 +57,7 @@
 .pos_dots .c1 .active .dot{ background-color:#fff}
 .pos_dots .c2{ margin-top:40px; background:rgba(0,0,0,.5); border-radius:18px 0 0 18px}
 .pos_dots .c2 .lk{ display:block;}
-.pos_dots .c2 .lk .arr{ display:block; height:50px; background:url(../assets/images/toparr.png) -50px 0 no-repeat; background-size:100px 50px}
+.pos_dots .c2 .lk .arr{ display:block; height:50px; background:url(../assets/images/toparr@2x.png) -50px 0 no-repeat; background-size:100px 50px}
 .pos_dots .c2 .lk:active .arr,
 .pos_dots .c2 .lk:hover .arr{ background-position:0 0}
 
@@ -115,15 +104,4 @@
 @media screen and (min-width:1200px){
 	.selfIntro .t{ width:25%; padding-left:3%; text-align:right}
 	.selfIntro .c{ padding-left:3%; padding-right:3%}
-}
-
-.mod .imgAni{
-	opacity:0;
-	-webkit-transform:translateY(30px);
-	-webkit-transition:all .5s ease-in-out;
-}
-.mod.active .imgAni,
-.active .mod .imgAni{
-	opacity:1;
-	-webkit-transform:translateY(0);
 }
