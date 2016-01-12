@@ -1,4 +1,4 @@
-.topnav{ background:rgba(255,255,255,.75);}
+.topnav{ background:rgba(255,255,255,.9); box-shadow:rgba(0,0,0,.3) 0 0 5px}
 .topnav_bd{ padding:0 5%; margin:0 auto;}
 .topnav .logo{ width:275px; margin:0 auto; padding-top:100px; padding-bottom:40px;}
 
@@ -71,7 +71,7 @@
 .selfIntro .c{ overflow:hidden}
 
 @media screen and (min-width:768px){
-	.topnav{ position:absolute; top:0; left:0; right:0; width:100%;}
+	.topnav{ position:fixed; top:0; left:0; right:0; width:100%;}
 	.topnav_bd{ width:75%; max-width:1200px; padding:0 20px;}
 	.topnav .logo{ float:left; padding-top:30px; padding-bottom:3px}
 
