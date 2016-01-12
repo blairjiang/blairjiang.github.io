@@ -1,6 +1,6 @@
 .topnav{ background:rgba(255,255,255,.75);}
 .topnav_bd{ padding:0 5%; margin:0 auto;}
-.topnav .logo{ width:230px; margin:0 auto; padding-top:100px; padding-bottom:40px;}
+.topnav .logo{ width:275px; margin:0 auto; padding-top:100px; padding-bottom:40px;}
 
 .navlist{ position:fixed; top:0; left:0; right:0; width:100%; background:rgba(255,255,255,.7); box-shadow:rgba(0,0,0,.3) 0 0 3px; z-index:1000;
     -webkit-backdrop-filter:saturate(180%) blur(10px);
@@ -9,31 +9,32 @@
 .navlist .lk{ display:block; height:26px; line-height:26px; white-space:nowrap; padding:12px 20px; font-family:century_gothicregular; color:#666}
 .navlist .select .lk,
 .navlist .lk:active,
-.navlist .lk:hover{ color:#f77c0f}
+.navlist .lk:hover{ color:#f84197}
 
-.pg_banner{
-	/* fallback */ 
-	background-color: #24cfe8; 
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#43d6ec), to(#0ac9e5));
-	background-image: -webkit-gradient(linear,0 0,0 100%,from(#43d6ec),color-stop(15%,#2ed1ea ),color-stop(100%,#0ac9e5));
-	background-image: -webkit-linear-gradient(top, #43d6ec, #0ac9e5);
-	background-image: -moz-linear-gradient(top, #43d6ec, #0ac9e5);
-	background-image: -ms-linear-gradient(top, #43d6ec, #0ac9e5);
-	background-image: -o-linear-gradient(top, #43d6ec, #0ac9e5);
-	background-image: linear-gradient(top, #43d6ec, #0ac9e5);
-	background-image: linear-gradient(to bottom, #43d6ec, #0ac9e5);
-	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#43d6ec,endColorStr=#0ac9e5); 
-}
-.pg_banner_bd{ padding:3.5% 5%; margin:0 auto; background:url(../assets/images/pg_banner_weshow.png) center center no-repeat; background-size:cover;
+.pg_banner_bd{ padding:3.5% 5%; margin:0 auto;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 }
 .pg_banner .tit{ font-size:1.5em;}
 .pg_banner .subtit{ font-size:1.125em}
 .pg_banner .tit,
-.pg_banner .subtit{ text-shadow:rgba(0,106,131,.3) 1px 1px 3px;}
+.pg_banner .subtit{}
 .pg_banner .dc{ line-height:1.5em}
 .pg_banner .com{ margin-top:5px}
+
+.dotlist{ padding-left:20px}
+.dotlist li{ list-style:square;}
+
+.scewwrap{ position:relative; background:rgba(255,255,255,.6); border-radius:10px; overflow:hidden}
+.scewwrap .c1{ padding:20px 20px 0;
+	font-weight:bold;
+}
+.scewwrap .c1 .t{}
+.scewwrap .c2{ padding:20px; overflow: hidden;}
+
+.sidephone{ position:relative;}
+.sidephone .c1{}
+.sidephone .c2{ text-align:center;}
 
 .mod{}
 .mod_bd{ padding:3.5% 5%; text-align:justify;}
@@ -49,6 +50,8 @@
 .videoWrap .placer{ display:none; width:100%}
 .videoWrap .control{ cursor:pointer; position:absolute; width:100%; height:100%; top:0; left:0; background:#000 url(../assets/images/play@2x.png) center center no-repeat; background-size:80px 80px}
 .videoWrap .video{ width:100%}
+
+.imgWrap .cols3 .area{}
 
 .pos_dots{ position:fixed; right:0; bottom:30px; width:50px;}
 .pos_dots .c1{ display:none; padding:20px 0; background:rgba(0,0,0,.5); border-radius:18px 0 0 18px}
@@ -70,7 +73,7 @@
 @media screen and (min-width:768px){
 	.topnav{ position:absolute; top:0; left:0; right:0; width:100%;}
 	.topnav_bd{ width:75%; max-width:1200px; padding:0 20px;}
-	.topnav .logo{ float:left; padding-top:30px; padding-bottom:0}
+	.topnav .logo{ float:left; padding-top:30px; padding-bottom:3px}
 
 	.navlist{ position:static; width:auto; background:none; box-shadow:none; float:right;-webkit-backdrop-filter:none;}
 	.navlist .item{ float:left; padding-top:30px}
@@ -90,6 +93,23 @@
 	.videoWrap{ width:100%; max-width:900px}
 	.videoWrap .placer{ display:block; opacity:0}
 	.videoWrap .video{ position:absolute; left:0; top:0; width:100%; height:100%}
+
+	.imgWrap .cols3 .area{ width:33%; float:left;}
+	.imgWrap .cols3 .dotlist{ width:68%; margin:0 auto;}
+
+	.scewwrap .c1{ padding:0; position:absolute; overflow:hidden; left:0; top:0; height:100%; width:200px;
+		background-image:url(../assets/images/scewbg.png);
+		background-image:-webkit-image-set(url(../assets/images/scewbg.png) 1x,url(../assets/images/scewbg@2x.png) 2x);
+		background-position:right 0;
+		background-repeat:no-repeat;
+		background-size:cover;
+		padding-left:30px;
+	}
+	.scewwrap .c1 .t{ position:absolute; left:30px; width:100%; line-height:30px; top:50%; margin-top:-15px;}
+	.scewwrap .c2{ padding:20px 20px 20px 250px;}
+
+	.sidephone .c1{ float:left; width:67%}
+	.sidephone .c2{ position:absolute; right:-5%; width:35%; bottom:0; overflow:hidden;}
 
 	.pos_dots{ bottom:auto; top:50%; margin-top:-170px}
 	.pos_dots .c1{ display:block}

@@ -10,6 +10,31 @@
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/skin.css" />
+<style>
+.e_pg_banner_icare{
+	/* fallback */ 
+	background-color: #ff6511;
+}
+.e_pg_banner_icare .pg_banner_bd{ background:url(./assets/images/pg_banner_icare.jpg) center center no-repeat; background-size:cover;}
+.e_pg_banner_icare .tit,
+.e_pg_banner_icare .subtit{ text-shadow:rgba(0,106,131,.3) 1px 1px 3px;}
+
+.e_pg_banner_icare .tit{ position:relative;}
+.e_pg_banner_icare .tit .de{ position:absolute; width:100px; height:100px; margin-left:-31px;
+	background-image:url(./assets/images/icare_logo.png);
+	background-image:-webkit-image-set(url(./assets/images/icare_logo.png) 1x,url(./assets/images/icare_logo@2x.png) 2x);
+	background-size:43px 43px;
+	background-repeat:no-repeat;
+}
+
+.e_pg_banner_icare .dc{ color:#ffce23}
+.e_pg_banner_icare .com{ color:#730300}
+
+@media screen and (min-width:768px){
+	.e_pg_banner_icare .tit .de{ margin-left:-72px; background-size:100px 100px}
+}
+
+</style>
 <!--[if lt IE 9]>
 <link rel="stylesheet" href="css/ie.css" />
 <![endif]-->
@@ -41,6 +66,7 @@ $(function() {
 		<a id="dot_4" data-scroll href="#mod_4" class="lk"><i class="dot"></i></a>
 		<a id="dot_5" data-scroll href="#mod_5" class="lk"><i class="dot"></i></a>
 		<a id="dot_6" data-scroll href="#mod_6" class="lk"><i class="dot"></i></a>
+		<a id="dot_7" data-scroll href="#mod_7" class="lk"><i class="dot"></i></a>
 	</div>
 	<div class="c2">
 		<a data-scroll href="#mod_1" class="lk"><i class="arr"></i></a>
@@ -49,9 +75,10 @@ $(function() {
 <div id="mod_1">
 	<div class="topnav">
 		<div class="topnav_bd clearfix">
-			<div class="logo"><a href="###"><img src="assets/images/logo.png" /></a></div>
+			<div class="logo"><a href="###"><img src="assets/images/logo_new.png" /></a></div>
 			<div class="navlist">
 				<ul class="list">
+					<li class="item"><a href="###" class="lk">Home</a></li>
 					<li class="item select"><a href="###" class="lk">Projects</a></li>
 					<li class="item"><a href="###" class="lk">About</a></li>
 					<li class="item"><a href="###" class="lk">Contact</a></li>
@@ -59,13 +86,13 @@ $(function() {
 			</div>
 		</div>
 	</div>
-	<div class="pg_banner">
+	<div class="pg_banner e_pg_banner_icare">
 		<div class="pg_banner_bd">
-			<h1 class="tit c_tw tx_c tx_cg">WeShow</h1>
-			<div class="subtit c_tw tx_c tx_cg">Mobile video Editing and Sharing APP</div>
-			<div class="dc mt5 c_t4 tx_c tx_14 tx_cg">Major design revision</div>
-			<div class="dc c_t4 tx_c tx_14 tx_cg">May 2014 - June 2014</div>
-			<div class="com c_t2 tx_c tx_14 tx_cg">Tencent Technology co. LTD.  Beijing</div>
+			<h1 class="tit c_tw tx_c tx_cg"><span class="de"></span>iCare</h1>
+			<div class="subtit c_tw tx_c tx_cg">mobile news content iOS APP</div>
+			<div class="dc mt5 tx_c tx_14 tx_cg">Major design revision</div>
+			<div class="dc tx_c tx_14 tx_cg">Sep 2013 - Nov 2013</div>
+			<div class="com tx_c tx_14 tx_cg">Tencent Technology co. LTD.  Beijing</div>
 		</div>
 	</div>
 	<div class="mod mod_0 c_bg0">
@@ -74,15 +101,15 @@ $(function() {
 				<div class="c1">
 					<div class="line clearfix">
 						<div class="t">Product:</div>
-						<div class="c">WeShow</div>
+						<div class="c">iCare</div>
 					</div>
 					<div class="line clearfix">
 						<div class="t">Type:</div>
-						<div class="c">Mobile video Editing and Sharing APP</div>
+						<div class="c">mobile news content iOS APP</div>
 					</div>
 					<div class="line clearfix">
 						<div class="t">Duration:</div>
-						<div class="c">6Weeks</div>
+						<div class="c">8weeks</div>
 					</div>
 				</div>
 				<div class="c2">
@@ -92,7 +119,7 @@ $(function() {
 					</div>
 					<div class="line clearfix">
 						<div class="t">Team size:</div>
-						<div class="c">8 visual designers</div>
+						<div class="c">4 designers (Interaction & visual designers)</div>
 					</div>
 				</div>
 			</div>
@@ -101,112 +128,199 @@ $(function() {
 	<div class="mod mod_1 c_bg1">
 		<div class="mod_bd">
 			<h2 class="tit tx_c tx_24 tx_cg">Background</h2>
-			<div class="desc tx_14 tx_cg">Based the existing interaction design of APP WeShow, in order to meet the users’ increasing demands of more dynamic and energetic appearance, overhaul the whole visual design, which including the style, color, texture, and icons, etc. Moreover, to ensure the product being competitive, the whole project had to be done within 6 weeks.  Considering the huge quantity of widgets, icons, and pages of the APP, the project management had to be efficient and effective.</div>
+			<div class="desc tx_14 tx_cg">Before our taking over the project, the iCare APP had been run over 1 years without active improvements. Meanwhile it was the time about the launch of iOS7. Thus there were three major goals for us—redirecting the product strategy, overhaul the interaction design, and redesign the appearance of the APP in order to meet the guidance of iOS7.</div>
 		</div>
 	</div>
 </div>
-<div id="mod_2" class="mod mod_2 c_bg2 c_tw">
+<div id="mod_2" class="mod mod_2 img_bg2 c_tw">
 	<div class="mod_bd">
-		<h2 class="tit tx_c tx_24 tx_cg">Keywords</h2>
-		<div class="desc tx_14 tx_cg">We investigated a certain number of active users of the APP, who were representative in many aspects, such as their ages, jobs, locations, frequency of use,etc. Meanwhile, we interviewed several experts of visual design in the industry, and collected and summarized their feedbacks. These information laid a solid foundation for our further discussion and brainstorm. Consequently, we drew a conclusion of the following keywords.</div>
-		<div class="imgWrap">
-			<div class="inner">
-				<img class="lazy placer" src="assets/images/loading.png" data-original="assets/images/weshow_keywords.png" />
-				<div class="imgAni">
-					<img class="lazy ani1" src="assets/images/loading.png" data-original="assets/images/weshow_keyword1.png" />
-					<img class="lazy ani2" src="assets/images/loading.png" data-original="assets/images/weshow_keyword2.png" />
-					<img class="lazy ani3" src="assets/images/loading.png" data-original="assets/images/weshow_keyword3.png" />
+		<h2 class="tit tx_c tx_24 tx_cg">User Research</h2>
+		<div class="desc tx_cg">
+			<h3 class="tx_18 tx_b pb5">Goal</h3>
+			<ul class="dotlist tx_14 pb20">
+				<li>To understand recent general users’ perspectives and opinions for iCare </li>
+				<li>To find the opportunity and to define the key points for iCare in the next step</li>
+			</ul>
+			<h3 class="tx_18 tx_b pb5">Methodology</h3>
+			<ul class="dotlist tx_14">
+				<li>Questionnaires to a million QQ users (among them 5424 were answered, and 4769 were used for analysis after screening) Interview of users of competitive products</li>
+				<li>Analysis of the “Boss system data” of iCare</li>
+			</ul>
+			<div class="imgWrap pl0 pr0">
+				<div class="cols3 clearfix">
+					<div class="area">
+						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_ur1.png" />
+						<noscript>
+							<img src="assets/images/icare_ur1.png" />
+						</noscript>
+						<h4 class="tx_c c_t5 tx_24 tx_b tx_nbr">Users of News Portal</h4>
+						<ul class="dotlist tx_14 c_t5 tx_l">
+							<li>abundant information</li>
+							<li>convinient to search</li>
+							<li>concise design</li>
+						</ul>
+					</div>
+					<div class="area">
+						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_ur2.png" />
+						<noscript>
+							<img src="assets/images/icare_ur2.png" />
+						</noscript>
+						<h4 class="tx_c c_t5 tx_24 tx_b tx_nbr">Users of Comprehensive news</h4>
+						<ul class="dotlist tx_14 c_t5 tx_l">
+							<li>immersive reading experience</li>
+							<li>latest news</li>
+							<li>sophisticated design</li>
+						</ul>
+					</div>
+					<div class="area">
+						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_ur3.png" />
+						<noscript>
+							<img src="assets/images/icare_ur3.png" />
+						</noscript>
+						<h4 class="tx_c c_t5 tx_24 tx_b tx_nbr">Users of E-magzine</h4>
+						<ul class="dotlist tx_14 c_t5 tx_l">
+							<li>innovative interaction</li>
+							<li>fine interface design</li>
+							<li>high-quality pictures</li>
+						</ul>
+					</div>
 				</div>
-				<noscript>
-				    <img src="assets/images/weshow_keywords.png" />
-				</noscript>
 			</div>
 		</div>
 	</div>
 </div>
-<div id="mod_3" class="mod mod_3 c_bg3 c_tw">
+<div id="mod_3" class="mod mod_3 img_bg3 c_tw">
 	<div class="mod_bd">
-		<h2 class="tit tx_c tx_24 tx_cg">Drafts</h2>
-		<div class="desc tx_14 tx_cg">Since the APP had already been run for around a year, the main users were familiar with the dominant tone, which meant the new characteristics should be added based on the existing dominant color.  In this stage, while nearly half of the team members were focusing on the daily operations of the former edition, several experienced designers in the team began to try brand new ideas and styles according to the key words.</div>
-		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/weshow_drafts.png" />
-			<noscript>
-			    <img src="assets/images/weshow_drafts.png" />
-			</noscript>
+		<h2 class="tit tx_c tx_24 tx_cg">Current Problems</h2>
+		<div class="desc pt20 tx_cg">
+			<div class="scewwrap clearfix c_t6">
+				<div class="c1 tx_18"><div class="t">Orientation</div></div>
+				<div class="c2 tx_14">
+					<ul class="dotlist">
+						<li>The goal that “a socialized high-quality magazine” has not been reached.</li>
+						<li>The notion that “between RSS and news client” is ambiguous and misleading.</li>
+						<li>Not actually socialized and personalized.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="scewwrap mt25 clearfix c_t6">
+				<div class="c1 tx_18"><div class="t">User Experience</div></div>
+				<div class="c2 tx_14">
+					<ul class="dotlist">
+						<li>Excessive immersive reading experience combined with concealing navigation lead to being lost.</li>
+						<li>The visual design is not elaborated enough.</li>
+						<li>Function is ignored in order to keep efficient.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="scewwrap mt25 clearfix c_t6">
+				<div class="c1 tx_18"><div class="t">Content</div></div>
+				<div class="c2 tx_14">
+					<ul class="dotlist">
+						<li>Updating is not frequently and immediately to meet users’ needs.</li>
+						<li>The source of information is limited and not efficiently organized, quality of content is not guaranteed.</li>
+						<li>The product does not have a clear taste or style.</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-<div id="mod_4" class="mod mod_4 c_bg4 c_tw">
-	<div class="mod_bd">
-		<h2 class="tit tx_c tx_24 tx_cg">Final Version</h2>
-		<div class="desc tx_14 tx_cg">After three times of meeting and discussion regarding all the drafts, the final design was decided. During the following days, the main pages were designed and confirmed by the main designers and senior project managers.</div>
-		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/weshow_final.png" />
-			<noscript>
-			    <img src="assets/images/weshow_final.png" />
-			</noscript>
+<div id="mod_4" class="mod mod_4 img_bg4">
+	<div class="mod_bd pb0">
+		<h2 class="tit tx_c tx_24 tx_cg">New Strategy</h2>
+		<div class="desc tx_cg">
+			<div class="sidephone clearfix">
+				<div class="c1 pb20">
+					<h3 class="tx_18 tx_b pb5">Customized</h3>
+					<ul class="dotlist tx_14 pb20">
+						<li>Personalized content recommendation based on interesting orientation</li>
+						<li>Content recommendation based on social relationship and friend circle</li>
+					</ul>
+					<h3 class="tx_18 tx_b pb5">Being attractive</h3>
+					<ul class="dotlist tx_14 pb20">
+						<li>Relevant reading material based on the horizontal and vertical logical relations between topics</li>
+						<li>Active correction during the reading procedure</li>
+					</ul>
+					<h3 class="tx_18 tx_b pb5">Simple & Easy</h3>
+					<ul class="dotlist tx_14 pb20">
+						<li>No more complicated classifications and catalogues, adopting a brand new flat structure only including the topic and content</li>
+						<li>Concise and easy operating procedure</li>
+					</ul>
+				</div>
+				<div class="c2">
+					<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_phone.png" />
+					<noscript>
+					    <img src="assets/images/icare_phone.png" />
+					</noscript>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-<div id="mod_5" class="mod mod_5 img_bg1 c_tw">
+<div id="mod_5" class="mod mod_5 img_bg5 c_tw">
 	<div class="mod_bd">
-		<h2 class="tit tx_c tx_24 tx_cg">Homepage</h2>
-		<div class="desc tx_14 tx_cg">Homepage is the most complicated and consequent page in the whole APP. It includes two kinds of feeds—original ones and reposted ones. Moreover, every single feed contains 4 parts of information— details of the publisher, the video, information of the video, and operations related to the feed. In order to illustrate the hierarchical relationship between all the different areas of information, as well as keep the whole design alacrity and concise, the visual design should be straightforward and clear. Finally we solved the problem by elaborately selecting and using several main colors to divide areas and keep them harmonious, qualifying the using of lines, considering white space as a vital element, reducing the using of texture, etc. Thus, although there is a great amount of information has to be showed on this page, the visual design keeps it simple and explicit.</div>
+		<h2 class="tit tx_c tx_24 tx_cg">Flow Chart</h2>
 		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/weshow_home.png" />
+			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_chart.png" />
 			<noscript>
-			    <img src="assets/images/weshow_home.png" />
+			    <img src="assets/images/icare_chart.png" />
 			</noscript>
 		</div>
 	</div>
 </div>
 <div id="mod_6">
-	<div class="mod mod_6 c_bg5 c_tw">
-		<div class="mod_bd">
-			<h2 class="tit tx_c tx_24 tx_cg">Guidance of Visual Design</h2>
-			<div class="desc tx_14 tx_cg">Since the goal was to accomplish all the redesign with in a limited time period, which necessarily  asked for teamwork. This made the guidance be of vital importance. In this stage, the chief visual designer concluded all the main pages into guidance of color, widgets, icons, while the other members in the team followed the rule and practiced in different pages and situations.</div>
-			<div class="hr1"></div>
-			<h2 class="tit tx_c tx_24 tx_cg">Colors</h2>
+	<div class="mod mod_6 c_bg6 c_tw">
+		<div class="mod_bd pb0">
+			<h2 class="tit tx_c tx_24 tx_cg">Drafts</h2>
+			<div class="desc tx_14 tx_cg">With a clear goal to redesign the whole APP in order to conform to the iOS standard, the stage of visual design drafts according to the new interaction design did not take too long.</div>
 			<div class="imgWrap">
-				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/weshow_colors.png" />
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_drafts.png" />
 				<noscript>
-				    <img src="assets/images/weshow_colors.png" />
+				    <img src="assets/images/icare_drafts.png" />
 				</noscript>
-			</div>
-			<div class="hr1"></div>
-			<h2 class="tit tx_c tx_24 tx_cg">Icons</h2>
-			<div class="imgWrap">
-				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/weshow_icons.png" />
-				<noscript>
-				    <img src="assets/images/weshow_icons.png" />
-				</noscript>
-			</div>
-			<div class="hr1"></div>
-			<h2 class="tit tx_c tx_24 tx_cg">Widgets</h2>
-			<div class="imgWrap">
-				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/weshow_widgets.png" />
-				<noscript>
-				    <img src="assets/images/weshow_widgets.png" />
-				</noscript>
-			</div>
-		</div>
-	</div>
-	<div class="mod mod_7 c_bg2 c_t1">
-		<div class="mod_bd">
-			<h2 class="tit tx_c tx_24 tx_cg">Video</h2>
-			<div class="desc tx_14 tx_cg">This video shows the major function and flow of WeShow, which basically means sectional shooting video, editing video, beautifying it with filter, etc.</div>
-			<div class="videoWrap">
-				<img class="placer" src="assets/images/placer.png" />
-				<video id="supportVideo" class="video" loop="loop">
-					<source src="assets/media/weishi_fin.mp4" type="video/mp4" />
-				</video>
-				<div id="videocontrol" class="control"></div>
-				<embed id="supportFlash" class="video" src="http://player.youku.com/player.php/sid/XMTQzNzU0OTI2MA==/v.swf" allowFullScreen="true" quality="high" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 			</div>
 		</div>
 	</div>
 </div>
-<div id="mod_7"></div>
+<div id="mod_7">
+	<div class="mod mod_7 img_bg6 c_tw">
+		<div class="mod_bd">
+			<h2 class="tit tx_c tx_24 tx_cg">Final Version</h2>
+			<div class="desc tx_14 tx_cg">After two times of meeting and discussion regarding all the drafts, the final design was decided. During the following days, the main pages were designed (both Day mode and Night mode) and confirmed by the main designers and senior project managers.</div>
+			<div class="imgWrap">
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_final1.png" />
+				<noscript>
+				    <img src="assets/images/icare_final1.png" />
+				</noscript>
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_final2.png" />
+				<noscript>
+				    <img src="assets/images/icare_final2.png" />
+				</noscript>
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/icare_final3.png" />
+				<noscript>
+				    <img src="assets/images/icare_final3.png" />
+				</noscript>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mod_8">
+	<div class="mod mod_8 c_bg2 c_t1">
+		<div class="mod_bd">
+			<h2 class="tit tx_c tx_24 tx_cg">Video</h2>
+			<div class="desc tx_14 tx_cg">This video shows the major function and flow of iCare, which basically includes timeline of recommend content—the latest news, followers’ micro-blog, topics in which interested by friends, etc; personal center; List of topics, settings, and so forth.</div>
+			<div class="videoWrap">
+				<img class="placer" src="assets/images/placer.png" />
+				<video id="supportVideo" class="video" loop="loop">
+					<source src="assets/media/icare-ae.mp4" type="video/mp4" />
+				</video>
+				<div id="videocontrol" class="control"></div>
+				<embed id="supportFlash" class="video" src="http://player.youku.com/player.php/sid/XMTQ0MzU0MjUzNg==/v.swf" allowFullScreen="true" quality="high" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 <script>
 

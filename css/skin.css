@@ -15,6 +15,10 @@
 .c_t3{ color:#999;}
 /* 弱文字色2 */
 .c_t4{ color:#abf3ff;}
+/* 强文字色3 */
+.c_t5{ color:#ffce23}
+
+.c_t6{ color:#cc3362}
 /* 白色 */
 .c_tw{ color:#fff;}
 
@@ -63,10 +67,15 @@ a.c_a2:active{ color:#366}
 .c_bg3{ background-color:#364450}
 .c_bg4{ background-color:#f65}
 .c_bg5{ background-color:#364450}
+.c_bg6{ background-color:#2e0a11}
 
 /* 底纹 */
 .img_bg1{ background:#3c1d0d url(../assets/images/img_bg1.jpg) center center no-repeat; background-size:cover;}
-.img_bg2{}
+.img_bg2{ background:#332623 url(../assets/images/img_bg2.jpg) center center no-repeat; background-size:cover;}
+.img_bg3{ background:#e22120 url(../assets/images/img_bg3.jpg) center center no-repeat; background-size:cover;}
+.img_bg4{ background:#ffce23 url(../assets/images/img_bg4.jpg) center center no-repeat; background-size:cover;}
+.img_bg5{ background:#5d4139 url(../assets/images/img_bg5.jpg) center center no-repeat; background-size:cover;}
+.img_bg6{ background:#e3241d url(../assets/images/img_bg6.jpg) center center no-repeat; background-size:cover;}
 
 .hr1{ height:2px; width:180px; margin:20px auto; background:url(../assets/images/spacer2.png) 0 0 repeat-x; background-size:30px 2px;}
 
