@@ -25,7 +25,9 @@
 .dotlist{ padding-left:20px}
 .dotlist li{ list-style:square;}
 
-.scewwrap{ position:relative; background:rgba(255,255,255,.6); border-radius:10px; overflow:hidden}
+.scewwrap{ position:relative; background:rgba(255,255,255,.6); border-radius:10px; overflow:hidden;
+	box-shadow:rgba(0,0,0,.2) 0 0 15px
+}
 .scewwrap .c1{ padding:20px 20px 0;
 	font-weight:bold;
 }
