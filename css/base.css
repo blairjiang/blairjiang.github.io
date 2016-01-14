@@ -153,6 +153,8 @@ body .pl0{ padding-left:0!important}
 .btn:hover{ background:#f16648; padding:10px 20px; border:none; color:#fff; display:inline-block; *display:inline; *zoom:1; vertical-align:top; border-radius:5px; cursor:pointer;
     font-family:century_gothicregular, century gothic, sans-serif;
     font-size:14px; font-weight:bold;
+    -webkit-appearance:none;
+    appearance:none;
 }
 .btn:active,
 .btn:hover,
