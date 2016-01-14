@@ -1,6 +1,6 @@
 body,img{ margin:0;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td,header,footer,nav,article{margin:0;padding:0}
-html,body{ height:100%}
+html,body{}
 header,footer,nav,article{ display: block;}
 table{border-collapse:collapse;border-spacing:0}
 img,video{border:0; max-width:100%; vertical-align:top}
@@ -134,6 +134,41 @@ body .pl0{ padding-left:0!important}
 /* 折行 */
 .tx_br{ word-wrap:break-word; word-break:break-all}
 .tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+/* 表单 */
+.inputTxt input,
+.inputTxt textarea{ width:100%; background:#edc9b3; border:#edc9b3 1px solid; padding:13px 20px; vertical-align:top; border-radius:5px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-appearance:none;
+    appearance:none;
+    font-family:century_gothicregular, century gothic, sans-serif;
+    font-size:14px;
+    -webkit-transition:all .2s ease-in-out;
+}
+.inputTxt input:focus,
+.inputTxt textarea:focus{ background:#f0e1d8; border-color:#f0e1d8}
+.btn,
+.btn:active,
+.btn:hover{ background:#f16648; padding:10px 20px; border:none; color:#fff; display:inline-block; *display:inline; *zoom:1; vertical-align:top; border-radius:5px; cursor:pointer;
+    font-family:century_gothicregular, century gothic, sans-serif;
+    font-size:14px; font-weight:bold;
+}
+.btn:active,
+.btn:hover,
+.btn:focus{
+    -webkit-filter:brightness(.9);
+}
+
+/* 图标 */
+.icon{ width:16px; height:16px; display:inline-block;*display:inline;*zoom:1; vertical-align:middle;
+    background-image:url(../assets/images/icon.png);
+    background-image:-webkit-image-set(url(../assets/images/icon.png) 1x,url(../assets/images/icon@2x.png) 2x);
+    background-size:48px 16px;
+}
+.icon_phone{ background-position:0 0}
+.icon_mail{ background-position:-16px 0}
+.icon_wechat{ background-position:-32px 0}
 
 @font-face {
     font-family: 'century_gothicregular';

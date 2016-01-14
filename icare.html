@@ -79,9 +79,9 @@ $(function() {
 			<div class="navlist">
 				<ul class="list">
 					<li class="item"><a href="./index.html" class="lk">Home</a></li>
-					<li class="item select"><a href="###" class="lk">Projects</a></li>
-					<li class="item"><a href="###" class="lk">About</a></li>
-					<li class="item"><a href="###" class="lk">Contact</a></li>
+					<li class="item select"><a href="javascript:;" class="lk">Projects</a></li>
+					<li class="item"><a href="./about.html" class="lk">About</a></li>
+					<li class="item"><a href="./contact.html" class="lk">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -328,19 +328,15 @@ $(function() {
 var hasVideo = !!(document.createElement('video').canPlayType);
 if(hasVideo){
 	$('#supportFlash').remove();
-}else{
-	$('#supportVideo').remove();
-}
-
-$(function(){
 	var video = $('#supportVideo')[0];
-	video.currentTime = 0;
+	//video.currentTime = 0;
 	$('#videocontrol').on('click',function(){
 		$(this).css('display','none');
 		video.play();
 	});
-
-});
+}else{
+	$('#supportVideo').remove();
+}
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
