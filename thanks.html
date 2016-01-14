@@ -21,20 +21,9 @@ body{ background:#f0dcd1 url(./assets/images/index_bg.jpg); background-size:cove
 }
 .topnav.checked{ background:none; box-shadow:none;}
 
-.content{ margin:0 5%; max-width:1200px}
-.aside img{ width:100%; box-shadow:rgba(0,0,0,.2) 0 0 5px}
-.article .tit{ font-size:36px; line-height:36px; color:#f84197}
-.article a,
-.article a:hover,
-.article a:active{ color:#fff}
-
-
+.content{ padding:10% 0; margin:0 5%;}
 @media screen and (min-width:768px){
 	.topnav.checked{ padding-top:30px}
-
-	.content{ margin:150px auto 0; width:75%}
-	.aside{ width:43%; float:left; margin-right:3%}
-	.article{ overflow:hidden;}
 }
 </style>
 <!--[if lt IE 9]>
@@ -74,32 +63,7 @@ $(function() {
 			<tr>
 				<td class="tb1">
 					<div class="frameTbCon">
-						<div class="aside mb25">
-							<div class="contactform">
-								<form action="//formspree.io/lingjiang0613@qq.com" method="POST">
-									<div class="inputTxt">
-										<input type="text" name="name" required="required" placeholder="YOUR NAME" maxlength="20" />
-									</div>
-									<div class="inputTxt mt25">
-										<input type="email" name="_replyto" required="required" placeholder="EMAIL ADDRESS" maxlength="100" />
-									</div>
-									<div class="inputTxt mt25">
-										<textarea name="message" required="required" placeholder="YOUR MESSAGE" maxlength="1000" style="height:100px"></textarea>
-									</div>
-									<div class="clearfix mt25">
-										<input type="hidden" name="_next" value="./thanks.html" />
-										<input class="btn" type="submit" value="SEND YOUR MESSAGE" />
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="article mb25">
-							<p class="tx_cg tx_14 c_tw">I love connecting with new people, so please feel free to reach out and say hello for any reason. You can contact me with the information or the form. Looking forward to talking with you!</p>
-							<div class="mt15">
-								<p class="tx_cg tx_14 c_tw mt5"><span class="icon icon_mail mr10"></span><a class="vt_m" href="mailto:lingjiang0613@qq.com">lingjiang0613@qq.com </a></p>
-								<p class="tx_cg tx_14 c_tw mt5"><span class="icon icon_wechat mr10"></span><span class="vt_m">hui57037965</span></p>
-							</div>
-						</div>
+						<h1 class="tx_c c_t1 tx_24 tx_cg">Thanks for your contact!</h1>
 					</div>
 				</td>
 			</tr>
