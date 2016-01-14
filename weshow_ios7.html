@@ -11,14 +11,41 @@
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/skin.css" />
 <style>
-.e_pg_banner_weshow_ios7{
+.pg_banner{
 	position:relative;
 	/* fallback */ 
 	background-color: #fff;
 }
-.e_pg_banner_weshow_ios7 img{ width:100%}
-.e_pg_banner_weshow_ios7 .pg_banner_wrap{ position:absolute; width:100%; height:100%; top:0; left:0;}
-.e_pg_banner_weshow_ios7 .pg_banner_bd{}
+.pg_banner_wrap{ background:url(./assets/images/pg_banner_weshow_ios7a.jpg) center bottom no-repeat; background-size:cover}
+.pg_banner img{ display:none; width:100%}
+.pg_banner_bd{}
+.pg_banner .dc{ margin-top:10px}
+.pg_banner_bd .summary{ margin:0 5%;}
+
+.pg_banner_bd .summary h1 .t{font-size:1.5em; vertical-align:baseline;}
+.pg_banner_bd .summary h1 .sub{ font-size:1em; vertical-align:baseline; color:#e0a2ff; margin-left:10px}
+
+.pg_banner_bd .summary .c1{ text-align:center;}
+.pg_banner_bd .summary .c2 .line{ margin-top:20px}
+.pg_banner_bd .summary .c2 .line:first-child{ margin-top:0}
+.pg_banner_bd .summary .c2 .t{ float:left; text-align:right; margin-right:5%; width:90px; font-weight:bold}
+.pg_banner_bd .summary .c2 .c{ overflow:hidden;}
+
+.mod_1 .c1{ float: left; width:70%; margin-right:3%}
+.mod_1 .c2{ overflow:hidden; width:27%; text-align:right}
+
+@media screen and (min-width:768px){
+	.pg_banner_wrap{ background-size:1600px 492px}
+	.pg_banner_bd{ padding-top:163px; height:329px}
+	.pg_banner .dc{ margin-top:25px}
+	.pg_banner_bd .summary{ margin:0 auto; max-width:850px}
+	.pg_banner_bd .summary .c1{ width:55%; float:left; text-align:left;}
+	.pg_banner_bd .summary .c2{ overflow:hidden;}
+
+	.pg_banner_bd .summary h1{ line-height:3.5em}
+	.pg_banner_bd .summary h1 .t{font-size:3.5em;}
+	.pg_banner_bd .summary h1 .sub{font-size:1.5em;}
+}
 
 </style>
 <!--[if lt IE 9]>
@@ -71,26 +98,138 @@ $(function() {
 		</div>
 	</div>
 	<div class="pg_banner e_pg_banner_weshow_ios7">
-		<img src="./assets/images/pg_banner_weshow_ios7.jpg" />
+		<img class="bg" src="./assets/images/pg_banner_weshow_ios7.jpg" />
 		<div class="pg_banner_wrap">
 			<div class="pg_banner_bd">
+				<div class="summary clearfix">
+					<div class="c1">
+						<h1 class="c_tw tx_cg"><span class="t">WeShow</span><span class="sub">for iOS7</span></h1>
+						<p class="c_tw tx_cg tx_18">Mobile video Editing and Sharing APP</p>
+						<p class="dc c_tw tx_cg tx_14">Major design revision</p>
+						<p class="c_tw tx_cg tx_14">November 2013 - January 2014</p>
+						<p class="com c_tw tx_cg tx_14">Tencent Technology co. LTD.  Beijing</p>
+					</div>
+					<div class="c2 tx_14 tx_cg pt15">
+						<div class="line clearfix">
+							<div class="t">Product:</div>
+							<div class="c">WeShow</div>
+						</div>
+						<div class="line clearfix">
+							<div class="t">Type:</div>
+							<div class="c">Mobile video Editing and Sharing APP</div>
+						</div>
+						<div class="line clearfix">
+							<div class="t">Duration:</div>
+							<div class="c">10weeks</div>
+						</div>
+						<div class="line clearfix">
+							<div class="t">My Role:</div>
+							<div class="c">Visual Team Leader and Manager;<br />Chief Designer</div>
+						</div>
+						<div class="line clearfix">
+							<div class="t">Team Size:</div>
+							<div class="c">8 visual designers</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="mod mod_1 c_bg7">
+	<div class="mod mod_1 img_bg7">
 		<div class="mod_bd">
-			<h2 class="tit tx_c tx_24 tx_cg">Background</h2>
-			<div class="desc tx_14 tx_cg">Based the existing interaction design of APP WeShow, in order to meet the users’ increasing demands of more dynamic and energetic appearance, overhaul the whole visual design, which including the style, color, texture, and icons, etc. Moreover, to ensure the product being competitive, the whole project had to be done within 6 weeks.  Considering the huge quantity of widgets, icons, and pages of the APP, the project management had to be efficient and effective.</div>
+			<div class="desc tx_cg">
+				<h2 class="tit tx_24 tx_cg tx_b pb10">Background Information</h2>
+				<div class="clearfix tx_14">
+					<div class="c1">
+						<p>Weshow was both a mobile video editing tool and a social network application. One year after the first version of Weshow could be downloaded from APP store, the iOS7 was launched and the trend of visual design has been changed dramatically-- the Flat Design had become dominant in the internet industry. Thus, to follow the trend, the existing APP WeShow had to be overhauled and redesigned according to the brand new official guidance of iOS7. As the competitors were doing the same kind of redesign, to ensure the product being competitive, the work had to been done within 10 weeks, which is not only a challenge for the development team but also means there was little time left for designers. Fortunately, the project has been completed timely.</p>
+					</div>
+					<div class="c2">
+						<img class="lazy" src="assets/images/loading.png" data-original="./assets/images/ios7.png" />
+						<noscript>
+						    <img src="./assets/images/ios7.png" />
+						</noscript>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-<div id="mod_2" class="mod mod_2 c_bg2 c_tw">
+<div id="mod_2" class="mod mod_2 img_bg8 c_tw">
+	<div class="mod mod_2">
+		<div class="mod_bd">
+			<div class="desc tx_cg">
+				<h2 class="tit tx_24 tx_cg tx_b pb10">Keywords</h2>
+				<p class="tx_14">Since the launch of iOS7 was a big event in the industry that the overhaul was necessary to keep the product being competitive in the market. And replacing all the widgets was already a huge task while there was left little time for the team to complete the overhaul timely, as the first version after the launch, the program manager decided the goal of the redesign basically is to change the whole product into the new style following all the principles and rules of the new operation system. Therefore, without too much struggling, after discussion, the product manager, the designers and the developers reached an agreement to define the keywords of the redesign as “Simple”, “Light” and “Elegant”.</p>
+			</div>
+			<div class="imgWrap">
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/ios7_keywords.png" />
+				<noscript>
+				    <img src="assets/images/ios7_keywords.png" />
+				</noscript>
+			</div>
+		</div>
+	</div>
 </div>
-<div id="mod_3" class="mod mod_3 c_bg3 c_tw">
+<div id="mod_3" class="mod mod_3 c_bg7">
+	<div class="mod mod_3">
+		<div class="mod_bd">
+			<div class="desc tx_cg">
+				<h2 class="tit tx_24 tx_cg tx_b pb10">Change of the Design</h2>
+				<p class="tx_14">According to the new iOS guidance, not only the visual design had been overhauled, but also the interaction design experienced a huge change. The whole application seemed totally different after a short time period.</p>
+			</div>
+			<div class="imgWrap">
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/ios7_change.png" />
+				<noscript>
+				    <img src="assets/images/ios7_change.png" />
+				</noscript>
+			</div>
+		</div>
+	</div>
 </div>
-<div id="mod_4" class="mod mod_4 c_bg4 c_tw">
+<div id="mod_4" class="mod mod_4 c_bg7">
+	<hr class="hr2" />
+	<div class="mod mod_4">
+		<div class="mod_bd">
+			<div class="desc tx_cg">
+				<h2 class="tit tx_24 tx_cg tx_b pb10">Homepage</h2>
+				<p class="tx_14">Weshow was an application on cell-phones which both a video-editing tool and a social network product. Since the homepage of Weshow basically was the timeline of all the feeds released by people who the users followed, which included a great amount of information, I want to take this page for example to explain the details of the redesign. Different from realistic design—the style of the former version-- which could use various textures to divide different functional areas, by practicing Flat Design the abundant content of the homepage had become a challenge for us. Thus we classified all and the information into several groups to simplify the problem, thus by elaborately design all the elements -- colors, lines, font size, icons, white space, we solved the problem successfully.</p>
+			</div>
+			<div class="imgWrap">
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/ios7_home.png" />
+				<noscript>
+				    <img src="assets/images/ios7_home.png" />
+				</noscript>
+			</div>
+		</div>
+	</div>
 </div>
-<div id="mod_5" class="mod mod_5 img_bg1 c_tw">
+<div id="mod_5" class="mod mod_5 img_bg9 c_tw">
+	<div class="mod mod_5">
+		<div class="mod_bd">
+			<div class="desc tx_cg">
+				<h2 class="tit tx_24 tx_cg tx_b pb10">Main pages</h2>
+				<p class="tx_14">Since there were only 8 visual designers in the team, and while we were exploring the new version, some people had to work on the daily operation and details optimizing of the existing product. Thus, after the homepage was finalized, I arranged three major designers spent a week working out the main pages. </p>
+			</div>
+			<div class="imgWrap">
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/ios7_main1.png" />
+				<noscript>
+				    <img src="assets/images/ios7_main1.png" />
+				</noscript>
+			</div>
+			<div class="imgWrap">
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/ios7_main2.png" />
+				<noscript>
+				    <img src="assets/images/ios7_main2.png" />
+				</noscript>
+			</div>
+			<div class="imgWrap">
+				<img class="lazy" src="assets/images/loading.png" data-original="assets/images/ios7_main3.png" />
+				<noscript>
+				    <img src="assets/images/ios7_main3.png" />
+				</noscript>
+			</div>
+		</div>
+	</div>
 </div>
 <div id="mod_6">
 </div>

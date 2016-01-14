@@ -71,7 +71,7 @@ a.c_a2:active{ color:#366}
 .c_bg4{ background-color:#f65}
 .c_bg5{ background-color:#364450}
 .c_bg6{ background-color:#2e0a11}
-.c_bg7{ background-color:#eeebef;}
+.c_bg7{ background-color:#eeebef}
 
 /* 底纹 */
 .img_bg1{ background:#3c1d0d url(../assets/images/img_bg1.jpg) center center no-repeat; background-size:cover;}
@@ -80,9 +80,17 @@ a.c_a2:active{ color:#366}
 .img_bg4{ background:#ffce23 url(../assets/images/img_bg4.jpg) center center no-repeat; background-size:cover;}
 .img_bg5{ background:#5d4139 url(../assets/images/img_bg5.jpg) center center no-repeat; background-size:cover;}
 .img_bg6{ background:#e3241d url(../assets/images/img_bg6.jpg) center center no-repeat; background-size:cover;}
+.img_bg7{ background:#eeebef url(../assets/images/img_bg7.png) center top no-repeat;}
+.img_bg8{ background:#eeebef url(../assets/images/img_bg8.jpg) center center no-repeat; background-size:cover;}
+.img_bg9{ background:#a3a09e url(../assets/images/img_bg9.jpg) center center no-repeat; background-size:cover;}
 
 .hr1{ height:2px; width:180px; margin:20px auto; background:url(../assets/images/spacer2.png) 0 0 repeat-x; background-size:30px 2px;}
+.hr2{ background:none; border:none; border-top:#d8d1db 1px solid; margin:0 5%;
+    -webkit-appearance:none;
+    appearance:none;
+}
 
 @media screen and (min-width:768px){
 	.hr1{ width:240px; margin:35px auto;}
+	.hr2{ width:75%; margin:0 auto;}
 }
