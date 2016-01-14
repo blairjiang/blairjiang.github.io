@@ -60,7 +60,7 @@
 
 .imgWrap .cols3 .area{}
 
-.pos_dots{ position:fixed; right:0; bottom:30px; width:50px;}
+.pos_dots{ position:fixed; right:0; bottom:30px; width:50px; z-index:999;}
 .pos_dots .c1{ display:none; padding:20px 0; background:rgba(0,0,0,.5); border-radius:18px 0 0 18px}
 .pos_dots .c1 .lk{ display:block; padding:10px 20px;}
 .pos_dots .c1 .lk .dot{ display:block; width:10px; height:10px; font-size:0; overflow:hidden; border-radius:5px; background-color:#999}
@@ -79,10 +79,19 @@
 
 .copyright .bd{ margin:0 auto; max-width:1200px; border-top:#a13696 1px solid; color:#a13696}
 
+.frameTb{ width:100%}
+.frameTbCon{ margin:0 auto; max-width:1200px}
+
 @media screen and (min-width:768px){
+
+	.frameTb{ position:absolute; left:0; top:0; height:100%;}
+	.frameTb .tb1{}
+	.frameTb .tb2{ vertical-align:bottom;}
+	.frameTbCon{ width:75%; margin-top:200px;/* padding-bottom:5%*/}
+
 	.topnav{ position:fixed; top:0; left:0; right:0; width:100%;}
 	.topnav_bd{ width:75%; max-width:1200px; padding:0 20px;}
-	.topnav .logo{ float:left; padding-top:30px; padding-bottom:3px}
+	.topnav .logo{ float:left; padding-top:27px; padding-bottom:3px}
 
 	.navlist{ position:static; width:auto; background:none; box-shadow:none; float:right;-webkit-backdrop-filter:none;}
 	.navlist .item{ float:left; padding-top:30px}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="#364450" />
+<meta name="format-detection" content="telephone=no" />
+<title>Ling Jiang</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/skin.css" />
+<style>
+.e_pg_banner_weshow_ios7{
+	position:relative;
+	/* fallback */ 
+	background-color: #fff;
+}
+.e_pg_banner_weshow_ios7 img{ width:100%}
+.e_pg_banner_weshow_ios7 .pg_banner_wrap{ position:absolute; width:100%; height:100%; top:0; left:0;}
+.e_pg_banner_weshow_ios7 .pg_banner_bd{}
+
+</style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css" />
+<![endif]-->
+<script type="text/javascript" src="script/jquery.min.js"></script>
+<script type="text/javascript" src="script/smooth-scroll.min.js"></script>
+<script type="text/javascript" src="script/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="script/jquery.lazyload.min.js"></script>
+<script>
+
+// init smooth-scroll
+smoothScroll.init();
+
+$(function() {
+    $("img.lazy").lazyload({
+	    effect : "fadeIn",
+	    threshold : 500
+    });
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+<div class="pos_dots">
+	<div class="c1">
+		<a id="dot_1" data-scroll href="#mod_1" class="lk active"><i class="dot"></i></a>
+		<a id="dot_2" data-scroll href="#mod_2" class="lk"><i class="dot"></i></a>
+		<a id="dot_3" data-scroll href="#mod_3" class="lk"><i class="dot"></i></a>
+		<a id="dot_4" data-scroll href="#mod_4" class="lk"><i class="dot"></i></a>
+		<a id="dot_5" data-scroll href="#mod_5" class="lk"><i class="dot"></i></a>
+		<a id="dot_6" data-scroll href="#mod_6" class="lk"><i class="dot"></i></a>
+	</div>
+	<div class="c2">
+		<a data-scroll href="#mod_1" class="lk"><i class="arr"></i></a>
+	</div>
+</div>
+<div id="mod_1">
+	<div class="topnav">
+		<div class="topnav_bd clearfix">
+			<div class="logo"><a href="./index.html"><img src="assets/images/logo_new.png" /></a></div>
+			<div class="navlist">
+				<ul class="list">
+					<li class="item"><a href="./index.html" class="lk">Home</a></li>
+					<li class="item select"><a href="javascript:;" class="lk">Projects</a></li>
+					<li class="item"><a href="./about.html" class="lk">About</a></li>
+					<li class="item"><a href="./contact.html" class="lk">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="pg_banner e_pg_banner_weshow_ios7">
+		<img src="./assets/images/pg_banner_weshow_ios7.jpg" />
+		<div class="pg_banner_wrap">
+			<div class="pg_banner_bd">
+			</div>
+		</div>
+	</div>
+	<div class="mod mod_1 c_bg7">
+		<div class="mod_bd">
+			<h2 class="tit tx_c tx_24 tx_cg">Background</h2>
+			<div class="desc tx_14 tx_cg">Based the existing interaction design of APP WeShow, in order to meet the users’ increasing demands of more dynamic and energetic appearance, overhaul the whole visual design, which including the style, color, texture, and icons, etc. Moreover, to ensure the product being competitive, the whole project had to be done within 6 weeks.  Considering the huge quantity of widgets, icons, and pages of the APP, the project management had to be efficient and effective.</div>
+		</div>
+	</div>
+</div>
+<div id="mod_2" class="mod mod_2 c_bg2 c_tw">
+</div>
+<div id="mod_3" class="mod mod_3 c_bg3 c_tw">
+</div>
+<div id="mod_4" class="mod mod_4 c_bg4 c_tw">
+</div>
+<div id="mod_5" class="mod mod_5 img_bg1 c_tw">
+</div>
+<div id="mod_6">
+</div>
+<div id="mod_7"></div>
+</div>
+<script>
+
+// 判断是否支持video标签
+var hasVideo = !!(document.createElement('video').canPlayType);
+if(hasVideo){
+	$('#supportFlash').remove();
+	var video = $('#supportVideo')[0];
+	// video.currentTime = 0;
+	$('#videocontrol').on('click',function(){
+		$(this).css('display','none');
+		video.play();
+	});
+}else{
+	$('#supportVideo').remove();
+}
+
+function onScroll(){
+    var scrollPos = $(document).scrollTop();
+    $('.pos_dots .c1 .lk').each(function(){
+    	var mod = $(this).attr('href');
+    	if($(mod).offset().top <= scrollPos && $(mod).offset().top + $(mod).height() > scrollPos){
+    		$('.pos_dots .c1 .lk').removeClass('active');
+    		$(this).addClass('active');
+    	}else{
+    		$(this).removeClass('active');
+    	}
+    });
+}
+window.onscroll = onScroll;
+
+// init controller
+var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
+
+// build scenes
+new ScrollMagic.Scene({triggerElement: "#mod_1"})
+	.setClassToggle("#mod_1", "active") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#mod_2"})
+	.setClassToggle("#mod_2", "active") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#mod_3"})
+	.setClassToggle("#mod_3", "active") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#mod_4"})
+	.setClassToggle("#mod_4", "active") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#mod_5"})
+	.setClassToggle("#mod_5", "active") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#mod_6"})
+	.setClassToggle("#mod_6", "active") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#mod_7"})
+	.setClassToggle("#mod_7", "active") // add class toggle
+	.addTo(controller);
+</script>
+</body>
+</html>

@@ -41,8 +41,11 @@ a.c_a2:active{ color:#366}
 :root ::-webkit-input-placeholder{ color:#e29d69;}
 :root :-webkit-input-placeholder{ color:#e29d69;}
 
+/* 表单气泡
+----------------------------------------------------------------*/
 
-
+::-webkit-validation-bubble-message {
+}
 
 
 /* 2 边框
@@ -68,6 +71,7 @@ a.c_a2:active{ color:#366}
 .c_bg4{ background-color:#f65}
 .c_bg5{ background-color:#364450}
 .c_bg6{ background-color:#2e0a11}
+.c_bg7{ background-color:#eeebef;}
 
 /* 底纹 */
 .img_bg1{ background:#3c1d0d url(../assets/images/img_bg1.jpg) center center no-repeat; background-size:cover;}
