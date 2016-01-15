@@ -21,8 +21,8 @@ body{ background:#f0dcd1 url(./assets/images/index_bg.jpg); background-size:cove
 }
 .topnav.checked{ background:none; box-shadow:none;}
 
-.productList{}
-.productList .item{ color:#5e5e5e; background:#fff; margin:0 5% 3%; box-shadow:rgba(0,0,0,.2) 0 0 5px}
+.productList{ margin-bottom:5%}
+.productList .item{ color:#5e5e5e; background:#fff; margin:0 5% 5%; box-shadow:rgba(0,0,0,.2) 0 0 5px}
 .productList .item .lk{ display:block; background:#ededed;}
 .productList .item img{ width:100%}
 .productList .item .txt{ padding:3%; background:#fff;}
@@ -109,6 +109,20 @@ $(function() {
 								</div>
 							</div>
 						</div>
+						<div id="moreWork" class="productList clearfix" style="display:none">
+							<div class="item">
+								<a href="./water.html" class="lk">
+									<img class="lazy" src="assets/images/loading.png" data-original="assets/images/index_icare.jpg" style="opacity:0" />
+									<noscript>
+									    <img src="assets/images/index_icare.jpg" style="opacity:0" />
+									</noscript>
+								</a>
+								<div class="txt clearfix">
+									<div class="left"><span class="tx_cg tx_18">Water<sup style="vertical-align:middle; margin-top:-10px; display:inline-block; *display:inline;*zoom:1"><small>2</small></sup></span></div>
+									<div class="right"><span class="tx_cg tx_12">Aug 2013 - Sep 2013</span></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</td>
 			</tr>
@@ -116,7 +130,7 @@ $(function() {
 				<td class="tb2">
 					<div class="footer">
 						<div class="loadmore clearfix">
-							<a href="###" class="lk dis_b pt20 pb20 tx_c"><img src="./assets/images/loadmore.png" /></a>
+							<a id="showmore" href="javascript:;" class="lk dis_b pt20 pb20 tx_c"><img src="./assets/images/loadmore.png" /></a>
 						</div>
 						<div class="copyright tx_c tx_14">
 							<div class="bd pt20 pb20">
@@ -142,6 +156,12 @@ function topnavbg(){
 }
 window.onscroll = topnavbg;
 window.onresize = topnavbg;
+$(function(){
+	$('#showmore').on('click',function(){
+		$('#moreWork').fadeIn(300);
+		$(this).hide();
+	});
+});
 </script>
 </body>
 </html>

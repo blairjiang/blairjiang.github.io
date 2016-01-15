@@ -19,6 +19,11 @@
 .c_t5{ color:#ffce23}
 
 .c_t6{ color:#cc3362}
+
+.c_t7{ color:#6a4a4a}
+
+.c_t8{ color:#666}
+
 /* 白色 */
 .c_tw{ color:#fff;}
 
@@ -73,6 +78,10 @@ a.c_a2:active{ color:#366}
 .c_bg6{ background-color:#2e0a11}
 .c_bg7{ background-color:#eeebef}
 .c_bg8{ background-color:#44364b}
+.c_bg9{ background-color:#f8f2de}
+.c_bg10{ background-color:#fdc55b}
+.c_bg11{ background-color:#6a4a4a;}
+.c_bg12{ background-color:#ccecee}
 
 /* 底纹 */
 .img_bg1{ background:#3c1d0d url(../assets/images/img_bg1.jpg) center center no-repeat; background-size:cover;}
@@ -90,6 +99,7 @@ a.c_a2:active{ color:#366}
     -webkit-appearance:none;
     appearance:none;
 }
+.hr3{ height:2px; width:320px; margin:20px auto; background:url(../assets/images/spacer3.png) 0 0 repeat-x; background-size:30px 2px;}
 
 @media screen and (min-width:768px){
 	.hr1{ width:240px; margin:35px auto;}

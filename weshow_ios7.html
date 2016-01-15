@@ -16,6 +16,10 @@
 	/* fallback */ 
 	background-color: #fff;
 }
+.pg_banner .summary .t,
+.pg_banner .summary .st,
+.pg_banner .summary .sub{ text-shadow:rgba(0,106,131,.3) 1px 1px 3px;}
+
 .pg_banner_wrap{ background:url(./assets/images/pg_banner_weshow_ios7a.jpg) center bottom no-repeat; background-size:cover}
 .pg_banner img{ display:none; width:100%}
 .pg_banner_bd{}
@@ -30,6 +34,9 @@
 .pg_banner_bd .summary .c2 .line:first-child{ margin-top:0}
 .pg_banner_bd .summary .c2 .t{ float:left; text-align:right; margin-right:5%; width:90px; font-weight:bold}
 .pg_banner_bd .summary .c2 .c{ overflow:hidden;}
+
+.mod .tit{ position:relative;}
+.mod .tit .preico{ position:absolute; top:8px; margin-left:-26px; height:22px; width:4px; overflow:hidden; background:#b980d6;}
 
 .mod_1 .c1{ float: left; width:70%; margin-right:3%}
 .mod_1 .c2{ overflow:hidden; width:27%; text-align:right}
@@ -104,7 +111,7 @@ $(function() {
 				<div class="summary clearfix">
 					<div class="c1">
 						<h1 class="c_tw tx_cg"><span class="t">WeShow</span><span class="sub">for iOS7</span></h1>
-						<p class="c_tw tx_cg tx_18">Mobile video Editing and Sharing APP</p>
+						<p class="st c_tw tx_cg tx_18">Mobile video Editing and Sharing APP</p>
 						<p class="dc c_tw tx_cg tx_14">Major design revision</p>
 						<p class="c_tw tx_cg tx_14">November 2013 - January 2014</p>
 						<p class="com c_tw tx_cg tx_14">Tencent Technology co. LTD.  Beijing</p>
@@ -138,10 +145,10 @@ $(function() {
 	<div class="mod mod_1 img_bg7">
 		<div class="mod_bd">
 			<div class="desc tx_cg">
-				<h2 class="tit tx_24 tx_cg tx_b pb10">Background Information</h2>
+				<h2 class="tit tx_24 tx_cg tx_b pb10"><span class="preico"></span>Background Information</h2>
 				<div class="clearfix tx_14">
 					<div class="c1">
-						<p>Weshow was both a mobile video editing tool and a social network application. One year after the first version of Weshow could be downloaded from APP store, the iOS7 was launched and the trend of visual design has been changed dramatically-- the Flat Design had become dominant in the internet industry. Thus, to follow the trend, the existing APP WeShow had to be overhauled and redesigned according to the brand new official guidance of iOS7. As the competitors were doing the same kind of redesign, to ensure the product being competitive, the work had to been done within 10 weeks, which is not only a challenge for the development team but also means there was little time left for designers. Fortunately, the project has been completed timely.</p>
+						<p class="c_t6">Weshow was both a mobile video editing tool and a social network application. One year after the first version of Weshow could be downloaded from APP store, the iOS7 was launched and the trend of visual design has been changed dramatically-- the Flat Design had become dominant in the internet industry. Thus, to follow the trend, the existing APP WeShow had to be overhauled and redesigned according to the brand new official guidance of iOS7. As the competitors were doing the same kind of redesign, to ensure the product being competitive, the work had to been done within 10 weeks, which is not only a challenge for the development team but also means there was little time left for designers. Fortunately, the project has been completed timely.</p>
 					</div>
 					<div class="c2">
 						<img class="lazy" src="assets/images/loading.png" data-original="./assets/images/ios7.png" />
@@ -157,7 +164,7 @@ $(function() {
 <div id="mod_2" class="mod mod_2 img_bg8 c_tw">
 	<div class="mod_bd">
 		<div class="desc tx_cg">
-			<h2 class="tit tx_24 tx_cg tx_b pb10">Keywords</h2>
+			<h2 class="tit tx_24 tx_cg tx_b pb10"><span class="preico"></span>Keywords</h2>
 			<p class="tx_14">Since the launch of iOS7 was a big event in the industry that the overhaul was necessary to keep the product being competitive in the market. And replacing all the widgets was already a huge task while there was left little time for the team to complete the overhaul timely, as the first version after the launch, the program manager decided the goal of the redesign basically is to change the whole product into the new style following all the principles and rules of the new operation system. Therefore, without too much struggling, after discussion, the product manager, the designers and the developers reached an agreement to define the keywords of the redesign as “Simple”, “Light” and “Elegant”.</p>
 		</div>
 		<div class="imgWrap">
@@ -171,7 +178,7 @@ $(function() {
 <div id="mod_3" class="mod mod_3 c_bg7">
 	<div class="mod_bd">
 		<div class="desc tx_cg">
-			<h2 class="tit tx_24 tx_cg tx_b pb10">Change of the Design</h2>
+			<h2 class="tit tx_24 tx_cg tx_b pb10"><span class="preico"></span>Change of the Design</h2>
 			<p class="tx_14">According to the new iOS guidance, not only the visual design had been overhauled, but also the interaction design experienced a huge change. The whole application seemed totally different after a short time period.</p>
 		</div>
 		<div class="imgWrap">
@@ -186,7 +193,7 @@ $(function() {
 	<hr class="hr2" />
 	<div class="mod_bd">
 		<div class="desc tx_cg">
-			<h2 class="tit tx_24 tx_cg tx_b pb10">Homepage</h2>
+			<h2 class="tit tx_24 tx_cg tx_b pb10"><span class="preico"></span>Homepage</h2>
 			<p class="tx_14">Weshow was an application on cell-phones which both a video-editing tool and a social network product. Since the homepage of Weshow basically was the timeline of all the feeds released by people who the users followed, which included a great amount of information, I want to take this page for example to explain the details of the redesign. Different from realistic design—the style of the former version-- which could use various textures to divide different functional areas, by practicing Flat Design the abundant content of the homepage had become a challenge for us. Thus we classified all and the information into several groups to simplify the problem, thus by elaborately design all the elements -- colors, lines, font size, icons, white space, we solved the problem successfully.</p>
 		</div>
 		<div class="imgWrap">
@@ -200,7 +207,7 @@ $(function() {
 <div id="mod_5" class="mod mod_5 img_bg9 c_tw">
 	<div class="mod_bd">
 		<div class="desc tx_cg">
-			<h2 class="tit tx_24 tx_cg tx_b pb10">Main pages</h2>
+			<h2 class="tit tx_24 tx_cg tx_b pb10"><span class="preico"></span>Main pages</h2>
 			<p class="tx_14">Since there were only 8 visual designers in the team, and while we were exploring the new version, some people had to work on the daily operation and details optimizing of the existing product. Thus, after the homepage was finalized, I arranged three major designers spent a week working out the main pages. </p>
 		</div>
 		<div class="imgWrap">
@@ -262,7 +269,6 @@ $(function() {
 		</div>
 	</div>
 </div>
-<div id="mod_7"></div>
 </div>
 <script>
 
@@ -315,9 +321,6 @@ new ScrollMagic.Scene({triggerElement: "#mod_5"})
 	.addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#mod_6"})
 	.setClassToggle("#mod_6", "active") // add class toggle
-	.addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#mod_7"})
-	.setClassToggle("#mod_7", "active") // add class toggle
 	.addTo(controller);
 </script>
 </body>
