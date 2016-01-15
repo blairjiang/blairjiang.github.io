@@ -160,6 +160,9 @@ $(function(){
 	$('#showmore').on('click',function(){
 		$('#moreWork').fadeIn(300);
 		$(this).hide();
+		var distance = $(window).scrollTop();
+        $("html").animate({scrollTop:distance + 300},300);//IE,FF
+        $("body").animate({scrollTop:distance + 300},300);//Webkit
 	});
 });
 </script>
