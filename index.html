@@ -166,8 +166,19 @@ function topnavbg(){
 	    }
 	}
 }
+function indexCt(){
+	var itemH = $('.productList .item:eq(1)').height();
+	var pageH = $('.frameTb .tb1').height();
+	console.log(pageH/itemH);
+	if(pageH/itemH > 2){
+		$('#moreWork').show();
+		$('#showmore').hide();
+	}
+}
 window.onscroll = topnavbg;
 window.onresize = topnavbg;
+window.onload = indexCt;
+window.onresize = indexCt;
 $(function(){
 	$('#showmore').on('click',function(){
 		$('#moreWork').fadeIn(300);
