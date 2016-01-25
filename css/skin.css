@@ -28,6 +28,8 @@
 
 .c_t10{ color:#cc56f2}
 
+.c_t11{ color:#ffe94d}
+
 /* 白色 */
 .c_tw{ color:#fff;}
 
@@ -89,8 +91,13 @@ a.c_a2:active{ color:#366}
 .c_bg13{ background-color:#f3eff9}
 .c_bg14{ background-color:#a642c6;}
 .c_bg15{ background-color:#262040}
+.c_bg16{ background-color:#e6f677}
+.c_bg17{ background-color:#1fb1f1}
+.c_bg18{ background-color:#f3f3f3}
+.c_bg19{ background-color:#405363}
 
-/* 底纹 */
+/* 底纹
+ */
 .img_bg1{ background:#3c1d0d url(../assets/images/img_bg1.jpg) center center no-repeat; background-size:cover;}
 .img_bg2{ background:#332623 url(../assets/images/img_bg2.jpg) center center no-repeat; background-size:cover;}
 .img_bg3{ background:#e22120 url(../assets/images/img_bg3.jpg) center center no-repeat; background-size:cover;}
@@ -102,6 +109,7 @@ a.c_a2:active{ color:#366}
 .img_bg9{ background:#a3a09e url(../assets/images/img_bg9.jpg) center center no-repeat; background-size:cover;}
 .img_bg10{ background:#43348a url(../assets/images/img_bg10.png) center center no-repeat; background-size:cover;}
 .img_bg11{ background:#43348a url(../assets/images/img_bg11.jpg) center center no-repeat; background-size:cover;}
+.img_bg12{ background:#78c328 url(../assets/images/img_bg12.png) center center no-repeat; background-size:cover;}
 
 .hr1{ height:2px; width:180px; margin:20px auto; background:url(../assets/images/spacer2.png) 0 0 repeat-x; background-size:30px 2px;}
 .hr2{ background:none; border:none; border-top:#d8d1db 1px solid; margin:0 5%;
