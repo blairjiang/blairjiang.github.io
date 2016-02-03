@@ -297,6 +297,13 @@ if(hasVideo){
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
+
+    if(scrollPos > 10){
+    	$('.topnav').removeClass('checked');
+    }else{
+    	$('.topnav').addClass('checked');
+    }
+
     $('.pos_dots .c1 .lk').each(function(){
     	var mod = $(this).attr('href');
     	if($(mod).offset().top <= scrollPos && $(mod).offset().top + $(mod).height() > scrollPos){

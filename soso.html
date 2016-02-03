@@ -13,28 +13,42 @@
 <style>
 .e_pg_banner_soso{
 	/* fallback */ 
-	background:#d9db2e url(./assets/images/soso_pgbg.png) center center no-repeat; background-size:cover;
+	background:#a5a5a5;
+	background:url(./assets/images/pg_banner_sosom.jpg) center center no-repeat; background-size:cover;
 }
-.e_pg_banner_soso .pg_banner_bd{ background:url(./assets/images/pg_banner_soso.png) center center no-repeat; background-size:cover;}
+.e_pg_banner_soso .pg_banner_bd{}
 .e_pg_banner_soso .tit,
 .e_pg_banner_soso .subtit{ text-shadow:rgba(0,106,131,.3) 1px 1px 3px;}
 
 .e_pg_banner_soso .tit{ position:relative;}
 
-.e_pg_banner_soso .dc{ color:#e3ffb6}
-.e_pg_banner_soso .com{ color:#129edb}
+.e_pg_banner_soso .dc{ color:#c8f6ff}
+.e_pg_banner_soso .com{ color:#7da4f4}
 
 .desc .subtit{ padding-left:20px; margin:30px 0 0;}
 .desc .subtit .de{ position:absolute; margin-left:-20px; width:4px; height:22px; background:#ffe94d;}
 .col33 .item{ float:left; width:100%; color:#b1b1b1}
 
-.copyright .bd{ color:#78c328; border-top-color:#78c328}
-
-@media screen and (min-width:768px){
-	.col33 .item{ width:33%}
-	.col33 .item .imgWrap{ min-height:70%}
-	.e_pg_banner_soso .tit .de{ margin-left:-72px; background-size:100px 100px}
+.mod_2 .ani1,
+.mod_2 .ani3{ opacity:0; position:absolute; top:0;
+	-webkit-transition:all .5s ease-in-out;
+	-webkit-transition-delay:.5s;
+	-moz-transition:all .5s ease-in-out;
+	-moz-transition-delay:.5s;
+	-o-transition:all .5s ease-in-out;
+	-o-transition-delay:.5s;
+	-ms-transition:all .5s ease-in-out;
+	-ms-transition-delay:.5s;
+	transition:all .5s ease-in-out;
+	transition-delay:.5s;
 }
+.mod_2 .ani2{ position:relative; z-index:1}
+.mod_2 .ani1{ left:50%}
+.mod_2 .ani3{ right:50%}
+.mod_2.active .ani1{ opacity:1; left:0}
+.mod_2.active .ani3{ opacity:1; right:0}
+
+.copyright .bd{ color:#3f61a3; border-top-color:#3f61a3}
 
 </style>
 <!--[if lt IE 9]>
@@ -67,13 +81,15 @@ $(function() {
 		<a id="dot_3" data-scroll href="#mod_3" class="lk"><i class="dot"></i></a>
 		<a id="dot_4" data-scroll href="#mod_4" class="lk"><i class="dot"></i></a>
 		<a id="dot_5" data-scroll href="#mod_5" class="lk"><i class="dot"></i></a>
+		<a id="dot_6" data-scroll href="#mod_6" class="lk"><i class="dot"></i></a>
+		<a id="dot_7" data-scroll href="#mod_7" class="lk"><i class="dot"></i></a>
 	</div>
 	<div class="c2">
 		<a data-scroll href="#mod_1" class="lk"><i class="arr"></i></a>
 	</div>
 </div>
 <div id="mod_1">
-	<div class="topnav">
+	<div class="topnav checked">
 		<div class="topnav_bd clearfix">
 			<div class="logo"><a href="./index.html"><img src="assets/images/logo_new.png" /></a></div>
 			<div class="navlist">
@@ -87,9 +103,10 @@ $(function() {
 	</div>
 	<div class="pg_banner e_pg_banner_soso">
 		<div class="pg_banner_bd">
-			<h1 class="tit c_tw tx_c tx_cg">Festival Doodle</h1>
-			<div class="subtit c_tw tx_c tx_cg">Festival doodle design for SOSO search engine</div>
-			<div class="dc mt5 tx_c tx_14 tx_cg">Feb 2009 - Feb 2013</div>
+			<h1 class="tit c_tw tx_c tx_cg">SOSO Mobile Website</h1>
+			<div class="subtit c_tw tx_c tx_cg">mobile website redesign for SOSO search engine</div>
+			<div class="dc mt5 tx_c tx_14 tx_cg">Major design revision</div>
+			<div class="dc tx_c tx_14 tx_cg">Nov. 2012 - Dec 2012</div>
 			<div class="com tx_c tx_14 tx_cg">Tencent Technology co. LTD.  Beijing</div>
 		</div>
 	</div>
@@ -99,368 +116,124 @@ $(function() {
 				<div class="c1">
 					<div class="line clearfix">
 						<div class="t">Product:</div>
-						<div class="c">Festival Doodle</div>
+						<div class="c">SOSO search engine</div>
 					</div>
 					<div class="line clearfix">
 						<div class="t">Type:</div>
-						<div class="c">illustration and logo design</div>
+						<div class="c">Mobile web page design</div>
 					</div>
 					<div class="line clearfix">
 						<div class="t">Duration:</div>
-						<div class="c">4 years</div>
+						<div class="c">6 weeks</div>
 					</div>
 				</div>
 				<div class="c2">
 					<div class="line clearfix">
 						<div class="t">My Role:</div>
-						<div class="c">Virtual Team Leader and Manager;<br />Chief Designer</div>
+						<div class="c">Virtual Team Leader;<br />Chief Designer</div>
 					</div>
 					<div class="line clearfix">
 						<div class="t">Team size:</div>
-						<div class="c">6 designers</div>
+						<div class="c">2 designers (Interaction & visual designers)</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="mod mod_1 c_bg16">
+	<div class="mod mod_1 c_bg20">
 		<div class="mod_bd">
 			<h2 class="tit tx_c tx_24 tx_cg tx_b">Background</h2>
-			<div class="desc tx_14 tx_cg">Festival Doodles are fun, surprising and sometimes spontaneous changes that are made to the Search Engine logo to celebrate holidays, anniversaries and the lives of celebrities. After the concept of the doodle was born by Google founders in the 1998, the demand for doodles has risen in internationally. Creating doodles is now implemented by many search engines, and SOSO is one of them. </div>
+			<div class="desc tx_14 tx_cg">The SOSO mobile website was first built in 2011. As SOSO search engine included several different subtypes-- such as SOSO music, SOSO Map, SOSO pictures, SOSO news, etc. , and since there were not enough designers to support this program, it took some months to gradually complete the launch of mobile web pages of them. In this case, the design was not identical among these subsidiary products, thus the mobile web design did not provide a good-quality user experience. Meanwhile, the former mobile web design of SOSO was outmoded to some extent, which could not perfectly meet the needs of increasing product features. Therefore, an overhaul of SOSO mobile web was just around the corner.</div>
 		</div>
 	</div>
 </div>
 <div id="mod_2" class="mod mod_2 c_bg17 c_tw">
 	<div class="mod_bd">
-		<h2 class="tit tx_c tx_24 tx_cg tx_b">Program Flow</h2>
+		<h2 class="tit tx_c tx_24 tx_cg tx_b">Keywords</h2>
+		<div class="desc tx_14 tx_cg">As one of the key points of search engine is to find the answers efficiently, we decided to keep the design “simple” and “light” to express the fastness of SOSO. Moreover, as we knew from the market research that the target users of SOSO were young people between 16 to 30 years old, “young” should be another keyword of the redesign.</div>
 		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/soso_flow.png" />
+			<div class="inner">
+				<img class="lazy placer" src="assets/images/loading.png" data-original="assets/images/sosom_keywords.png" />
+				<div class="imgAni">
+					<img class="lazy ani1" src="assets/images/loading.png" data-original="assets/images/sosom_keyword1.png" />
+					<img class="lazy ani2" src="assets/images/loading.png" data-original="assets/images/sosom_keyword2.png" />
+					<img class="lazy ani3" src="assets/images/loading.png" data-original="assets/images/sosom_keyword3.png" />
+				</div>
+				<noscript>
+				    <img src="assets/images/sosom_keywords.png" />
+				</noscript>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mod_3" class="mod mod_3 img_bg13 c_tw">
+	<div class="mod_bd">
+		<h2 class="tit tx_c tx_24 tx_cg tx_b">Current Problems</h2>
+		<div class="desc tx_14 tx_cg">Since the APP had already been run for around a year, the main users were familiar with the dominant tone, which meant the new characteristics should be added based on the existing dominant color.  In this stage, while nearly half of the team members were focusing on the daily operations of the former edition, several experienced designers in the team began to try brand new ideas and styles according to the key words.</div>
+		<div class="imgWrap">
+			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/sosom_cp.png" />
 			<noscript>
-			    <img src="assets/images/soso_flow.png" />
+			    <img src="assets/images/sosom_cp.png" />
 			</noscript>
 		</div>
 	</div>
 </div>
-<div id="mod_3" class="mod mod_3 c_bg18">
-	<div class="mod_bd">
-		<h2 class="tit tx_c tx_24 tx_cg tx_b">SOSO Logo</h2>
-		<div class="desc tx_14 tx_cg">The basic SOSO loge includes three parts—English product name, Chinese product name, and slogan. To make doodles more creative, the core concept of SOSO festival doodle design is to reflect the shape of the four English letters--“SOSO” with items which are relevant to a special theme. Since the shape of Chinese is too difficult to fit in an illustration, festival doodles do not include the Chinese name and the slogan. </div>
+<div id="mod_4" class="mod mod_4 c_bg21 c_tw">
+	<div class="mod_bd pb0">
+		<h2 class="tit tx_c tx_24 tx_cg tx_b">Drafts</h2>
+		<div class="desc tx_14 tx_cg">As the interaction designer tried to solve the existing problems with a improved layout, I was asked to build a better image through graphic design to impress users that SOSO search engine is light and handy. After the layout of the website was settled, I drawn up some design drafts for the product manager and the team to choose. Since the interaction was identical, the difference between these drafts were the details, such as the model of the search bar, the icon color and style, and so forth.</div>
 		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/soso_logo.png" />
+			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/sosom_drafts.png" />
 			<noscript>
-			    <img src="assets/images/soso_logo.png" />
+			    <img src="assets/images/sosom_drafts.png" />
 			</noscript>
 		</div>
 	</div>
 </div>
-<div id="mod_4" class="mod mod_4 img_bg12 c_tw">
-	<div class="mod_bd">
-		<h2 class="tit tx_c tx_24 tx_cg tx_b">Guidance</h2>
-		<div class="desc tx_14 tx_cg">As the SOSO festival doodles were showed both on traditional web page and mobile web, I regulated the size of doodle on the two occasions to ensure works of different designers being practical.</div>
-		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/soso_guide1.png" />
-			<noscript>
-			    <img src="assets/images/soso_guide1.png" />
-			</noscript>
+<div id="mod_5" class="mod mod_5 img_bg14 c_t12">
+	<div class="mod_bd pb0">
+		<h2 class="tit tx_c tx_24 tx_cg tx_b">New Strategy</h2>
+		<div class="desc tx_cg">
+			<div class="sidephone clearfix">
+				<div class="c1 pb20">
+					<h3 class="tx_18 tx_b pb5">Functional Partition</h3>
+					<p class="tx_14">To reasonably use space, the homepage was divided into four areas—logo and search bar, entrances of subsets, personal information (sign in/ sign up), supplementary information (entrance of other version, and copyright).</p>
+					<h3 class="mt30 tx_18 tx_b pb5">Color</h3>
+					<p class="tx_14">To make the page seems lighter, I changed the search bar from blue into white, as well as designed icons by the brand color of SOSO—blue instead of using too much colors.</p>
+					<h3 class="mt30 tx_18 tx_b pb5">Visual Style</h3>
+					<p class="tx_14">Besides adopting simple shape icon style, I increased the radian of arc of icons to make them more adorable to young people. Moreover, decrease of using lines to divide zones enabled the webpage light and airy.</p>
+				</div>
+				<div class="c2">
+					<img class="lazy" src="assets/images/loading.png" data-original="assets/images/sosom_newstrategy.png" />
+					<noscript>
+					    <img src="assets/images/sosom_newstrategy.png" />
+					</noscript>
+				</div>
+			</div>
 		</div>
+	</div>
+</div>
+<div id="mod_6" class="mod mod_6 img_bg15 c_tw">
+	<div class="mod_bd">
+		<h2 class="tit tx_c tx_24 tx_cg tx_b">Final Version of SOSO Web Search</h2>
+		<div class="desc tx_14 tx_cg">After two times of meeting and discussion regarding all the drafts, the final design was decided. During the following days, the main pages were designed (both Day mode and Night mode) and confirmed by the main designers and senior project managers.</div>
 		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/soso_guide2.png" />
+			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/sosom_fv.png" />
 			<noscript>
-			    <img src="assets/images/soso_guide2.png" />
+			    <img src="assets/images/sosom_fv.png" />
 			</noscript>
 		</div>
 	</div>
 </div>
-<div id="mod_5" class="mod mod_5 c_bg19 c_tw">
+<div id="mod_7" class="mod mod_7 c_bg21 c_tw">
 	<div class="mod_bd">
-		<h2 class="tit tx_c tx_24 tx_cg tx_b">Flexible Styles</h2>
-		<div class="desc tx_14 tx_cg">
-			<p>For this part, I choose some typical doodles to show various styles we adopted into the illustration of festival doodle.</p>
-			<h3 class="subtit tx_16 c_t11"><span class="de"></span>Modern illustration Style</h3>
-			<div class="col33 clearfix">
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle1.png" />
-						<noscript>
-						    <img src="assets/images/doodle1.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Women's Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle2.png" />
-						<noscript>
-						    <img src="assets/images/doodle2.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Mother’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle3.png" />
-						<noscript>
-						    <img src="assets/images/doodle3.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Teacher’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle4.png" />
-						<noscript>
-						    <img src="assets/images/doodle4.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Helloween</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle5.png" />
-						<noscript>
-						    <img src="assets/images/doodle5.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Anniversary Of The First Incandescent Light Bulb</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle6.png" />
-						<noscript>
-						    <img src="assets/images/doodle6.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Anniversary Of The First Sound Film</div>
-				</div>
-			</div>
-			<h3 class="subtit tx_16 c_t11"><span class="de"></span>Realistic Style</h3>
-			<div class="col33 clearfix">
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle7.png" />
-						<noscript>
-						    <img src="assets/images/doodle7.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Anniversary Of The First Gramophone </div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle8.png" />
-						<noscript>
-						    <img src="assets/images/doodle8.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Faraday’s Birthday</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle9.png" />
-						<noscript>
-						    <img src="assets/images/doodle9.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Anniversary Of The Moon Landing</div>
-				</div>
-			</div>
-			<h3 class="subtit tx_16 c_t11"><span class="de"></span>Hand-drawn Style</h3>
-			<div class="col33 clearfix">
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle10.png" />
-						<noscript>
-						    <img src="assets/images/doodle10.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Lantern Festival</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle11.png" />
-						<noscript>
-						    <img src="assets/images/doodle11.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Mid-autumn Festival</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle12.png" />
-						<noscript>
-						    <img src="assets/images/doodle12.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">New Year’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle13.png" />
-						<noscript>
-						    <img src="assets/images/doodle13.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">National Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle14.png" />
-						<noscript>
-						    <img src="assets/images/doodle14.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Chinese Valentine’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle15.png" />
-						<noscript>
-						    <img src="assets/images/doodle15.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Teacher’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle16.png" />
-						<noscript>
-						    <img src="assets/images/doodle16.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Mother’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle17.png" />
-						<noscript>
-						    <img src="assets/images/doodle17.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Father’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle18.png" />
-						<noscript>
-						    <img src="assets/images/doodle18.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Women’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle19.png" />
-						<noscript>
-						    <img src="assets/images/doodle19.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Valentines’ Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle20.png" />
-						<noscript>
-						    <img src="assets/images/doodle20.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Children’s Day</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle21.png" />
-						<noscript>
-						    <img src="assets/images/doodle21.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Arbor Day</div>
-				</div>
-			</div>
-			<h3 class="subtit tx_16 c_t11"><span class="de"></span>Traditional Chinese Style</h3>
-			<div class="col33 clearfix">
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle22.png" />
-						<noscript>
-						    <img src="assets/images/doodle22.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Spring Festival</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle23.png" />
-						<noscript>
-						    <img src="assets/images/doodle23.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Qing Ming Festival</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle24.png" />
-						<noscript>
-						    <img src="assets/images/doodle24.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Double Ninth Festival</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle25.png" />
-						<noscript>
-						    <img src="assets/images/doodle25.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Zu Chongzhi’s Birthday</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle26.png" />
-						<noscript>
-						    <img src="assets/images/doodle26.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Mid-autumn Festival</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle27.png" />
-						<noscript>
-						    <img src="assets/images/doodle27.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">Dargon Boat Festival</div>
-				</div>
-			</div>
-			<h3 class="subtit tx_16 c_t11"><span class="de"></span>Old School Style</h3>
-			<div class="col33 clearfix">
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle28.png" />
-						<noscript>
-						    <img src="assets/images/doodle28.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">May Day (Labor Day)</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle29.png" />
-						<noscript>
-						    <img src="assets/images/doodle29.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">The First Day Of School</div>
-				</div>
-				<div class="item">
-					<div class="imgWrap">
-						<img class="lazy" src="assets/images/loading.png" data-original="assets/images/doodle30.png" />
-						<noscript>
-						    <img src="assets/images/doodle30.png" />
-						</noscript>
-					</div>
-					<div class="tx_14 tx_c tx_cg">May Day (Labor Day)</div>
-				</div>
-			</div>
+		<h2 class="tit tx_c tx_24 tx_cg tx_b">Guidance of Visual Design</h2>
+		<div class="desc tx_14 tx_cg">Since there were several subsidiary products of SOSO—which means plenty of web pages-- had to be revised according to the new visual style, to ensure the consistency of design among these sub-products, I summarized a set of guidance about all the widgets and supervised the redesign work  implemented by different designers.</div>
+		<div class="imgWrap">
+			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/sosom_guide.png" />
+			<noscript>
+			    <img src="assets/images/sosom_guide.png" />
+			</noscript>
 		</div>
 	</div>
 	<div class="footer">
@@ -476,6 +249,13 @@ $(function() {
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
+
+    if(scrollPos > 10){
+    	$('.topnav').removeClass('checked');
+    }else{
+    	$('.topnav').addClass('checked');
+    }
+
     $('.pos_dots .c1 .lk').each(function(){
     	var mod = $(this).attr('href');
     	if($(mod).offset().top <= scrollPos && $(mod).offset().top + $(mod).height() > scrollPos){
@@ -506,6 +286,12 @@ new ScrollMagic.Scene({triggerElement: "#mod_4"})
 	.addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#mod_5"})
 	.setClassToggle("#mod_5", "active") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#mod_6"})
+	.setClassToggle("#mod_6", "active") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#mod_7"})
+	.setClassToggle("#mod_7", "active") // add class toggle
 	.addTo(controller);
 </script>
 </body>

@@ -35,6 +35,12 @@
 .mod_2 .ani3{ opacity:0; position:absolute; top:0;
 	-webkit-transition:all .5s ease-in-out;
 	-webkit-transition-delay:.5s;
+	-moz-transition:all .5s ease-in-out;
+	-moz-transition-delay:.5s;
+	-ms-transition:all .5s ease-in-out;
+	-ms-transition-delay:.5s;
+	-o-transition:all .5s ease-in-out;
+	-o-transition-delay:.5s;
 	transition:all .5s ease-in-out;
 	transition-delay:.5s;
 }
@@ -44,13 +50,6 @@
 .mod_2.active .ani1{ opacity:1; left:0}
 .mod_2.active .ani3{ opacity:1; right:0}
 
-.mod_3 img{ opacity:0;
-	-webkit-transform:translateY(30px);
-	-webkit-transition:all 1s ease-in-out;
-}
-.mod_3.active img{ opacity:1;
-	-webkit-transform:translateY(0);
-}
 </style>
 <!--[if lt IE 9]>
 <link rel="stylesheet" href="css/ie.css" />
@@ -274,6 +273,13 @@ if(hasVideo){
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
+
+    if(scrollPos > 10){
+    	$('.topnav').removeClass('checked');
+    }else{
+    	$('.topnav').addClass('checked');
+    }
+
     $('.pos_dots .c1 .lk').each(function(){
     	var mod = $(this).attr('href');
     	if($(mod).offset().top <= scrollPos && $(mod).offset().top + $(mod).height() > scrollPos){

@@ -1,10 +1,16 @@
 .container{ min-height:400px;}
 
-.topnav{ position:relative; background:rgba(255,255,255,.9); box-shadow:rgba(0,0,0,.3) 0 0 5px; z-index:1000}
+.topnav{ position:relative; background:rgba(255,255,255,.95); box-shadow:rgba(0,0,0,.3) 0 0 5px; z-index:1000;
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
 .topnav_bd{ padding:0 5%; margin:0 auto;}
 .topnav .logo{ width:275px; margin:0 auto; padding-top:100px; padding-bottom:40px;}
 
-.navlist{ position:fixed; top:0; left:0; right:0; width:100%; background:rgba(255,255,255,.7); box-shadow:rgba(0,0,0,.3) 0 0 3px; z-index:1000;
+.navlist{ position:fixed; top:0; left:0; right:0; width:100%; background:rgba(255,255,255,.9); box-shadow:rgba(0,0,0,.3) 0 0 3px; z-index:1000;
     -webkit-backdrop-filter:saturate(180%) blur(10px);
 }
 .navlist .item{ float:left; padding-top:10px}
@@ -84,6 +90,8 @@
 
 @media screen and (min-width:768px){
 
+	.topnav.checked{ background:rgba(255,255,255,.75);}
+
 	.frameTb{ position:absolute; left:0; top:0; height:100%;}
 	.frameTb .tb1{}
 	.frameTb .tb2{ vertical-align:bottom;}
@@ -145,4 +153,26 @@
 @media screen and (min-width:1200px){
 	.selfIntro .t{ width:25%; padding-left:3%; text-align:right}
 	.selfIntro .c{ padding-left:3%; padding-right:3%}
+}
+
+
+.mod .imgWrap{ opacity:0;
+	-webkit-transform:translateY(10px);
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transform:translateY(10px);
+	-moz-transition:all 1s ease-in-out;
+	-o-transform:translateY(10px);
+	-o-transition:all 1s ease-in-out;
+	-ms-transform:translateY(10px);
+	-ms-transition:all 1s ease-in-out;
+	transform:translateY(10px);
+	transition:all 1s ease-in-out;
+}
+.active .mod .imgWrap,
+.active.mod .imgWrap{ opacity:1;
+	-webkit-transform:translateY(0);
+	-moz-transform:translateY(0);
+	-ms-transform:translateY(0);
+	-o-transform:translateY(0);
+	transform:translateY(0);
 }

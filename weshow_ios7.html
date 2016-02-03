@@ -41,6 +41,25 @@
 .mod_1 .c1{ float: left; width:70%; margin-right:3%}
 .mod_1 .c2{ position:relative; top:-10px; overflow:hidden; width:27%; text-align:right}
 
+.mod_2 .ani1,
+.mod_2 .ani3{ opacity:0; position:absolute; top:0;
+	-webkit-transition:all .5s ease-in-out;
+	-webkit-transition-delay:.5s;
+	-moz-transition:all .5s ease-in-out;
+	-moz-transition-delay:.5s;
+	-o-transition:all .5s ease-in-out;
+	-o-transition-delay:.5s;
+	-ms-transition:all .5s ease-in-out;
+	-ms-transition-delay:.5s;
+	transition:all .5s ease-in-out;
+	transition-delay:.5s;
+}
+.mod_2 .ani2{ position:relative; z-index:1}
+.mod_2 .ani1{ left:50%}
+.mod_2 .ani3{ right:50%}
+.mod_2.active .ani1{ opacity:1; left:0}
+.mod_2.active .ani3{ opacity:1; right:0}
+
 .copyright .bd{ color:#2e1c37; border-top-color:#2e1c37}
 
 @media screen and (min-width:768px){
@@ -170,10 +189,17 @@ $(function() {
 			<p class="tx_14">Since the launch of iOS7 was a big event in the industry that the overhaul was necessary to keep the product being competitive in the market. And replacing all the widgets was already a huge task while there was left little time for the team to complete the overhaul timely, as the first version after the launch, the program manager decided the goal of the redesign basically is to change the whole product into the new style following all the principles and rules of the new operation system. Therefore, without too much struggling, after discussion, the product manager, the designers and the developers reached an agreement to define the keywords of the redesign as “Simple”, “Light” and “Elegant”.</p>
 		</div>
 		<div class="imgWrap">
-			<img class="lazy" src="assets/images/loading.png" data-original="assets/images/ios7_keywords.png" />
-			<noscript>
-			    <img src="assets/images/ios7_keywords.png" />
-			</noscript>
+			<div class="inner">
+				<img class="lazy placer" src="assets/images/loading.png" data-original="assets/images/ios7_keywords.png" />
+				<div class="imgAni">
+					<img class="lazy ani1" src="assets/images/loading.png" data-original="assets/images/ios7_keyword1.png" />
+					<img class="lazy ani2" src="assets/images/loading.png" data-original="assets/images/ios7_keyword2.png" />
+					<img class="lazy ani3" src="assets/images/loading.png" data-original="assets/images/ios7_keyword3.png" />
+				</div>
+				<noscript>
+				    <img src="assets/images/ios7_keywords.png" />
+				</noscript>
+			</div>
 		</div>
 	</div>
 </div>
@@ -290,6 +316,13 @@ if(hasVideo){
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
+
+    if(scrollPos > 10){
+    	$('.topnav').removeClass('checked');
+    }else{
+    	$('.topnav').addClass('checked');
+    }
+
     $('.pos_dots .c1 .lk').each(function(){
     	var mod = $(this).attr('href');
     	if($(mod).offset().top <= scrollPos && $(mod).offset().top + $(mod).height() > scrollPos){
