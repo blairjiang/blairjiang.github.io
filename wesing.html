@@ -53,7 +53,6 @@ $(function() {
 		<a id="dot_3" data-scroll href="#mod_3" class="lk"><i class="dot"></i></a>
 		<a id="dot_4" data-scroll href="#mod_4" class="lk"><i class="dot"></i></a>
 		<a id="dot_5" data-scroll href="#mod_5" class="lk"><i class="dot"></i></a>
-		<a id="dot_6" data-scroll href="#mod_6" class="lk"><i class="dot"></i></a>
 	</div>
 	<div class="c2">
 		<a data-scroll href="#mod_1" class="lk"><i class="arr"></i></a>
@@ -207,7 +206,7 @@ $(function() {
 		</div>
 	</div>
 </div>
-<div id="mod_6" class="mod mod_6 c_bg14 c_tw">
+<div id="mod_6" class="mod mod_6 c_bg14 c_tw" style="display:none">
 	<div class="mod_bd">
 		<h2 class="tit tx_24 tx_cg tx_b tx_c">Video</h2>
 		<div class="desc tx_cg">
@@ -226,18 +225,18 @@ $(function() {
 <script>
 
 // 判断是否支持video标签
-var hasVideo = !!(document.createElement('video').canPlayType);
-if(hasVideo){
-	$('#supportFlash').remove();
-	var video = $('#supportVideo')[0];
-	// video.currentTime = 0;
-	$('#videocontrol').on('click',function(){
-		$(this).css('display','none');
-		video.play();
-	});
-}else{
-	$('#supportVideo').remove();
-}
+// var hasVideo = !!(document.createElement('video').canPlayType);
+// if(hasVideo){
+// 	$('#supportFlash').remove();
+// 	var video = $('#supportVideo')[0];
+// 	// video.currentTime = 0;
+// 	$('#videocontrol').on('click',function(){
+// 		$(this).css('display','none');
+// 		video.play();
+// 	});
+// }else{
+// 	$('#supportVideo').remove();
+// }
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
@@ -278,9 +277,6 @@ new ScrollMagic.Scene({triggerElement: "#mod_4"})
 	.addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#mod_5"})
 	.setClassToggle("#mod_5", "active") // add class toggle
-	.addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#mod_6"})
-	.setClassToggle("#mod_6", "active") // add class toggle
 	.addTo(controller);
 </script>
 </body>
