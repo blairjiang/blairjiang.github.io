@@ -1,0 +1,12 @@
+.page{ margin:0 auto;}
+#intro{ background:#dadfe2 url(../assets/images/bg1.jpg) 0 0 no-repeat fixed; background-size:90%;}
+#intro .story{ width:76%; margin:0 auto; padding-top:7.5%; text-align:center;}
+#second{
+	background:url(../assets/images/bg2a.png),url(../assets/images/bg2b.png);
+	background-position:right 0,right 100%;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100%,40%;
+}
+#second .story{ width:76%; margin:0 auto; padding-top:15%; padding-bottom:15%; text-align:center;}
