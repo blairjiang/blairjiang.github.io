@@ -26,10 +26,10 @@ $(function() {
 	    Move();
 	    RepositionNav();
 	});
-	$window.on('load',function(){
+	window.onload = function(){
 	    Move();
 	    RepositionNav();
-	});
+	}
 	$window.bind('scroll', function(){
 	    Move();
 	});
@@ -53,7 +53,7 @@ $(function() {
 		    $firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 800, 0.3)});
 		}
 	    if($secondBG.hasClass("inview")){
-	    	$secondBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 1600, 0.1) + ", " + newPos(100, windowHeight, pos, 3000, 0.4)});
+	    	$secondBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 2000, 0.1) + ", " + newPos(100, windowHeight, pos, 3800, 0.3)});
 		}
 	}
 });

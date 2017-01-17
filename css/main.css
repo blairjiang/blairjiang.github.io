@@ -1,5 +1,5 @@
 .page{ margin:0 auto;}
-#intro{ background:#dadfe2 url(../assets/images/bg1.jpg) 0 0 no-repeat fixed; background-size:90%;}
+#intro{ background:#dadfe2 url(../assets/images/bg1.jpg) 0 bottom no-repeat fixed; background-size:100%;}
 #intro .story{ width:76%; margin:0 auto; padding-top:7.5%; text-align:center;}
 #second{
 	background:url(../assets/images/bg2a.png),url(../assets/images/bg2b.png);
