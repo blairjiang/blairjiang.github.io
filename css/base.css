@@ -222,7 +222,7 @@ body .pl0{ padding-left:0!important}
 .iconsvg {
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(../assets/images/icon/svg/sprite.svg);
+  background-image: url(../assets/images/icons/svg/sprite.svg);
   background-size:23.5em 1em;
   vertical-align:top;
 }
