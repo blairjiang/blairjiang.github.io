@@ -49,11 +49,16 @@ $(function() {
 	function Move(){
 	    var pos = $window.scrollTop();
 
-	 //    if($firstBG.hasClass("inview")){
-		//     $firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 800, 0.3)});
-		// }
 	    if($firstBG.hasClass("inview")){
 	    	$firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 2400, 0.1) + ", " + newPos(0, windowHeight, pos, 2500, 0.3) + ", " + newPos(40, windowHeight, pos, 3500, 0.5)});
+		}
+
+	    if($secondBG.hasClass("inview")){
+		    $secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 800, 0.1)});
+		}
+
+	    if($thirdBG.hasClass("inview")){
+		    $thirdBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 800, 0.1)});
 		}
 	}
 });

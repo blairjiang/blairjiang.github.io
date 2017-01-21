@@ -8,7 +8,7 @@
 
 /* #intro
 ----------------------------------------------------------------*/
-#intro{ height:3000px;
+#intro{
 	background-image:url(../assets/images/port.png),url(../assets/images/fo.png),url(../assets/images/lio.png);
 	background-position:right 10%,left 30%,40% 60%;
 	background-repeat:no-repeat;
@@ -52,8 +52,23 @@
 /* #second
 ----------------------------------------------------------------*/
 
-#second{}
-#second .story{ }
+#second{ height:800px;
+	background-image:url(../assets/images/bgcity.jpg);
+	background-color:#141617;
+	background-position:center 0;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+#second .story{}
+
+/* #third
+----------------------------------------------------------------*/
+
+#third{ height:200px;
+	background-color:#f6f8fa;
+	background-attachment:fixed;
+}
+#third .story{}
 
 
 
