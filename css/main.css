@@ -46,10 +46,12 @@
 	transition-delay:0s;
 }
 .works .item .lk{ position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; text-indent:-9999em;}
+.works .item .lk:active + .pic p,
 .works .item .lk:hover + .pic p{ margin:0}
 .works .item .desc{ position:absolute; z-index:9; left:0; top:0; width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,.3); opacity:0; border:#f6f8fa 10px solid;
 	transition:opacity .1s ease-in-out;
 }
+.works .item .lk:active ~ .desc,
 .works .item .lk:hover ~ .desc{ opacity:1}
 
 /* #second
