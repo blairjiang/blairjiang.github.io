@@ -41,16 +41,11 @@
 .works .item{ padding-top:10px; padding-bottom:10px}
 .works .item .pic{ position:relative; overflow:hidden;}
 .works .item .pic img{ width:100%}
-.works .item .pic p{ width:200%; margin:0 0 0 -100%;
-	transition:margin 0 linear;
-	transition-delay:0s;
-}
+.works .item .pic p{ width:200%; margin:0 0 0 -100%;}
 .works .item .lk{ position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; text-indent:-9999em;}
 .works .item .lk:active + .pic p,
 .works .item .lk:hover + .pic p{ margin:0}
-.works .item .desc{ position:absolute; z-index:9; left:0; top:0; width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,.3); opacity:0; border:#f6f8fa 10px solid;
-	transition:opacity .1s ease-in-out;
-}
+.works .item .desc{ position:absolute; z-index:9; left:0; top:0; width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,.3); opacity:0; border:#f6f8fa 10px solid;}
 .works .item .lk:active ~ .desc,
 .works .item .lk:hover ~ .desc{ opacity:1}
 
