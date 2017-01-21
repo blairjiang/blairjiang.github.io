@@ -186,11 +186,11 @@ body .pl0{ padding-left:0!important}
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../assets/images/icon/font/icomoon.eot?nc35eb');
-  src:  url('../assets/images/icon/font/icomoon.eot?nc35eb#iefix') format('embedded-opentype'),
-    url('../assets/images/icon/font/icomoon.ttf?nc35eb') format('truetype'),
-    url('../assets/images/icon/font/icomoon.woff?nc35eb') format('woff'),
-    url('../assets/images/icon/font/icomoon.svg?nc35eb#icomoon') format('svg');
+  src:  url('../assets/images/icons/font/icomoon.eot?nc35eb');
+  src:  url('../assets/images/icons/font/icomoon.eot?nc35eb#iefix') format('embedded-opentype'),
+    url('../assets/images/icons/font/icomoon.ttf?nc35eb') format('truetype'),
+    url('../assets/images/icons/font/icomoon.woff?nc35eb') format('woff'),
+    url('../assets/images/icons/font/icomoon.svg?nc35eb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
