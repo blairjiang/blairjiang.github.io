@@ -49,11 +49,11 @@ $(function() {
 	function Move(){
 	    var pos = $window.scrollTop();
 
+	 //    if($firstBG.hasClass("inview")){
+		//     $firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 800, 0.3)});
+		// }
 	    if($firstBG.hasClass("inview")){
-		    $firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 800, 0.3)});
-		}
-	    if($secondBG.hasClass("inview")){
-	    	$secondBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 2000, 0.1) + ", " + newPos(100, windowHeight, pos, 3800, 0.3)});
+	    	$firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 2500, 0.1) + ", " + newPos(0, windowHeight, pos, 2500, 0.3) + ", " + newPos(40, windowHeight, pos, 3500, 0.5)});
 		}
 	}
 });
