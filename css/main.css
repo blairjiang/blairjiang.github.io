@@ -18,9 +18,10 @@
 #intro .container{ padding-top:4.5%}
 
 /* logo */
-.logo{ font-size:.75rem;}
+.logo{ margin:0; font-size:.7rem;}
 .logo .c1{ float:left; line-height:1; margin-right:2.25em;}
 .logo .c1 .iconsvg{ font-size:4.375em;}
+.logo .c1 .t{ position:absolute; opacity:0; width:0; height:0; overflow:hidden; font-size:0;}
 .logo .c2{ overflow:hidden; line-height:1.375em; padding-top:1.5em}
 .logo .c2 i{ width:6.25em; height:.25em; background-color:#000; display:block;}
 .logo .c2 .slogan{ display:inline-block; margin-top:1.1em; font-size:1.5em; vertical-align:top; text-transform:uppercase; letter-spacing:.08em}
@@ -31,6 +32,25 @@
 .hello p .icon-tri{ display:inline-block; font-size:1.25em; color:#ff5151; line-height:1.5em;
 	transform:rotate(-90deg);
 }
+
+.works{ padding-top:1%}
+.works ul,
+.works li{ list-style:none}
+.works ul{ padding-left:0; margin:0;}
+
+.works .item{ padding-top:10px; padding-bottom:10px}
+.works .item .pic{ position:relative; overflow:hidden;}
+.works .item .pic img{ width:100%}
+.works .item .pic p{ width:200%; margin:0 0 0 -100%;
+	transition:margin 0 linear;
+	transition-delay:0s;
+}
+.works .item .lk{ position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; text-indent:-9999em;}
+.works .item .lk:hover + .pic p{ margin:0}
+.works .item .desc{ position:absolute; z-index:9; left:0; top:0; width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,.3); opacity:0; border:#f6f8fa 10px solid;
+	transition:opacity .1s ease-in-out;
+}
+.works .item .lk:hover ~ .desc{ opacity:1}
 
 /* #second
 ----------------------------------------------------------------*/

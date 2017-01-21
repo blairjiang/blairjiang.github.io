@@ -53,7 +53,7 @@ $(function() {
 		//     $firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 800, 0.3)});
 		// }
 	    if($firstBG.hasClass("inview")){
-	    	$firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 2500, 0.1) + ", " + newPos(0, windowHeight, pos, 2500, 0.3) + ", " + newPos(40, windowHeight, pos, 3500, 0.5)});
+	    	$firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 2400, 0.1) + ", " + newPos(0, windowHeight, pos, 2500, 0.3) + ", " + newPos(40, windowHeight, pos, 3500, 0.5)});
 		}
 	}
 });
