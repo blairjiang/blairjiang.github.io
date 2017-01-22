@@ -6,6 +6,15 @@
 
 .page{ margin:0 auto;}
 
+/*subtitle*/
+.subtitle{ font-size:.5rem; font-weight:100; text-transform:uppercase; letter-spacing:.08em}
+.subtitle .icon{ font-size:2.5em; margin-right:.3em;}
+.e_subtitle_1 .icon{ color:#231815}
+.e_subtitle_1 .t{ color:#000; font-size:4em}
+.e_subtitle_2 .icon,
+.e_subtitle_2 .t{ color:#fff;}
+.e_subtitle_2 .t{ font-size:4.25em}
+
 /* #intro
 ----------------------------------------------------------------*/
 #intro{
@@ -15,6 +24,7 @@
 	background-attachment:fixed;
 	background-size:48%,22%,40%;
 }
+#intro .story{ padding-bottom:1%}
 #intro .container{ padding-top:4.5%}
 
 /* logo */
@@ -28,38 +38,91 @@
 
 /*hello*/
 .hello{ font-size:.875rem; margin-top:1em;}
-.hello p{ font-size:1.125em; margin:0; line-height:1.5em}
+.hello p{ font-size:1.25em; margin:0; line-height:1.5em;}
 .hello p .icon-tri{ display:inline-block; font-size:1.25em; color:#ff5151; line-height:1.5em;
 	transform:rotate(-90deg);
 }
 
+/*works*/
 .works{ padding-top:1%}
 .works ul,
 .works li{ list-style:none}
-.works ul{ padding-left:0;}
+.works ul{ padding-left:0; margin-bottom:0;}
 
-.works .item{ padding-top:10px; padding-bottom:10px}
+.works .item{ padding:0.9%;}
+.works .item .inner{ position:relative;}
 .works .item .pic{ position:relative; overflow:hidden;}
 .works .item .pic img{ width:100%}
 .works .item .pic p{ width:200%; min-height:5em; margin:0 0 0 -100%; background:url(../assets/images/loading2.gif) 75% center no-repeat; background-size:2rem 2rem;}
 .works .item .lk{ position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; text-indent:-9999em;}
+.works .selected .lk + .pic p,
 .works .item .lk:active + .pic p,
 .works .item .lk:hover + .pic p{ margin:0}
-.works .item .desc{ position:absolute; z-index:9; left:0; top:0; width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,.3); opacity:0; border:#f6f8fa 10px solid;}
+.works .item .desc{ position:absolute; z-index:9; left:0; top:0; width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,.3); opacity:0; color:#fff;
+	transition:opacity .2s ease-in-out;
+}
+.works .selected .lk ~ .desc,
 .works .item .lk:active ~ .desc,
 .works .item .lk:hover ~ .desc{ opacity:1}
+
+.works .item .desc dl{ padding:8.6% 8.6% 0 8.6%; letter-spacing:.08em}
+.works .item .desc dt{ padding-top:2%; padding-bottom:5%; line-height:1; border-bottom:#fff .1875em solid; text-transform:uppercase;}
+.works .item .desc dt strong{ font-size:3em; font-weight:100;}
+.works .item .desc dt sup{ font-size:.5em}
+.works .item .desc dd .c1{ font-size:1.875em; margin-top:.8em; line-height:1; width:90%; text-transform:uppercase;}
+.works .item .desc dd .c2{ font-size:1.5em; line-height:1}
+.works .item .desc time{ position:absolute; bottom:0; left:0; width:100%; padding:0 8.6% 8.6% 8.6%; font-size:1.5em}
+
+.works .item .e_desc_1{ font-size:.625rem;}
+.works .item .e_desc_2{ font-size:.5rem;}
+.works .item .e_desc_3{ font-size:.3rem;}
+.works .item .e_desc_1 dt{ width:50%;}
+.works .item .e_desc_2 dt{ width:100%;}
+.works .item .e_desc_3 dt{ width:80%;}
+
+.works .item .e_desc_3 dl{ padding:5% 5% 0 5%;}
+.works .item .e_desc_3 time{ padding:0 5% 5% 5%;}
+
+.works .item .desc dt,
+.works .item .desc dd .c1,
+.works .item .desc dd .c2,
+.works .item .desc time{
+	transform:translateX(4%);
+}
+.works .item .desc dt{
+	transition:transform .2s ease-in-out;
+}
+.works .item .desc dd .c1,
+.works .item .desc dd .c2{
+	transition:transform .3s ease-in-out;
+}
+.works .item .desc time{
+	transition:transform .4s ease-in-out;
+}
+.works .item .lk:hover ~ .desc dt,
+.works .item .lk:hover ~ .desc dd .c1,
+.works .item .lk:hover ~ .desc dd .c2,
+.works .item .lk:hover ~ .desc time{
+	transform:translateX(0);
+}
 
 /* #second
 ----------------------------------------------------------------*/
 
-#second{ height:800px;
-	background-image:url(../assets/images/bgcity.jpg);
+#second{
+	background-image:url(../assets/images/a.png),url(../assets/images/bout.png),url(../assets/images/bgcity.jpg);
 	background-color:#141617;
-	background-position:center 0;
+	background-position:13% 0,19.5% 0,center 0;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
+	background-size:11%,50%,cover;
 }
-#second .story{}
+#second .story{ padding-top:1%; padding-bottom:4%}
+
+/*abouttxt*/
+.abouttxt{ font-size:.875rem; color:#fff}
+.abouttxt h3{ padding-top:1em; font-size:1.75em; letter-spacing:.08em; font-weight:100}
+.abouttxt p{ font-size:1.125em; line-height:1.5em; text-align:justify;}
 
 /* #third
 ----------------------------------------------------------------*/
@@ -77,26 +140,51 @@
 
 @media (min-width: 768px){
 
+	/*subtitle*/
+	.subtitle{ font-size:.75rem;}
+
 	/*logo*/
 	.logo{ font-size:.8rem}
 
 	/*hello*/
 	.hello{ font-size:1rem; margin-top:0}
-	.hello p{ text-align:right;}
+	.hello p{ text-align:right; font-size:1.125em}
 	.hello p .icon-tri{
 		transform:none;
 	}
+
+	/*works*/
+	.works .item{ padding:0.7%;}
+
+	/*abouttxt*/
+	.abouttxt{ font-size:1rem;
 
 }
 
 @media (min-width: 1003px){
 
+	/*subtitle*/
+	.subtitle{ font-size:.875rem;}
+
 	/*logo*/
 	.logo{ font-size:1rem}
+
+	/*works*/
+	.works .item .e_desc_1{ font-size:.875rem;}
+	.works .item .e_desc_2,
+	.works .item .e_desc_3{ font-size:.625rem;}
 	
 }
 
 @media (min-width: 1440px){
+
+	/*subtitle*/
+	.subtitle{ font-size:1rem;}
+
+	/*works*/
+	.works .item .e_desc_1{ font-size:1rem;}
+	.works .item .e_desc_2,
+	.works .item .e_desc_3{ font-size:.875rem;}
 	
 }
 

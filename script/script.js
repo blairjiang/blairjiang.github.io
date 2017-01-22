@@ -50,11 +50,11 @@ $(function() {
 	    var pos = $window.scrollTop();
 
 	    if($firstBG.hasClass("inview")){
-	    	$firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 2400, 0.1) + ", " + newPos(0, windowHeight, pos, 2500, 0.3) + ", " + newPos(100, windowHeight, pos, 2500, 0.5)});
+	    	$firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 1120, 0.3) + ", " + newPos(0, windowHeight, pos, 1800, 0.4) + ", " + newPos(100, windowHeight, pos, 2500, 0.5)});
 		}
 
 	    if($secondBG.hasClass("inview")){
-		    $secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 800, 0.1)});
+		    $secondBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 4000, 0.2) + ", " + newPos(48, windowHeight, pos, 4200, 0.4) + ", " + newPos(50, windowHeight, pos, 2000, 0)});
 		}
 
 	    if($thirdBG.hasClass("inview")){
