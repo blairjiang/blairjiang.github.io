@@ -9,11 +9,19 @@
 /*subtitle*/
 .subtitle{ font-size:.5rem; font-weight:100; text-transform:uppercase; letter-spacing:.08em}
 .subtitle .icon{ font-size:2.5em; margin-right:.3em;}
+.subtitle .t{ letter-spacing:.08em}
 .e_subtitle_1 .icon{ color:#231815}
 .e_subtitle_1 .t{ color:#000; font-size:4em}
 .e_subtitle_2 .icon,
 .e_subtitle_2 .t{ color:#fff;}
 .e_subtitle_2 .t{ font-size:4.25em}
+
+/*formlist*/
+.formlist{ font-size:.875rem;}
+.formlist,
+.formlist li{ list-style:none; padding-left:0}
+.formlist .item{ margin-top:1.25em;}
+.formlist .item:first-child{ margin-top:0}
 
 /* #intro
 ----------------------------------------------------------------*/
@@ -127,13 +135,35 @@
 /* #third
 ----------------------------------------------------------------*/
 
-#third{ height:200px;
+#third{
+	background-image:url(../assets/images/co.png),url(../assets/images/tact.png);
 	background-color:#f6f8fa;
+	background-position:11% 0,right bottom;
+	background-repeat:no-repeat;
 	background-attachment:fixed;
+	background-size:25%,63%;
 }
-#third .story{}
+#third .story{ padding:8% 0}
 
+/*contacttxt*/
+.contacttxt{ font-size:.875rem; padding-top:1em;}
+.contacttxt p{ font-size:1.125em; line-height:1.5em; text-align:justify;}
 
+/*contactlist*/
+.contactlist,
+.contactlist li{ padding-left:0; list-style:none}
+.contactlist{ font-size:.875rem; margin-bottom:0; padding-top:1em; letter-spacing:.08em}
+.contactlist strong{ font-weight:100; text-transform:uppercase;}
+.contactlist .item{ position:relative; padding-left:2.5em; margin-top:1em}
+.contactlist .item:first-child{ margin-top:0}
+.contactlist .item:before{ position:absolute; left:0; font-size:1.25em; padding-top:.5rem; font-family: 'icomoon';
+	transform:scale(.7);
+	transform-origin:center 0;
+}
+.contactlist .e_contact_mobile:before{ content:'\e902'; font-size:2em}
+.contactlist .e_contact_email:before{ content:'\e901'; font-size:.954em}
+.contactlist .e_contact_wechat:before{ content:'\e905'; font-size:1.236em}
+.contactlist p{ margin:0; line-height:1.2em}
 
 /* bootstrap & media query
 ----------------------------------------------------------------*/
@@ -142,6 +172,9 @@
 
 	/*subtitle*/
 	.subtitle{ font-size:.75rem;}
+
+	/*formlist*/
+	.formlist{ font-size:1rem;}
 
 	/*logo*/
 	.logo{ font-size:.8rem}
@@ -157,7 +190,14 @@
 	.works .item{ padding:0.7%;}
 
 	/*abouttxt*/
-	.abouttxt{ font-size:1rem;
+	.abouttxt{ font-size:1rem;}
+
+	/*contacttxt*/
+	.contacttxt{ padding-left:1em; padding-top:0; font-size:1rem;}
+	.contacttxt p{ font-size:1.5em;}
+
+	/*contactlist*/
+	.contactlist{ font-size:1rem;}
 
 }
 

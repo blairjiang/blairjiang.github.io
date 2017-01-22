@@ -134,6 +134,34 @@ body .pl0{ padding-left:0!important}
 .tx_br{ word-wrap:break-word; word-break:break-all}
 .tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 
+/* form */
+.inputTxt input,
+.inputTxt textarea{ font-size:1.125em; width:100%; background:#fff; border:#afb7bc 1px solid; padding:1em; vertical-align:top;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-appearance:none;
+    appearance:none;
+    font-family:"me-book",Helvetica,sans-serif;
+    line-height:1.5em;
+    letter-spacing:.08em;
+}
+.inputTxt input:focus,
+.inputTxt textarea:focus{ background:#fff; border-color:#999}
+.btn1,
+.btn1:active,
+.btn1:hover{ background:#ff5151; font-size:1.125em; padding:1em; border:none; color:#fff; display:inline-block; vertical-align:top; cursor:pointer;
+    font-family:"me-bold",Helvetica,sans-serif;
+    -webkit-appearance:none;
+    appearance:none;
+    line-height:1em;
+    letter-spacing:.08em;
+}
+.btn1:active,
+.btn1:hover,
+.btn1:focus{
+    -webkit-filter:brightness(.9);
+}
+
 @font-face {
     font-family: 'me-bold';
     src: url('../assets/font/me-bold.eot');
