@@ -194,14 +194,14 @@
 
 	/*contacttxt*/
 	.contacttxt{ font-size:1rem;}
-	.contacttxt p{ font-size:1.5em;}
+	.contacttxt p{ font-size:1.25em;}
 
 	/*contactlist*/
 	.contactlist{ font-size:1rem;}
 
 }
 
-@media (min-width: 1003px){
+@media (min-width: 1200px){
 
 	/*subtitle*/
 	.subtitle{ font-size:.875rem;}
@@ -216,10 +216,11 @@
 
 	/*contacttxt*/
 	.contacttxt{ padding-left:1em; padding-top:0;}
+	.contacttxt p{ font-size:1.5em;}
 	
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1600px){
 
 	/*subtitle*/
 	.subtitle{ font-size:1rem;}
