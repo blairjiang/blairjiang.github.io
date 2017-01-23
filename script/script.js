@@ -101,7 +101,7 @@ $(function() {
 		}
 
 	    if($thirdBG.hasClass("inview")){
-		    $thirdBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 6000, 0.1) + ", " + newPos(100, windowHeight, pos, 6900, .3)});
+		    $thirdBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 6000, 0.1) + ", " + newPos(100, windowHeight, pos, 6000, .3)});
 		}
 	}
 });
