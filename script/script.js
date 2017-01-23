@@ -1,4 +1,46 @@
+var ScrollPos = 0;
+
+function onScroll(){
+
+    scrollPos = $(document).scrollTop() + 5;
+
+    $('#nav li .lk').each(function(){
+    	var mod = $(this).attr('href');
+    	if($(mod).offset().top <= scrollPos){
+    		$('#nav li').removeClass('selected');
+    		$(this).parents('li').addClass('selected');
+    	}else{
+    		$(this).parents('li').removeClass('selected');
+    	}
+    });
+
+    if($('#second').hasClass('selected') && !$('#third').hasClass('selected')){
+    	$('body').addClass('darkbg');
+    }else{
+    	$('body').removeClass('darkbg');
+    }
+
+}
+
+window.onscroll = onScroll;
+
+// init controller
+var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
+
+// build scenes
+new ScrollMagic.Scene({triggerElement: "#intro"})
+	.setClassToggle("#intro", "selected") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#second"})
+	.setClassToggle("#second", "selected") // add class toggle
+	.addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#third"})
+	.setClassToggle("#third", "selected") // add class toggle
+	.addTo(controller);
+
 $(function() {
+
+	smoothScroll.init();
 
 	// lazyload
     $("img.lazy").lazyload({
@@ -36,10 +78,7 @@ $(function() {
 
 	function RepositionNav(){
 	    var windowHeight = $window.height();
-	    var navHeight = $('#nav').height() / 2;
 	    var windowCenter = (windowHeight / 2);
-	    var newtop = windowCenter - navHeight;
-	    $('#nav').css({"top": newtop});
 	}
 
 	function newPos(x, windowHeight, pos, adjuster, inertia){
