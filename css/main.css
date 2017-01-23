@@ -50,6 +50,10 @@
 .e_subtitle_2 .icon,
 .e_subtitle_2 .t{ color:#fff;}
 .e_subtitle_2 .t{ font-size:4.25em}
+.e_subtitle_3 .icon,
+.e_subtitle_3 .t{ color:#000;}
+.e_subtitle_3 .icon{ font-size:1.25em}
+.e_subtitle_3 .t{ font-size:1.714em;}
 
 /*formlist*/
 .formlist{ font-size:.875rem;}
@@ -58,17 +62,25 @@
 .formlist .item{ margin-top:1.25em;}
 .formlist .item:first-child{ margin-top:0}
 
-/* #intro
+/*topnav*/
+.topnav{ position:absolute; z-index:1000; width:100%; left:0; top:0; font-size:.875rem; background-color:rgba(255,255,255,.8);}
+.topnav .logo{ padding-top:1.24em}
+.topnav .logo .lk{ color:#000}
+.topnav .logo .lk:hover{ text-decoration:none;}
+.topnav .logo .icon{ font-size:2.4em}
+.topnav .option{ padding:1.24em 0;}
+
+/* #index_intro
 ----------------------------------------------------------------*/
-#intro{
+#index_intro{
 	background-image:url(../assets/images/port.png),url(../assets/images/fo.png),url(../assets/images/lio.png);
 	background-position:right 10%,left 30%,40% 60%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-size:48%,22%,40%;
 }
-#intro .story{ padding-bottom:1%}
-#intro .container{ padding-top:4.5%}
+#index_intro .story{ padding-bottom:1%}
+#index_intro .container{ padding-top:4.5%}
 
 /* logo */
 .logo{ margin:0; font-size:.7rem;}
@@ -171,10 +183,10 @@
 	transform:translateX(0);
 }
 
-/* #second
+/* #index_second
 ----------------------------------------------------------------*/
 
-#second{
+#index_second{
 	background-image:url(../assets/images/a.png),url(../assets/images/bout.png),url(../assets/images/bgcity.jpg);
 	background-color:#141617;
 	background-position:13% 0,19.5% 0,center 0;
@@ -182,17 +194,17 @@
 	background-attachment:fixed;
 	background-size:11%,50%,cover;
 }
-#second .story{ padding-top:1%; padding-bottom:4%}
+#index_second .story{ padding-top:1%; padding-bottom:4%}
 
 /*abouttxt*/
 .abouttxt{ font-size:.875rem; color:#fff}
 .abouttxt h3{ padding-top:1em; font-size:1.75em; letter-spacing:.08em; font-weight:100}
 .abouttxt p{ font-size:1em; line-height:1.5em; text-align:justify;}
 
-/* #third
+/* #index_third
 ----------------------------------------------------------------*/
 
-#third{
+#index_third{
 	background-image:url(../assets/images/co.png),url(../assets/images/tact.png);
 	background-color:#f6f8fa;
 	background-position:11% 0,right bottom;
@@ -200,7 +212,7 @@
 	background-attachment:fixed;
 	background-size:25%,63%;
 }
-#third .story{ padding:10% 0}
+#index_third .story{ padding:10% 0}
 
 /*contacttxt*/
 .contacttxt{ font-size:1rem; padding-top:1em;}
@@ -222,10 +234,10 @@
 .contactlist .e_contact_wechat:before{ content:'\e905'; font-size:1.236em}
 .contactlist p{ margin:0; line-height:1.2em}
 
-/* #fourth
+/* #index_fourth
 ----------------------------------------------------------------*/
 
-#fourth{ background-color:#000; color:#9bb5c5; line-height:5rem}
+#index_fourth{ background-color:#000; color:#9bb5c5; line-height:5rem}
 .logofoot{ font-size:2em;}
 .copyright{ font-size:1em;}
 
@@ -241,6 +253,9 @@
 
 	/*formlist*/
 	.formlist{ font-size:1rem;}
+
+	/*topnav*/
+	.topnav{ font-size:1rem;}
 
 	/*logo*/
 	.logo{ font-size:.8rem}

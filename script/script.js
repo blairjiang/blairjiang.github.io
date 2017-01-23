@@ -14,7 +14,7 @@ function onScroll(){
     	}
     });
 
-    if($('#second').hasClass('selected') && !$('#third').hasClass('selected')){
+    if($('#index_second').hasClass('selected') && !$('#index_third').hasClass('selected')){
     	$('body').addClass('darkbg');
     }else{
     	$('body').removeClass('darkbg');
@@ -28,14 +28,14 @@ window.onscroll = onScroll;
 var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
 
 // build scenes
-new ScrollMagic.Scene({triggerElement: "#intro"})
-	.setClassToggle("#intro", "selected") // add class toggle
+new ScrollMagic.Scene({triggerElement: "#index_intro"})
+	.setClassToggle("#index_intro", "selected") // add class toggle
 	.addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#second"})
-	.setClassToggle("#second", "selected") // add class toggle
+new ScrollMagic.Scene({triggerElement: "#index_second"})
+	.setClassToggle("#index_second", "selected") // add class toggle
 	.addTo(controller);
-new ScrollMagic.Scene({triggerElement: "#third"})
-	.setClassToggle("#third", "selected") // add class toggle
+new ScrollMagic.Scene({triggerElement: "#index_third"})
+	.setClassToggle("#index_third", "selected") // add class toggle
 	.addTo(controller);
 
 $(function() {
@@ -50,13 +50,13 @@ $(function() {
 
     // parallax
 	var $window = $(window);
-	var $firstBG = $('#intro');
-	var $secondBG = $('#second');
-	var $thirdBG = $('#third');
+	var $index_firstBG = $('#index_intro');
+	var $index_secondBG = $('#index_second');
+	var $index_thirdBG = $('#index_third');
 
 	var windowHeight = $window.height();
 
-	$('#intro, #second, #third').bind('inview', function (event, visible) {
+	$('#index_intro, #index_second, #index_third').bind('inview', function (event, visible) {
 	    if (visible == true) {
 	        $(this).addClass("inview");
 	    }else{
@@ -92,16 +92,16 @@ $(function() {
 	    	$('.guide').css('display','none');
 	    }
 
-	    if($firstBG.hasClass("inview")){
-	    	$firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 1120, 0.3) + ", " + newPos(0, windowHeight, pos, 1800, 0.4) + ", " + newPos(100, windowHeight, pos, 2500, 0.5)});
+	    if($index_firstBG.hasClass("inview")){
+	    	$index_firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 1120, 0.3) + ", " + newPos(0, windowHeight, pos, 1800, 0.4) + ", " + newPos(100, windowHeight, pos, 2500, 0.5)});
 		}
 
-	    if($secondBG.hasClass("inview")){
-		    $secondBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 4000, 0.2) + ", " + newPos(48, windowHeight, pos, 4200, 0.4) + ", " + newPos(50, windowHeight, pos, 2000, 0)});
+	    if($index_secondBG.hasClass("inview")){
+		    $index_secondBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 4000, 0.2) + ", " + newPos(48, windowHeight, pos, 4200, 0.4) + ", " + newPos(50, windowHeight, pos, 2000, 0)});
 		}
 
-	    if($thirdBG.hasClass("inview")){
-		    $thirdBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 6000, 0.1) + ", " + newPos(100, windowHeight, pos, 6000, .3)});
+	    if($index_thirdBG.hasClass("inview")){
+		    $index_thirdBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 6000, 0.1) + ", " + newPos(100, windowHeight, pos, 6000, .3)});
 		}
 	}
 });
