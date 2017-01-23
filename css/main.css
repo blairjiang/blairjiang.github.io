@@ -107,6 +107,10 @@
 .works .item .desc time{
 	transition:transform .4s ease-in-out;
 }
+.works .item .lk:active ~ .desc dt,
+.works .item .lk:active ~ .desc dd .c1,
+.works .item .lk:active ~ .desc dd .c2,
+.works .item .lk:active ~ .desc time,
 .works .item .lk:hover ~ .desc dt,
 .works .item .lk:hover ~ .desc dd .c1,
 .works .item .lk:hover ~ .desc dd .c2,
