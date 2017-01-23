@@ -49,6 +49,10 @@ $(function() {
 	function Move(){
 	    var pos = $window.scrollTop();
 
+	    if(pos > 500){
+	    	$('.guide').css('display','none');
+	    }
+
 	    if($firstBG.hasClass("inview")){
 	    	$firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 1120, 0.3) + ", " + newPos(0, windowHeight, pos, 1800, 0.4) + ", " + newPos(100, windowHeight, pos, 2500, 0.5)});
 		}

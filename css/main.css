@@ -57,6 +57,24 @@
 .works li{ list-style:none}
 .works ul{ padding-left:0; margin-bottom:0;}
 
+
+/*guide*/
+.works .guide{ position:relative; display:none;
+	animation:guideshake .5s ease-in-out infinite;
+	animation-direction:alternate;
+	animation-fill-mode:both;
+}
+@keyframes guideshake{
+	0%{ transform:translateY(-.5em);}
+	100%{ transform:translateY(.5em);}
+}
+.works .guide:before{ position:absolute; content:''; left:50%; margin-left:-.0625em; width:.125em; height:5em; background-color:#300}
+.works .guide:after{ position:absolute; content:''; left:50%; width:1em; height:1em; margin-left:-.5em; top:5em; border:#300 .125em solid; border-top-color:transparent; border-right:transparent;
+	transform:rotate(-45deg);
+}
+.works .guide .device{ position:absolute; left:50%; top:7em; width:2.5em; margin-left:-1.25em; text-align:center;}
+.works .guide .device .icon{ font-size:2.5em;}
+
 .works .item{ padding:0.9%;}
 .works .item .inner{ position:relative;}
 .works .item .pic{ position:relative; overflow:hidden;}
@@ -169,6 +187,13 @@
 .contactlist .e_contact_wechat:before{ content:'\e905'; font-size:1.236em}
 .contactlist p{ margin:0; line-height:1.2em}
 
+/* #fourth
+----------------------------------------------------------------*/
+
+#fourth{ background-color:#000; color:#9bb5c5; line-height:5rem}
+.logofoot{ font-size:2em;}
+.copyright{ font-size:1em;}
+
 /* bootstrap & media query
 ----------------------------------------------------------------*/
 
@@ -191,6 +216,8 @@
 	}
 
 	/*works*/
+
+	.works .guide{ display:block;}
 	.works .item{ padding:0.7%;}
 
 	/*abouttxt*/
