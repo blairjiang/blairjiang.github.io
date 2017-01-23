@@ -136,7 +136,7 @@ body .pl0{ padding-left:0!important}
 
 /* form */
 .inputTxt input,
-.inputTxt textarea{ font-size:1.125em; width:100%; background:#fff; border:#afb7bc 1px solid; padding:1em; vertical-align:top;
+.inputTxt textarea{ font-size:1em; width:100%; background:#fff; border:#afb7bc 1px solid; padding:1em; vertical-align:top;
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
     -webkit-appearance:none;
@@ -149,7 +149,7 @@ body .pl0{ padding-left:0!important}
 .inputTxt textarea:focus{ background:#fff; border-color:#999}
 .btn1,
 .btn1:active,
-.btn1:hover{ background:#ff5151; font-size:1.125em; padding:1em; border:none; color:#fff; display:inline-block; vertical-align:top; cursor:pointer;
+.btn1:hover{ background:#ff5151; font-size:1em; padding:1em; border:none; color:#fff; display:inline-block; vertical-align:top; cursor:pointer;
     font-family:"me-bold",Helvetica,sans-serif;
     -webkit-appearance:none;
     appearance:none;

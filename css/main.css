@@ -46,7 +46,7 @@
 
 /*hello*/
 .hello{ font-size:.875rem; margin-top:1em;}
-.hello p{ font-size:1.25em; margin:0; line-height:1.5em;}
+.hello p{ font-size:1.125em; margin:0; line-height:1.5em;}
 .hello p .icon-tri{ display:inline-block; font-size:1.25em; color:#ff5151; line-height:1.5em;
 	transform:rotate(-90deg);
 }
@@ -130,7 +130,7 @@
 /*abouttxt*/
 .abouttxt{ font-size:.875rem; color:#fff}
 .abouttxt h3{ padding-top:1em; font-size:1.75em; letter-spacing:.08em; font-weight:100}
-.abouttxt p{ font-size:1.125em; line-height:1.5em; text-align:justify;}
+.abouttxt p{ font-size:1em; line-height:1.5em; text-align:justify;}
 
 /* #third
 ----------------------------------------------------------------*/
@@ -147,7 +147,7 @@
 
 /*contacttxt*/
 .contacttxt{ font-size:1rem; padding-top:1em;}
-.contacttxt p{ font-size:1.125em; line-height:1.5em; text-align:justify;}
+.contacttxt p{ font-size:1em; line-height:1.5em; text-align:justify;}
 
 /*contactlist*/
 .contactlist,
@@ -181,7 +181,7 @@
 
 	/*hello*/
 	.hello{ font-size:1rem; margin-top:0}
-	.hello p{ text-align:right; font-size:1.125em}
+	.hello p{ text-align:right;}
 	.hello p .icon-tri{
 		transform:none;
 	}
@@ -193,8 +193,7 @@
 	.abouttxt{ font-size:1rem;}
 
 	/*contacttxt*/
-	.contacttxt{ font-size:1rem;}
-	.contacttxt p{ font-size:1.25em;}
+	.contacttxt p{ font-size:1.125em;}
 
 	/*contactlist*/
 	.contactlist{ font-size:1rem;}
@@ -216,7 +215,6 @@
 
 	/*contacttxt*/
 	.contacttxt{ padding-left:1em; padding-top:0;}
-	.contacttxt p{ font-size:1.5em;}
 	
 }
 
