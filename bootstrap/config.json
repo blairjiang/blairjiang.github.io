@@ -393,18 +393,7 @@
     "carousel.less"
   ],
   "js": [
-    "alert.js",
-    "button.js",
-    "carousel.js",
-    "dropdown.js",
-    "modal.js",
-    "tooltip.js",
-    "popover.js",
-    "tab.js",
-    "affix.js",
-    "collapse.js",
-    "scrollspy.js",
-    "transition.js"
+    "carousel.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=4336f7e16c6ed1c78156b56779ff0cc3"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=6e85e942a66b0996f5cef18363524730"
 }
