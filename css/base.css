@@ -223,7 +223,7 @@ body .pl0{ padding-left:0!important}
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" iconfont-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -238,12 +238,12 @@ body .pl0{ padding-left:0!important}
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo:before { content: "\e900"; }
-.icon-icon-mail:before { content: "\e901"; }
-.icon-icon-mobile:before { content: "\e902"; }
-.icon-mouse:before { content: "\e903"; }
-.icon-tri:before { content: "\e904"; }
-.icon-icon-wechat:before { content: "\e905"; }
+.iconfont-logo:before { content: "\e900"; }
+.iconfont-icon-mail:before { content: "\e901"; }
+.iconfont-icon-mobile:before { content: "\e902"; }
+.iconfont-mouse:before { content: "\e903"; }
+.iconfont-tri:before { content: "\e904"; }
+.iconfont-icon-wechat:before { content: "\e905"; }
 
 /* svg icon 32px==1em */
 

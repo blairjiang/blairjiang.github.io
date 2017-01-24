@@ -11,7 +11,9 @@
 #nav,
 #nav li{ list-style:none;}
 
-#nav{ position:absolute; width:100%; bottom:5rem; padding-left:0; font-size:.5rem;}
+#nav{ position:absolute; width:100%; bottom:1rem; padding-left:0; font-size:.5rem;
+	transition:transform .2s ease-in-out;
+}
 #nav li{ text-align:center;}
 #nav .num{ display:none; text-align:center; font-size:3.75em; line-height:1em; color:#000; letter-spacing:.08em;
 	transition:color .2s ease-in-out;
@@ -41,19 +43,23 @@
 .darkbg #nav .lk span{ color:#fff}
 .darkbg #nav .line{ background-color:#fff}
 
+.sidenavlower #nav{
+	transform:translateY(-5em);
+}
+
 /*subtitle*/
 .subtitle{ font-size:.5rem; font-weight:100; text-transform:uppercase; letter-spacing:.08em}
-.subtitle .icon{ font-size:2.5em; margin-right:.3em;}
+.subtitle .iconfont{ font-size:2.5em; margin-right:.3em;}
 .subtitle .t{ letter-spacing:.08em}
-.e_subtitle_1 .icon{ color:#231815}
+.e_subtitle_1 .iconfont{ color:#231815}
 .e_subtitle_1 .t{ color:#000; font-size:4em}
 .e_subtitle_2 .icon,
 .e_subtitle_2 .t{ color:#fff;}
 .e_subtitle_2 .t{ font-size:4.25em}
 .e_subtitle_3 .icon,
 .e_subtitle_3 .t{ color:#000;}
-.e_subtitle_3 .icon{ font-size:1.25em}
-.e_subtitle_3 .t{ font-size:1.714em;}
+.e_subtitle_3 .iconfont{ font-size:1em}
+.e_subtitle_3 .t{ font-size:1.5em;}
 
 /*formlist*/
 .formlist{ font-size:.875rem;}
@@ -62,13 +68,27 @@
 .formlist .item{ margin-top:1.25em;}
 .formlist .item:first-child{ margin-top:0}
 
-/*topnav*/
-.topnav{ position:absolute; z-index:1000; width:100%; left:0; top:0; font-size:.875rem; background-color:rgba(255,255,255,.8);}
-.topnav .logo{ padding-top:1.24em}
-.topnav .logo .lk{ color:#000}
-.topnav .logo .lk:hover{ text-decoration:none;}
-.topnav .logo .icon{ font-size:2.4em}
-.topnav .option{ padding:1.24em 0;}
+/*headnav*/
+.headnav{ position:absolute; z-index:1000; width:100%; left:0; top:0; font-size:.75rem; background-color:rgba(255,255,255,.8);}
+.headnav .inner{ max-width:1420px; margin:0 auto;}
+.headnav .inner .c1{ width:40%; float:left; padding-left:10px; box-sizing:border-box;}
+.headnav .inner .c2{ overflow:hidden; padding-right:10px; box-sizing:border-box;}
+.headnav .logo{ padding-top:1.2em}
+.headnav .logo .lk{ color:#000}
+.headnav .logo .lk:link,
+.headnav .logo .lk:active,
+.headnav .logo .lk:hover{ text-decoration:none;}
+.headnav .logo .iconfont{ font-size:2em}
+.headnav .option{ padding:1.2em 0;}
+@media (min-width: 768px){
+	.headnav .inner{ max-width:690px}
+}
+@media (min-width: 1200px){
+	.headnav .inner{ max-width:1080px}
+}
+@media (min-width: 1600px){
+	.headnav .inner{ max-width:1440px}
+}
 
 /* #index_intro
 ----------------------------------------------------------------*/
@@ -120,7 +140,7 @@
 	transform:rotate(-45deg);
 }
 .works .guide .device{ position:absolute; left:50%; top:7em; width:2.5em; margin-left:-1.25em; text-align:center;}
-.works .guide .device .icon{ font-size:2.5em;}
+.works .guide .device .iconfont{ font-size:2.5em;}
 
 .works .item{ padding:0.9%;}
 .works .item .inner{ position:relative;}
@@ -254,9 +274,6 @@
 	/*formlist*/
 	.formlist{ font-size:1rem;}
 
-	/*topnav*/
-	.topnav{ font-size:1rem;}
-
 	/*logo*/
 	.logo{ font-size:.8rem}
 
@@ -285,8 +302,6 @@
 
 @media (min-width: 1200px){
 
-	#nav{ font-size:.875em}
-
 	/*subtitle*/
 	.subtitle{ font-size:.875rem;}
 
@@ -304,6 +319,8 @@
 }
 
 @media (min-width: 1600px){
+
+	#nav{ font-size:.875em}
 
 	/*subtitle*/
 	.subtitle{ font-size:1rem;}

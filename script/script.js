@@ -20,9 +20,16 @@ function onScroll(){
     	$('body').removeClass('darkbg');
     }
 
+    if($('#index_third').hasClass('selected')){
+    	$('body').addClass('sidenavlower');
+    }else{
+    	$('body').removeClass('sidenavlower');
+    }
+
 }
 
 window.onscroll = onScroll;
+window.onload = onScroll;
 
 // init controller
 var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
