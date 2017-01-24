@@ -70,7 +70,7 @@
 
 /*headnav*/
 .headnav{ position:absolute; z-index:1000; width:100%; left:0; top:0; font-size:.75rem; background-color:rgba(255,255,255,.8);}
-.headnav .inner{ max-width:1420px; margin:0 auto;}
+.headnav .inner{ max-width:100%; margin:0 auto;}
 .headnav .inner .c1{ width:40%; float:left; padding-left:10px; box-sizing:border-box;}
 .headnav .inner .c2{ overflow:hidden; padding-right:10px; box-sizing:border-box;}
 .headnav .logo{ padding-top:1.2em}
@@ -254,12 +254,25 @@
 .contactlist .e_contact_wechat:before{ content:'\e905'; font-size:1.236em}
 .contactlist p{ margin:0; line-height:1.2em}
 
-/* #index_fourth
+/* pagefoot
 ----------------------------------------------------------------*/
 
-#index_fourth{ background-color:#000; color:#9bb5c5; line-height:5rem}
+.pagefoot{ background-color:#000; color:#9bb5c5; line-height:5rem}
+.pagefoot .inner{ max-width:100%; margin:0 auto;}
+.pagefoot .inner .c1{ width:40%; float:left; padding-left:10px; box-sizing:border-box;}
+.pagefoot .inner .c2{ overflow:hidden; padding-right:10px; box-sizing:border-box;}
+
 .logofoot{ font-size:2em;}
 .copyright{ font-size:1em;}
+@media (min-width: 768px){
+	.pagefoot .inner{ max-width:690px}
+}
+@media (min-width: 1200px){
+	.pagefoot .inner{ max-width:1080px}
+}
+@media (min-width: 1600px){
+	.pagefoot .inner{ max-width:1440px}
+}
 
 /* bootstrap & media query
 ----------------------------------------------------------------*/
