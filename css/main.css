@@ -4,6 +4,17 @@
 /* layout
 ----------------------------------------------------------------*/
 
+.switcher_l,
+.switcher_r{ font-size:.75rem; display:none; opacity:.9; position:absolute; top:50%; margin-top:-1em; padding:2.125em; width:6.25em; height:6.25em; background-color:rgba(0,0,0,.5)}
+.switcher_l i,
+.switcher_r i{ display:block; width:2em; height:2em; border:#fff 1px solid; border-top:none; border-right:none;}
+.switcher_l{ left:0; padding:2.125em 1.625em 2.125em 2.625em;}
+.switcher_r{ right:0; padding:2.125em 2.625em 2.125em 1.625em;}
+.switcher_l i{ transform:rotate(45deg); transform-origin:;}
+.switcher_r i{ transform:rotate(-135deg);}
+.switcher_l:hover,
+.switcher_r:hover{ opacity:1}
+
 .page{ margin:0 auto;}
 
 /*sidenav*/
@@ -279,6 +290,9 @@
 
 @media (min-width: 768px){
 
+	.switcher_l,
+	.switcher_r{ display:block;}
+
 	.sidenav{ display:block;}
 
 	/*subtitle*/
@@ -315,6 +329,9 @@
 
 @media (min-width: 1200px){
 
+	.switcher_l,
+	.switcher_r{ font-size:.875rem;}
+
 	/*subtitle*/
 	.subtitle{ font-size:.875rem;}
 
@@ -332,6 +349,9 @@
 }
 
 @media (min-width: 1600px){
+
+	.switcher_l,
+	.switcher_r{ font-size:1rem;}
 
 	#nav{ font-size:.875em}
 

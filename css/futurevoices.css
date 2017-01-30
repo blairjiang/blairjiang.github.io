@@ -6,6 +6,7 @@ body{ background-color:#fff}
 #fv_intro{
 	background-color:#efefef;
 }
+#fv_intro .story{ position:relative;}
 #fv_intro .container{ padding-top:2em}
 
 #fv_second{ background-color:#efefef}

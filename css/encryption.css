@@ -1,6 +1,55 @@
 body{ background-color:#343434}
 
-#enc_intro{ background:#69f1f3 url(../assets/images/bgdevice.png) center bottom no-repeat; background-size:contain;}
-#enc_intro .story{ padding-top:2em}
+#enc_intro{ background:#69f1f3 url(../assets/images/bgdevice.png) center center no-repeat;
+	background-size:cover;
+}
+#enc_intro .story{ position:relative; font-size:.75rem; padding-top:4.875em}
 
-.seemore{ position:absolute; bottom:0; left:0; width:100%; height:20%; text-indent:-9999em; overflow:hidden;}
+#enc_intro header{ text-align:center; padding-bottom:15%; line-height:1.2;}
+#enc_intro header .title{ font-size:4.5em; color:#000; text-transform:uppercase;}
+#enc_intro header .desc{ font-size:2em; color:#fff; text-transform:uppercase;}
+#enc_intro header .desc span{ background-color:#000; padding:0 .5em;}
+#enc_intro header .time,
+#enc_intro header .author{ font-size:1.125em;}
+#enc_intro header .time{ color:#5b7cfa}
+#enc_intro header .author{ text-transform:uppercase; color:#000;}
+
+#enc_second .v_c1{ margin-top:-13%;}
+#enc_second .v_c2{ margin-top:1.5em; padding-bottom:1.5em; font-size:1em; color:#fff}
+#enc_second .v_c2 .option{ text-transform:uppercase;}
+#enc_second .v_c2 .desc p{ margin-top:1.5em; text-align:justify;}
+
+.videoWrap{position:relative; background-color:#000}
+.videoWrap iframe{ position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%}
+
+#enc_second .v_c2 .desc .seemore{ text-align:center;}
+.seemore a:link,
+.seemore a:active,
+.seemore a:hover,
+.seemore a:visited{ color:#fff}
+.seemore a:hover,
+.seemore a:active{ text-decoration:underline;}
+
+/* bootstrap & media query
+----------------------------------------------------------------*/
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 1200px){
+
+	#enc_intro{	background-size:contain; background-position:center bottom}
+
+	#enc_intro .story{ font-size:.875rem;}
+	#enc_intro header .desc{ font-size:2.5em;}
+	#enc_intro header{}
+}
+
+@media (min-width: 1600px){
+
+	#enc_intro .story{ font-size:1rem;}
+	#enc_intro header .desc{ font-size:3em;}
+	#enc_intro header{}
+	
+}
