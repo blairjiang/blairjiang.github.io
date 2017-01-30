@@ -1,12 +1,24 @@
-var ScrollPos = 0;
+var scrollPos = 0;
+var windowH = $(window).height();
 
 function onScroll(){
 
-    scrollPos = $(document).scrollTop() + 5;
+	// 滚动距离
+    scrollPos = Math.floor($(document).scrollTop() - 50);
+	var offsetPos = [];
+
+    $('.page').each(function(){
+
+		// 容器顶部距离文档顶部的距离
+    	offsetPos.push(Math.floor($(this).offset().top));
+    	// console.log(scrollPos + ', ' + windowH + ', ' + offsetPos);
+    });
 
     $('#nav li .lk').each(function(){
-    	var mod = $(this).attr('href');
-    	if($(mod).offset().top <= scrollPos){
+
+    	var idx = $(this).parents('li').index();
+
+    	if(offsetPos[idx] <= scrollPos + windowH){
     		$('#nav li').removeClass('selected');
     		$(this).parents('li').addClass('selected');
     	}else{

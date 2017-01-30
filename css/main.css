@@ -38,7 +38,7 @@
 	transition:all .2s ease-in-out;
 }
 
-#nav .line{ display:inline-block; font-size:0; margin:1em 0; vertical-align:top; height:0; width:.125em; background-color:#000;
+#nav .line{ display:inline-block; font-size:0; margin:1em 0; vertical-align:top; height:4.4em; max-height:0; width:.125em; background-color:#000;
 	transition:all .2s ease-in-out;
 }
 
@@ -46,13 +46,13 @@
 #nav .selected .num{ display:block;}
 #nav .selected .lk i{ background-color:#000}
 #nav .selected .lk span{ opacity:1;}
-#nav .selected .line{ height:4.4em; font-size:1em}
+#nav .selected .line{ max-height:4.4em; font-size:1em}
 
-.darkbg #nav .num{ color:#fff}
-.darkbg #nav .lk i{ background-color:#869098}
-.darkbg #nav .selected .lk i{ background-color:#fff}
-.darkbg #nav .lk span{ color:#fff}
-.darkbg #nav .line{ background-color:#fff}
+.darkbg #nav li.selected:nth-child(2) .lk i{ background-color:#869098}
+.darkbg #nav li.selected:nth-child(2) .line{ background-color:#fff}
+.darkbg #nav li.selected:nth-child(2) .num{ color:#fff}
+.darkbg #nav li.selected:nth-child(2) .lk span{ color:#fff}
+.darkbg #nav li.selected:nth-child(2) .lk i{ background-color:#fff}
 
 .sidenavlower #nav{
 	transform:translateY(-5em);
