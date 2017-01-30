@@ -12,7 +12,7 @@ body{ background-color:#343434}
 #enc_intro header .time,
 #enc_intro header .author{ font-size:1.125em;}
 #enc_intro header .time{ color:#5b7cfa}
-#enc_intro header .author{ text-transform:uppercase; color:#000;}
+#enc_intro header .author{ margin-top:3%; text-transform:uppercase; color:#000;}
 
 #enc_second .v_c1{ margin-top:-13%;}
 #enc_second .v_c2{ margin-top:1.5em; padding-bottom:1.5em; font-size:1em; color:#fff}
