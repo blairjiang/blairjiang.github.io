@@ -95,7 +95,7 @@
 .headnav .option .t{ font-size:1.25em; text-transform:uppercase; letter-spacing:.08em}
 
 @media (min-width: 768px){
-	.headnav{ font-size:1rem;}
+	.headnav{ font-size:1rem}
 }
 @media (min-width: 1200px){
 }
