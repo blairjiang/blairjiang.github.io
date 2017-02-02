@@ -112,15 +112,15 @@ $(function() {
 	    }
 
 	    if($index_firstBG.hasClass("inview")){
-	    	$index_firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 1120, 0.3) + ", " + newPos(0, windowHeight, pos, 1800, 0.4) + ", " + newPos(100, windowHeight, pos, 2500, 0.5)});
+	    	$index_firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 1080, 0.3) + ", " + newPos(0, windowHeight, pos, 1500, 0.4) + ", " + newPos(100, windowHeight, pos, 2000, 0.5)});
 		}
 
 	    if($index_secondBG.hasClass("inview")){
-		    $index_secondBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 4000, 0.2) + ", " + newPos(48, windowHeight, pos, 4200, 0.4) + ", " + newPos(50, windowHeight, pos, 2000, 0)});
+		    $index_secondBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 2400, 0.2) + ", " + newPos(48, windowHeight, pos, 2700, 0.4) + ", " + newPos(50, windowHeight, pos, 2000, 0)});
 		}
 
 	    if($index_thirdBG.hasClass("inview")){
-		    $index_thirdBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 6000, 0.1) + ", " + newPos(100, windowHeight, pos, 6000, .3)});
+		    $index_thirdBG.css({'backgroundPosition': newPos(11, windowHeight, pos, 3500, 0.1) + ", " + newPos(100, windowHeight, pos, 3800, .3)});
 		}
 	}
 });
