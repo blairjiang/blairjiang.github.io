@@ -144,6 +144,7 @@ body .pl0{ padding-left:0!important}
     font-family:"me-book",Helvetica,sans-serif;
     line-height:1.5em;
     letter-spacing:.08em;
+    border-radius:0;
 }
 .inputTxt input:focus,
 .inputTxt textarea:focus{ background:#fff; border-color:#999;}

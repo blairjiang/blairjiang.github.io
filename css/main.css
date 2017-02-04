@@ -237,7 +237,7 @@
 #index_third .story{}
 
 /*contacttxt*/
-.contacttxt{ font-size:1rem; padding-top:1em;}
+.contacttxt{ font-size:1rem; padding-top:1em; padding-bottom:2em}
 .contacttxt p{ font-size:1em; line-height:1.5em; text-align:justify;}
 
 /*contactlist*/
