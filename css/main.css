@@ -237,7 +237,7 @@
 #index_third .story{}
 
 /*contacttxt*/
-.contacttxt{ font-size:1rem; padding-top:1em; padding-bottom:2em}
+.contacttxt{ font-size:.875rem; padding-top:1em; padding-bottom:2em}
 .contacttxt p{ font-size:1em; line-height:1.5em; text-align:justify;}
 
 /*contactlist*/
@@ -304,7 +304,7 @@
 	.abouttxt{ font-size:1rem;}
 
 	/*contacttxt*/
-	.contacttxt p{}
+	.contacttxt{ font-size:1rem}
 
 	/*contactlist*/
 	.contactlist{ font-size:1rem;}
@@ -357,7 +357,7 @@
 	.works .guide{ font-size:1rem;}
 	.works .item .e_desc_1{ font-size:1rem;}
 
-	.contacttxt p{ font-size:1.25em;}
+	.contacttxt p{ font-size:1em;}
 
 	.pagefoot{ font-size:1rem;}
 	
