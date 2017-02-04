@@ -112,7 +112,7 @@ $(function() {
 	    }
 
 	    if($index_firstBG.hasClass("inview")){
-	    	$index_firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 1080, 0.3) + ", " + newPos(0, windowHeight, pos, 1500, 0.4) + ", " + newPos(100, windowHeight, pos, 2000, 0.5)});
+	    	$index_firstBG.css({'backgroundPosition': newPos(100, windowHeight, pos, 900, 0.3) + ", " + newPos(0, windowHeight, pos, 1200, 0.4) + ", " + newPos(100, windowHeight, pos, 1600, 0.5)});
 		}
 
 	    if($index_secondBG.hasClass("inview")){

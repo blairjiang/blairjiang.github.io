@@ -135,7 +135,7 @@
 
 /*guide*/
 .works .guideWrap{ display:none;}
-.works .guide{ position:relative;
+.works .guide{ position:relative; font-size:.75rem;
 	animation:guideshake .5s ease-in-out infinite;
 	animation-direction:alternate;
 	animation-fill-mode:both;
@@ -279,9 +279,6 @@
 	/*subtitle*/
 	.subtitle{}
 
-	/*formlist*/
-	.formlist{ font-size:1rem;}
-
 	/*hello*/
 	.hello{ margin-top:0}
 	.hello p{ text-align:right;}
@@ -350,10 +347,14 @@
 	/*subtitle*/
 	.subtitle{ font-size:1rem;}
 
+	/*formlist*/
+	.formlist{ font-size:1rem;}
+
 	/*logo*/
 	.logo{ font-size:1rem}
 
 	/*works*/
+	.works .guide{ font-size:1rem;}
 	.works .item .e_desc_1{ font-size:1rem;}
 
 	.contacttxt p{ font-size:1.25em;}
