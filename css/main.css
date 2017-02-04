@@ -125,7 +125,7 @@
 
 /*works*/
 .works{ padding-top:2%;
-	width:100%; overflow:scroll; -webkit-overflow-scrolling:touch;
+	width:100%; overflow-x:scroll; overflow-y:hidden; -webkit-overflow-scrolling:touch;
 }
 .works ul,
 .works li{ list-style:none}
