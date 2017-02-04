@@ -22,7 +22,7 @@
 #nav,
 #nav li{ list-style:none;}
 
-#nav{ position:absolute; width:100%; bottom:1rem; padding-left:0; font-size:.5rem;
+#nav{ position:absolute; width:100%; left:0; bottom:1rem; padding-left:0; font-size:.5rem;
 	transition:transform .2s ease-in-out;
 }
 #nav li{ text-align:center; max-height:1.25em;}
@@ -55,7 +55,7 @@
 .darkbg #nav li.selected:nth-child(2) .lk i{ background-color:#fff}
 
 .sidenavlower #nav{
-	transform:translateY(-7em);
+	transform:translateY(-3em);
 }
 
 /*subtitle*/
@@ -81,25 +81,25 @@
 
 /*headnav*/
 .headnav{ position:absolute; z-index:1000; width:100%; left:0; top:0; font-size:.75rem; background-color:rgba(255,255,255,.8);}
-.headnav .logo{ padding:.5em 0}
+.headnav .logo{ padding:1.25em 0}
 .headnav .logo .lk{ line-height:1; display:inline-block; vertical-align:top; color:#000}
 .headnav .logo .lk:link,
 .headnav .logo .lk:active,
 .headnav .logo .lk:hover{ text-decoration:none;}
-.headnav .logo .iconfont{ font-size:2em; vertical-align:middle; margin-right:.3em}
+.headnav .logo .iconfont{ font-size:2.5em; vertical-align:middle; margin-right:.3em}
 .headnav .logo .t{ display:none; font-size:2em; vertical-align:middle; text-transform:uppercase; letter-spacing:.08em}
-.headnav .option{ padding:.5em 0; text-align:right}
+.headnav .option{ padding-top:1.375em; text-align:right}
 .headnav .option .iconfont,
 .headnav .option .t{ vertical-align:middle;}
 .headnav .option .iconfont{ margin-right:.5em}
-.headnav .option .t{ font-size:1.25em; text-transform:uppercase; letter-spacing:.08em}
+.headnav .option .t{ font-size:1.5em; text-transform:uppercase; letter-spacing:.08em}
 
 @media (min-width: 768px){
-	.headnav{ font-size:1rem}
 }
 @media (min-width: 1200px){
 }
 @media (min-width: 1600px){
+	.headnav{ font-size:1rem}
 }
 
 /* #index_intro
@@ -260,22 +260,12 @@
 /* pagefoot
 ----------------------------------------------------------------*/
 
-.pagefoot{ background-color:#000; color:#9bb5c5; line-height:5rem}
-.pagefoot .inner{ max-width:100%; margin:0 auto;}
-.pagefoot .inner .c1{ width:40%; float:left; padding-left:10px; box-sizing:border-box;}
-.pagefoot .inner .c2{ overflow:hidden; padding-right:10px; box-sizing:border-box;}
+.pagefoot{ background-color:#000; color:#9bb5c5; font-size:.75rem; padding:1.25em;}
 
-.logofoot{ font-size:2em;}
-.copyright{ font-size:1em;}
-@media (min-width: 768px){
-	.pagefoot .inner{ max-width:690px}
-}
-@media (min-width: 1200px){
-	.pagefoot .inner{ max-width:1080px}
-}
-@media (min-width: 1600px){
-	.pagefoot .inner{ max-width:1440px}
-}
+.logofoot{ font-size:2.5em; line-height:1;}
+.logofoot .iconfont{ display:inline-block;}
+.copyright{ font-size:1.5em; padding-top:.375em; line-height:1}
+.copyright p{ margin-bottom:0}
 
 /* bootstrap & media query
 ----------------------------------------------------------------*/
@@ -353,6 +343,8 @@
 	.works .item .e_desc_1{ font-size:1rem;}
 
 	.contacttxt p{ font-size:1.25em;}
+
+	.pagefoot{ font-size:1rem;}
 	
 }
 
