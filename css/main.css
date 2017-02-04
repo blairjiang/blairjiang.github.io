@@ -59,7 +59,7 @@
 }
 
 /*subtitle*/
-.subtitle{ font-size:.5rem; font-weight:100; text-transform:uppercase; letter-spacing:.08em}
+.subtitle{ font-size:.75rem; font-weight:100; text-transform:uppercase; letter-spacing:.08em}
 .subtitle .iconfont{ font-size:1.5em; margin-right:.3em;}
 .subtitle .t{ letter-spacing:.08em}
 .e_subtitle_1 .iconfont{ color:#231815}
@@ -67,10 +67,6 @@
 .e_subtitle_2 .iconfont,
 .e_subtitle_2 .t{ color:#fff;}
 .e_subtitle_2 .t{ font-size:2.25em}
-.e_subtitle_3 .iconfont,
-.e_subtitle_3 .t{ color:#000;}
-.e_subtitle_3 .iconfont{ font-size:1em}
-.e_subtitle_3 .t{ font-size:1.5em;}
 
 /*formlist*/
 .formlist{ font-size:.875rem;}
@@ -111,8 +107,8 @@
 	background-attachment:fixed;
 	background-size:48%,22%,40%;
 }
-#index_intro .story{ padding-bottom:1%}
-#index_intro .container{ padding-top:3%}
+#index_intro .story{ padding-bottom:1%; padding-top:3%}
+#index_intro .container{}
 
 /* logo */
 #index_intro .logo{ margin:0; font-size:.75rem;}
@@ -128,14 +124,18 @@
 .hello p .iconfont-tri{ display:inline-block; color:#ff5151; vertical-align:middle; margin-right:.5em}
 
 /*works*/
-.works{ padding-top:2%}
+.works{ padding-top:2%;
+	width:100%; overflow:scroll; -webkit-overflow-scrolling:touch;
+}
 .works ul,
 .works li{ list-style:none}
-.works ul{ padding-left:0; margin-bottom:0;}
-
+.works ul{ padding-left:0; margin-bottom:0;
+	float:left; width:33.3%;
+}
 
 /*guide*/
-.works .guide{ position:relative; display:none;
+.works .guideWrap{ display:none;}
+.works .guide{ position:relative;
 	animation:guideshake .5s ease-in-out infinite;
 	animation-direction:alternate;
 	animation-fill-mode:both;
@@ -158,9 +158,8 @@
 .works .item .pic p{ width:200%; min-height:5em; margin:0 0 0 -100%; background:url(../assets/images/loading2.gif) 75% center no-repeat; background-size:2rem 2rem;}
 .works .item .lk{ position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; text-indent:-9999em;}
 .works .selected .lk + .pic p,
-.works .item .lk:active + .pic p,
-.works .item .lk:hover + .pic p{ margin:0}
-.works .item .desc{ position:absolute; z-index:9; left:0; top:0; width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,.3); opacity:0; color:#fff;
+.works .item .lk:active + .pic p{ margin:0}
+.works .item .desc{ position:absolute; z-index:9; left:0; top:0; width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,.3); opacity:1; color:#fff;
 	transition:opacity .2s ease-in-out;
 }
 .works .selected .lk ~ .desc,
@@ -183,7 +182,7 @@
 .works .item .desc dd .c1,
 .works .item .desc dd .c2,
 .works .item .desc time{
-	transform:translateX(4%);
+	transform:translateX(0);
 }
 .works .item .desc dt{
 	transition:transform .1s ease-in-out;
@@ -220,7 +219,7 @@
 #index_second .story{ padding-top:1%; padding-bottom:4%}
 
 /*abouttxt*/
-.abouttxt{ font-size:.875rem; color:#fff; padding:10% 0 20%;}
+.abouttxt{ font-size:.875rem; color:#fff;}
 .abouttxt h3{ font-size:1.5em; letter-spacing:.08em; font-weight:100}
 .abouttxt p{ font-size:1em; line-height:1.5em; text-align:justify;}
 
@@ -235,7 +234,7 @@
 	background-attachment:fixed;
 	background-size:25%,63%;
 }
-#index_third .story{ padding:10% 0}
+#index_third .story{}
 
 /*contacttxt*/
 .contacttxt{ font-size:1rem; padding-top:1em;}
@@ -278,7 +277,7 @@
 	.sidenav{ display:block;}
 
 	/*subtitle*/
-	.subtitle{ font-size:.75rem;}
+	.subtitle{}
 
 	/*formlist*/
 	.formlist{ font-size:1rem;}
@@ -288,10 +287,20 @@
 	.hello p{ text-align:right;}
 
 	/*works*/
+	.works{ overflow:hidden;}
+	.works ul{ float:none; width:auto}
+	.works .item .desc{ opacity:0}
 	.works .item .e_desc_1{ font-size:.5rem;}
 	.works .item .e_desc_1 dt{ width:44%;}
+	.works .item .desc dt,
+	.works .item .desc dd .c1,
+	.works .item .desc dd .c2,
+	.works .item .desc time{
+		transform:translateX(4%);
+	}
+	.works .item .lk:hover + .pic p{ margin:0}
 
-	.works .guide{ display:block;}
+	.works .guideWrap{ display:block;}
 	.works .item{ padding:0.7%;}
 
 	/*abouttxt*/
@@ -313,13 +322,18 @@
 	#nav{ font-size:.75em}
 
 	/*subtitle*/
-	.subtitle{ font-size:.875rem;}
+	.subtitle{}
 
 	/*works*/
 	.works .item .e_desc_1{ font-size:.75rem;}
 
 	/*contacttxt*/
 	.contacttxt{ padding-left:1em; padding-top:0;}
+
+	#index_third .story{ padding:10% 0}
+
+	/*abouttxt*/
+	.abouttxt{ padding:10% 0 20%;}
 	
 }
 
@@ -347,4 +361,7 @@
 	.pagefoot{ font-size:1rem;}
 	
 }
+@media (max-width: 768px){
 
+	.roll{ width:850%}
+}
