@@ -88,7 +88,7 @@
 .headnav .logo .t{ display:none; font-size:3em; vertical-align:middle; text-transform:uppercase; letter-spacing:.08em}
 .headnav .option{ padding-top:1.375em; float:right;}
 .headnav .option ul{ margin:0; padding:0; list-style:none}
-.headnav .option .item{ float:left; padding-left:1.5em}
+.headnav .option .item{ float:left; padding-left:1em}
 .headnav .option .item:first-child{ padding-left:0}
 .headnav .option .item .lk{ display:inline-block; font-size:1.2em; text-transform:uppercase; color:#000; text-decoration:none; letter-spacing:.08em}
 .headnav .option .item .lk:active,
