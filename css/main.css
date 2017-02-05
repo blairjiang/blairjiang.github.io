@@ -76,21 +76,23 @@
 .formlist .item:first-child{ margin-top:0}
 
 /*headnav*/
-.headnav{ position:absolute; z-index:1000; width:100%; left:0; top:0; font-size:.75rem; background-color:rgba(255,255,255,.8);}
-.headnav .logo{ padding:1.25em 0}
+.headnav{ position:fixed; z-index:1000; width:100%; left:0; top:0; font-size:.65rem; background-color:rgba(255,255,255,.6);}
+.headnav .logo{ padding:1em 0}
 .headnav .logo .lk{ line-height:1; display:inline-block; vertical-align:top; color:#000}
 .headnav .logo .lk:link,
 .headnav .logo .lk:active,
 .headnav .logo .lk:hover{ text-decoration:none;}
-.headnav .logo .iconfont{ font-size:2.5em; vertical-align:middle; margin-right:.3em}
-.headnav .logo .t{ display:none; font-size:2em; vertical-align:middle; text-transform:uppercase; letter-spacing:.08em}
-.headnav .option{ padding-top:1.375em; text-align:right}
-.headnav .option .iconfont,
-.headnav .option .t{ vertical-align:middle;}
-.headnav .option .iconfont{ margin-right:.5em}
-.headnav .option .t{ font-size:1.5em; text-transform:uppercase; letter-spacing:.08em}
+.headnav .logo .iconfont{ display:inline-block; font-size:2.5em; vertical-align:middle; margin-right:.4em}
+.headnav .logo .t{ display:none; font-size:3em; vertical-align:middle; text-transform:uppercase; letter-spacing:.08em}
+.headnav .option{ padding-top:1.375em; float:right;}
+.headnav .option ul{ margin:0; padding:0; list-style:none}
+.headnav .option .item{ float:left; padding-left:.5em}
+.headnav .option .item:first-child{ padding-left:0}
+.headnav .option .item .lk{ display:inline-block; font-size:1.5em; text-transform:uppercase; color:#000; text-decoration:none; letter-spacing:.08em}
 
 @media (min-width: 768px){
+	.headnav .logo .t{ display:inline-block;}
+	.headnav .option .item{ padding-left:2.5em}
 }
 @media (min-width: 1200px){
 }
