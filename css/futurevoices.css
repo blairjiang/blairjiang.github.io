@@ -1,20 +1,75 @@
 body{ background-color:#fff}
 .container{}
 
-.e_row_1{ background:url(../assets/images/grid1.png) right top no-repeat; background-size:cover;}
-.e_row_1 .c2{ margin-top:20px;}
+/*e_row_1*/
+
+.e_row_1{}
 @media (min-width: 768px){
 }
 @media (min-width: 1200px){
-	.e_row_1{ background-size:45%; background-position:70% top;
+	.e_row_1{
 		display:-webkit-flex;
 		display:flex;
 		-webkit-align-items:flex-end;
 		align-items:flex-end;
 	}
-	.e_row_1 .c2{ margin-top:0}
 }
 @media (min-width: 1600px){
+}
+
+.n_row_video{ background:url(../assets/images/grid1.png) right top no-repeat; background-size:100%;}
+.n_row_video .c2{ margin-top:20px;}
+@media (min-width: 768px){
+}
+@media (min-width: 1200px){
+	.n_row_video{ background-size:45%; background-position:70% top;}
+	.n_row_video .c2{ margin-top:0}
+}
+
+.n_row_tech{}
+.n_row_tech .c2 .txtcontent{ padding-bottom:0}
+
+@media (min-width: 1200px){
+	.n_row_tech{}
+	.n_row_tech .c2 .txtcontent .bd,
+	.n_row_tech .c2 .txtcontent .bd p:first-child{ margin-top:0}
+}
+
+/*n_row_ref*/
+.n_row_ref{}
+.n_row_ref .c2{ margin-top:20px}
+.n_row_ref .c2 .txtcontent{ padding-bottom:0}
+.n_row_ref .c4,
+.n_row_ref .c5,
+.n_row_ref .c6,
+.n_row_ref .c7{ margin-top:20px}
+
+@media (min-width: 1200px){
+	.n_row_ref .c2 .txtcontent .hd{ padding-top:60px}
+	.n_row_ref .c2 .txtcontent .bd,
+	.n_row_ref .c2 .txtcontent .bd p{ margin-top:0}
+	.n_row_ref .c3{ margin-top:20px}
+	.n_row_ref .c4{ margin-top:-20px}
+}
+
+/*e_row_2*/
+
+.e_row_2{ background:url(../assets/images/grid1.png) right top no-repeat; background-size:100%;}
+.e_row_2 .c3{ margin-top:20px}
+@media (min-width: 768px){
+}
+@media (min-width: 1200px){
+	.e_row_2 { background-size:45%;
+		display:-webkit-flex;
+		display:flex;
+	}
+	.e_row_2 .c2{
+		display:-webkit-flex;
+		display:flex;
+		-webkit-align-items:flex-end;
+		align-items:flex-end;
+	}
+	.e_row_2 .c3{ margin-top:0;}
 }
 
 .pic_sp1{}
@@ -31,8 +86,8 @@ body{ background-color:#fff}
 /*txtcontent*/
 .txtcontent{ font-size:.75rem; padding-bottom:1em}
 .txtcontent .hd{ font-size:1.125em; margin:0; text-transform:uppercase;}
-.txtcontent .hd:before{ content:''; display:inline-block; vertical-align:middle; width:5em; height:.125em; background-color:#000}
-.txtcontent .hd .t{ display:inline-block; vertical-align:middle; padding-left:1em}
+.txtcontent .hd:before{ content:''; display:inline-block; vertical-align:middle; width:3.5em; height:.125em; background-color:#000}
+.txtcontent .hd .t{ display:inline-block; vertical-align:middle; padding-left:.5em}
 .txtcontent h2{ margin:0; font-size:2em; text-transform:uppercase;}
 .txtcontent .bd{ margin-top:.5em}
 .txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify;}
@@ -62,7 +117,7 @@ body{ background-color:#fff}
 	background-color:#efefef;
 }
 #fv_intro .story{ position:relative; background:url(../assets/images/fv_banner.jpg) center bottom no-repeat; background-size:cover;}
-#fv_intro .container{ padding-top:4.875em; padding-bottom:2em}
+#fv_intro .container{ padding-top:6.875em; padding-bottom:2em}
 #fv_intro .banner{ font-size:.5rem;}
 #fv_intro .banner .pjlogoWrap{ display:none}
 #fv_intro .banner .pjlogo{ width:73%;}
@@ -95,19 +150,19 @@ body{ background-color:#fff}
 }
 
 
-/* #fv_second
-----------------------------------------------------------------*/
-#fv_second{ background-color:#efefef}
-
-/* #fv_third
-----------------------------------------------------------------*/
-#fv_third{ background:#efefef url(../assets/images/tribg.jpg) center top repeat; background-attachment:fixed;}
-
 /* #fv_fourth
 ----------------------------------------------------------------*/
-#fv_fourth{ background:#000 url(../assets/images/bgchild.jpg) center center no-repeat; background-size:cover; background-attachment:fixed;}
+#fv_fourth{ background-color:#efefef}
 
 /* #fv_fifth
 ----------------------------------------------------------------*/
-#fv_fifth{ background:#a3a3aa url(../assets/images/tribg.png)  center top repeat; background-attachment:fixed;}
+#fv_fifth .container{}
 
+/* #fv_fourth
+----------------------------------------------------------------*/
+/*#fv_fourth{ background:#000 url(../assets/images/bgchild.jpg) center center no-repeat; background-size:cover; background-attachment:fixed;}
+*/
+/* #fv_fifth
+----------------------------------------------------------------*/
+/*#fv_fifth{ background:#a3a3aa url(../assets/images/tribg.png)  center top repeat; background-attachment:fixed;}
+*/
