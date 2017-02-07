@@ -162,11 +162,15 @@ body{ background-color:#fff}
 ----------------------------------------------------------------*/
 #fv_fifth .container{}
 
-/* #fv_fourth
+/*fv_eightth
 ----------------------------------------------------------------*/
-/*#fv_fourth{ background:#000 url(../assets/images/bgchild.jpg) center center no-repeat; background-size:cover; background-attachment:fixed;}
-*/
-/* #fv_fifth
+#fv_eightth{ background:#e0e0e0 url(../assets/images/tribg.jpg)  center top repeat; background-attachment:fixed;}
+
+/* #twelveth
 ----------------------------------------------------------------*/
-/*#fv_fifth{ background:#a3a3aa url(../assets/images/tribg.png)  center top repeat; background-attachment:fixed;}
-*/
+#twelveth{ background:#000 url(../assets/images/bgchild.jpg) center center no-repeat; background-size:cover; background-attachment:fixed;}
+
+/* #thirteenth
+----------------------------------------------------------------*/
+#thirteenth{ background:#a3a3aa url(../assets/images/tribg.png)  center top repeat; background-attachment:fixed;}
+
