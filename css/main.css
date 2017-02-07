@@ -15,7 +15,7 @@
 .switcher_l:hover,
 .switcher_r:hover{ opacity:1}
 
-.page{ margin:0 auto;}
+.page{ margin:0 auto}
 
 /*sidenav*/
 .sidenav{ display:none; position:fixed; bottom:0; height:0; left:0; right:0; z-index:999;}
