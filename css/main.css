@@ -77,7 +77,7 @@
 
 /*headnav*/
 .headnav{ position:fixed; z-index:1000; width:100%; left:0; top:0; font-size:.75rem; background-color:rgba(255,255,255,.8);
-	-webkit-backdrop-filter:saturate(180%) blur(10px);
+	-webkit-backdrop-filter:saturate(180%) blur(3px);
 }
 .headnav .logo{ padding:1em 0}
 .headnav .logo .lk{ line-height:1; display:inline-block; vertical-align:top; color:#000}
@@ -133,7 +133,9 @@
 
 /*works*/
 .works{ padding-top:2%;
-	width:100%; overflow-x:scroll; overflow-y:hidden; -webkit-overflow-scrolling:touch;
+	width:100%; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch;
+	-webkit-scroll-snap-type: mandatory;
+	-webkit-scroll-snap-points-x:repeat(94.444%);
 }
 .works ul,
 .works li{ list-style:none}
