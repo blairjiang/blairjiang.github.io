@@ -133,9 +133,15 @@
 
 /*works*/
 .works{ padding-top:2%;
-	width:100%; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch;
+	width:100%; overflow-x:auto; overflow-y:hidden;
+	-webkit-overflow-scrolling:touch;
+	/*http://caniuse.com/#search=scroll*/
 	-webkit-scroll-snap-type: mandatory;
+	-ms-scroll-snap-type: mandatory;
+	scroll-snap-type: mandatory;
 	-webkit-scroll-snap-points-x:repeat(94.444%);
+	-ms-scroll-snap-points-x:repeat(94.444%);
+	scroll-snap-points-x:repeat(94.444%);
 }
 .works ul,
 .works li{ list-style:none}
