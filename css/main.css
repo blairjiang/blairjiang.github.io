@@ -142,6 +142,8 @@
 	-webkit-scroll-snap-points-x:repeat(94.444%);
 	-ms-scroll-snap-points-x:repeat(94.444%);
 	scroll-snap-points-x:repeat(94.444%);
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
 }
 .works ul,
 .works li{ list-style:none}
