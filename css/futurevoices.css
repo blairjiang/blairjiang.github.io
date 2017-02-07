@@ -1,4 +1,4 @@
-body{ background-color:#fff}
+body{ background-color:#fff; width:100%; overflow-x:hidden;}
 .container{}
 
 /*Fix Firefox 45.0.1*/
@@ -40,19 +40,24 @@ body{ background-color:#fff}
 
 /*n_row_ref*/
 .n_row_ref{}
-.n_row_ref .c2{ margin-top:20px}
+.n_row_ref .c2{ margin-top:1.25em}
 .n_row_ref .c2 .txtcontent{ padding-bottom:0}
 .n_row_ref .c4,
 .n_row_ref .c5,
 .n_row_ref .c6,
-.n_row_ref .c7{ margin-top:20px}
+.n_row_ref .c7{ margin-top:1.25em}
 
 @media (min-width: 1200px){
-	.n_row_ref .c2 .txtcontent .hd{ padding-top:60px}
+	.n_row_ref .c2 .txtcontent .hd{ padding-top:3.5em}
 	.n_row_ref .c2 .txtcontent .bd,
 	.n_row_ref .c2 .txtcontent .bd p{ margin-top:0}
-	.n_row_ref .c3{ margin-top:20px}
-	.n_row_ref .c4{ margin-top:-20px}
+	.n_row_ref .c3{ margin-top:1.25em}
+	.n_row_ref .c4{ margin-top:-1.25em}
+}
+
+@media (min-width: 1600px){
+	.n_row_ref .c2 .txtcontent .hd{ padding-top:2em}
+	.n_row_ref .c4{ margin-top:0}
 }
 
 /*e_row_2*/
@@ -73,6 +78,25 @@ body{ background-color:#fff}
 		align-items:flex-end;
 	}
 	.e_row_2 .c3{ margin-top:0;}
+}
+
+/*e_row_3*/
+.e_row_3 .c1{
+	border-width:34px 24px;
+	border-image:url(../assets/images/sqshadow.png) 34 24 stretch;
+	border-style:solid;
+}
+@media (min-width: 1200px){
+	.e_row_3{ margin-left:-34px; margin-right:-24px; max-width:calc(100% + 44px)}
+	.e_row_3 .c1{
+		border-width:34px 24px 34px 0;
+	}
+	.e_row_3 .c2{
+		margin:-34px 0 -34px -24px;
+		border-width:34px 0 34px 24px;
+		border-image:url(../assets/images/sqshadow.png) 34 24 stretch;
+		border-style:solid;
+	}
 }
 
 .pic_sp1{}
@@ -107,7 +131,7 @@ body{ background-color:#fff}
 }
 
 .e_txtcontent_1{ padding:1.5em 2em; border:#000 .3em solid;}
-
+.n_txtcontent_big h2{ font-size:3em}
 
 /*videoWrap1*/
 .videoWrap1{ position:relative; background-color:#000}
