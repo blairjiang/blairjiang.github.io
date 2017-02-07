@@ -5,8 +5,8 @@ body{ background-color:#343434}
 }
 #enc_intro .story{ position:relative; font-size:.75rem; padding-top:4.875em}
 
-#enc_intro header{ text-align:center; padding-bottom:15%; line-height:1.2;}
-#enc_intro header .title{ font-size:4.5em; color:#000; text-transform:uppercase;}
+#enc_intro header{ text-align:center; padding-bottom:15%; line-height:1.2; font-size:.75rem}
+#enc_intro header .title{ font-size:4.5em; color:#000; text-transform:uppercase; margin:0; padding:.5em 0 .25em;}
 #enc_intro header .desc{ font-size:2em; color:#fff; text-transform:uppercase;}
 #enc_intro header .desc span{ background-color:#000; padding:0 .5em;}
 #enc_intro header .time,
@@ -42,14 +42,14 @@ body{ background-color:#343434}
 	#enc_intro{	background-size:contain; background-position:center bottom}
 
 	#enc_intro .story{ font-size:.875rem;}
-	#enc_intro header .desc{ font-size:2.5em;}
+	#enc_intro header .desc{ font-size:3em;}
 	#enc_intro header{}
 }
 
 @media (min-width: 1600px){
 
 	#enc_intro .story{ font-size:1rem;}
-	#enc_intro header .desc{ font-size:3em;}
+	#enc_intro header{ font-size:1rem}
 	#enc_intro header{}
 	
 }
