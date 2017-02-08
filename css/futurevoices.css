@@ -1,4 +1,4 @@
-body{ background-color:#fff; width:100%; overflow-x:hidden;}
+body{ background-color:#fff;}
 .container{}
 
 /*Fix Firefox 45.0.1*/
@@ -99,6 +99,44 @@ body{ background-color:#fff; width:100%; overflow-x:hidden;}
 	}
 }
 
+/*e_row_4*/
+.e_row_4{ padding:1.25em 0;}
+.e_row_4 .c4{ margin-top:1.25em}
+@media (min-width: 1200px){
+	.e_row_4{ padding:3.75em 0;}
+	.e_row_4 .c3{ position:relative; top:5em}
+	.e_row_4 .c4{ margin-top:0}
+}
+
+/*e_row_5*/
+.e_row_5 .c1{
+	border-width:34px 24px;
+	border-image:url(../assets/images/sqshadow.png) 34 24 stretch;
+	border-style:solid;
+}
+.e_row_5 .c2{ padding:1.25em 10px;
+	background-color:#efefef;
+}
+@media (min-width: 1200px){
+	.e_row_5{ margin-left:-34px; margin-right:-34px; max-width:calc(100% + 68px)}
+	.e_row_5 .c2{ padding:1.25em 0;}
+}
+
+/*e_row_6*/
+.n_row_concepts img{ width:100%;}
+.n_row_concepts .c2{ margin-top:20px}
+.n_row_concepts .c3{ margin-bottom:20px}
+@media (min-width: 1200px){
+	.n_row_concepts{ padding-bottom:20px}
+	.n_row_concepts .c1,
+	.n_row_concepts .c2{ min-width:calc(33.33333333% + 50px)}
+	.n_row_concepts .c2{ position:relative; top:20px; margin-top:0}
+	.n_row_concepts .c3{ position:absolute; max-width:calc(100% - 20px); margin-bottom:0}
+}
+@media (min-width: 1600px){
+	.n_row_concepts .c2{ min-width:calc(37.5%)}
+}
+
 .pic_sp1{}
 
 @media (min-width: 768px){
@@ -117,7 +155,7 @@ body{ background-color:#fff; width:100%; overflow-x:hidden;}
 .txtcontent .hd .t{ display:inline-block; vertical-align:middle; padding-left:.5em}
 .txtcontent h2{ margin:0; font-size:2em; text-transform:uppercase;}
 .txtcontent .bd{ margin-top:.5em}
-.txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify;}
+.txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify; line-height:1.45}
 .txtcontent .bd p strong{ font-weight:normal}
 
 @media (min-width: 768px){
@@ -128,9 +166,11 @@ body{ background-color:#fff; width:100%; overflow-x:hidden;}
 }
 @media (min-width: 1600px){
 	.txtcontent{ font-size:1rem}
+	.txtcontent .bd p{ line-height:2}
 }
 
-.e_txtcontent_1{ padding:1.5em 2em; border:#000 .3em solid;}
+.e_txtcontent_1{ padding:1.2em 2em; border:#000 .3em solid;}
+.e_txtcontent_2{ padding:1.2em 2em; border:#4848ff .3em solid;}
 .n_txtcontent_big h2{ font-size:3em}
 
 /*videoWrap1*/
@@ -189,6 +229,8 @@ body{ background-color:#fff; width:100%; overflow-x:hidden;}
 /* #fv_sixth
 ----------------------------------------------------------------*/
 #fv_sixth .container{}
+
+#fv_sixpointseventh .story{ width:100%; overflow:hidden;}
 
 /*fv_eightth
 ----------------------------------------------------------------*/
