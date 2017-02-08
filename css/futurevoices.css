@@ -192,13 +192,18 @@ body{ background-color:#fff; width:100%; overflow-x:hidden;}
 
 /*fv_eightth
 ----------------------------------------------------------------*/
-#fv_eightth{ background:#e0e0e0 url(../assets/images/tribg.jpg)  center top repeat; background-attachment:fixed;}
+#fv_eightth{ background:#e0e0e0 url(../assets/images/tribg.jpg)  center top repeat;}
 
 /* #twelveth
 ----------------------------------------------------------------*/
-#twelveth{ background:#000 url(../assets/images/bgchild.jpg) center center no-repeat; background-size:cover; background-attachment:fixed;}
+#twelveth{ background:#fff url(../assets/images/bgchild.jpg) center center no-repeat; background-size:cover;}
 
 /* #thirteenth
 ----------------------------------------------------------------*/
-#thirteenth{ background:#a3a3aa url(../assets/images/tribg.png)  center top repeat; background-attachment:fixed;}
+#thirteenth{ background:#a3a3aa url(../assets/images/tribg.png)  center top repeat;}
 
+@media (min-width: 1200px){
+	#fv_eightth,
+	#twelveth,
+	#thirteenth{ background-attachment:fixed;}
+}

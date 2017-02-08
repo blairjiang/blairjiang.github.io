@@ -112,8 +112,10 @@
 	background-image:url(../assets/images/port.png),url(../assets/images/fo.png),url(../assets/images/lio.png);
 	background-position:right 10%,left 30%,40% 60%;
 	background-repeat:no-repeat;
-	background-attachment:fixed;
 	background-size:48%,22%,40%;
+}
+@media (min-width: 1200px){
+	#index_intro{ background-attachment:fixed;}
 }
 #index_intro .story{ padding-bottom:1%; padding-top:3%}
 #index_intro .container{}
@@ -222,10 +224,13 @@
 	background-color:#141617;
 	background-position:13% 0,19.5% 0,center 0;
 	background-repeat:no-repeat;
-	background-attachment:fixed;
 	background-size:11%,50%,cover;
 }
 #index_second .story{ padding-top:1%; padding-bottom:4%}
+
+@media (min-width: 1200px){
+	#index_second{ background-attachment:fixed;}
+}
 
 /*abouttxt*/
 .abouttxt{ font-size:.875rem; color:#fff;}
@@ -240,10 +245,13 @@
 	background-color:#f6f8fa;
 	background-position:11% 0,right bottom;
 	background-repeat:no-repeat;
-	background-attachment:fixed;
 	background-size:25%,63%;
 }
 #index_third .story{}
+
+@media (min-width: 1200px){
+	#index_third{ background-attachment:fixed;}
+}
 
 /*contacttxt*/
 .contacttxt{ font-size:.875rem; padding-top:1em; padding-bottom:2em}
