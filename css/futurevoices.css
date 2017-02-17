@@ -187,6 +187,8 @@ body{ background-color:#fff;}
 
 .e_txtcontent_1{ padding:1.2em 2em; border:#000 .3em solid;}
 .e_txtcontent_2{ padding:1.2em 2em; border:#4848ff .3em solid;}
+.e_txtcontent_3{ color:#fff}
+.e_txtcontent_3 .hd:before{ background-color:#fff}
 .n_txtcontent_big h2{ font-size:3em}
 
 /*videoWrap1*/
