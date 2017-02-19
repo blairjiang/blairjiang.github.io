@@ -136,9 +136,9 @@
     "@grid-float-breakpoint-max": "(@grid-float-breakpoint - 1)",
     "@container-tablet": "(670px + @grid-gutter-width)",
     "@container-sm": "@container-tablet",
-    "@container-desktop": "(1060px + @grid-gutter-width)",
+    "@container-desktop": "(1160px + @grid-gutter-width)",
     "@container-md": "@container-desktop",
-    "@container-large-desktop": "(1420px + @grid-gutter-width)",
+    "@container-large-desktop": "(1520px + @grid-gutter-width)",
     "@container-lg": "@container-large-desktop",
     "@navbar-height": "50px",
     "@navbar-margin-bottom": "@line-height-computed",
@@ -395,5 +395,5 @@
   "js": [
     "carousel.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=6e85e942a66b0996f5cef18363524730"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=44bd3ff5a4de2a0f8d755ebc42d45bc7"
 }
