@@ -1,4 +1,5 @@
 body{ background-color:#fff;}
+img{ width:100%}
 .container{}
 
 /*Fix Firefox 45.0.1*/
@@ -7,6 +8,7 @@ body{ background-color:#fff;}
 /*e_row_1*/
 
 .e_row_1{}
+.e_row_1 img{ width:100%}
 @media (min-width: 768px){
 }
 @media (min-width: 1200px){
@@ -32,10 +34,37 @@ body{ background-color:#fff;}
 .n_row_tech{}
 .n_row_tech .c2 .txtcontent{ padding-bottom:0}
 
+.n_row_curr{ position:relative;}
+.n_row_curr .c2 .txtcontent{ padding-bottom:0}
+.n_row_curr .picWrap{ clear:both; padding-top:20px}
+
 @media (min-width: 1200px){
 	.n_row_tech{}
 	.n_row_tech .c2 .txtcontent .bd,
 	.n_row_tech .c2 .txtcontent .bd p:first-child{ margin-top:0}
+
+	.n_row_curr .c2 .txtcontent .bd,
+	.n_row_curr .c2 .txtcontent .bd p:first-child{ margin-top:0}
+	.n_row_curr .c1 .txtcontent{ text-align:right;}
+	.n_row_curr .c2 .txtcontent p{ height:26em;
+		-webkit-column-count:2;
+		-moz-column-count:2;
+		column-count:2;
+		-webkit-column-gap:20px;
+		-moz-column-gap:20px;
+		column-gap:20px;
+		-webkit-column-fill:auto;
+		-moz-column-fill:auto;
+		column-fill:auto;
+	}
+	.n_row_curr .picWrap{ position:absolute; z-index:1; top:4.75em; right:0; width:49%}
+	.n_row_curr .picWrap .item1{ float:left; margin-right:20px}
+	.n_row_curr .picWrap .item2{ overflow:hidden;}
+
+	.n_row_curr2 .c2{ margin-top:-7em}
+}
+@media (min-width: 1600px){
+	.n_row_curr .c2 .txtcontent p{ height:30em;}
 }
 
 /*n_row_ref*/
@@ -63,6 +92,7 @@ body{ background-color:#fff;}
 /*e_row_2*/
 
 .e_row_2{ background:url(../assets/images/grid1.png) right top no-repeat; background-size:100%;}
+.e_row_2 img{ width:100%}
 .e_row_2 .c3{ margin-top:20px}
 @media (min-width: 768px){
 }
@@ -131,7 +161,7 @@ body{ background-color:#fff;}
 	.n_row_concepts .c1,
 	.n_row_concepts .c2{ min-width:calc(33.33333333% + 50px)}
 	.n_row_concepts .c2{ position:relative; top:20px; margin-top:0}
-	.n_row_concepts .c3{ position:absolute; max-width:calc(100% - 20px); margin-bottom:0}
+	.n_row_concepts .c3{ position:absolute; width:100%; max-width:calc(100% - 20px); margin-bottom:0}
 }
 @media (min-width: 1600px){
 	.n_row_concepts .c2{ min-width:calc(37.5%)}
@@ -147,7 +177,7 @@ body{ background-color:#fff;}
 	.n_row_concepts2 .c1 .txtcontent .bd p{ margin-top:0}
 	.n_row_concepts2 .c2,
 	.n_row_concepts2 .c3{ min-width:calc(33.33333333% + 45px)}
-	.n_row_concepts2 .c3{ position:absolute; max-width:calc(100% - 20px); margin-bottom:0}
+	.n_row_concepts2 .c3{ position:absolute; width:100%; max-width:calc(100% - 20px); margin-bottom:0}
 }
 @media (min-width: 1600px){
 	.n_row_concepts2 .c2{ min-width:calc(37.5%)}
@@ -261,6 +291,10 @@ body{ background-color:#fff;}
 /* #thirteenth
 ----------------------------------------------------------------*/
 #thirteenth{ background:#a3a3aa url(../assets/images/tribg.png)  center top repeat;}
+
+/* #fourteenth
+----------------------------------------------------------------*/
+#fourteenth img{ width:100%}
 
 @media (min-width: 1200px){
 	#fv_eightth,
