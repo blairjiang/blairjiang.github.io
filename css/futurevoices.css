@@ -188,10 +188,10 @@ img{ width:100%}
 @media (min-width: 768px){
 }
 @media (min-width: 1200px){
-	.pic_sp1{ position:relative; top:-6.6em}
+	.pic_sp1{ position:relative; top:-7.1em}
 }
 @media (min-width: 1600px){
-	.pic_sp1{ top:-8.5em}
+	.pic_sp1{ top:-8.9em}
 }
 
 /*txtcontent*/
@@ -259,9 +259,9 @@ img{ width:100%}
 	#fv_intro .banner .desc2 .t{ font-size:3em}
 }
 @media (min-width: 1200px){
-	#fv_intro .story{ background-size:contain;}
 }
 @media (min-width: 1600px){
+	#fv_intro .story{ background-size:contain;}
 	#fv_intro .banner{ font-size:1rem;}
 }
 
