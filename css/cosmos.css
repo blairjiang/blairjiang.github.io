@@ -33,7 +33,7 @@ body{ background-color:#000;}
 
 /* co_second
 ----------------------------------------------------------------*/
-#co_second{ position:relative; z-index:1; background-color:#2fc18f}
+#co_second{ position:relative; margin-top:-20px; z-index:1; background-color:#2fc18f}
 #co_second .bg_skew1,
 #co_second .bg_skew2{ position:absolute; left:0; top:0; background-color:#2fc18f; height:100%; width:100%;}
 #co_second .bg_skew1{
