@@ -297,7 +297,7 @@ img{ width:100%}
 #fourteenth img{ width:100%}
 
 @media (min-width: 1200px){
-	#fv_eightth,
-	#twelveth,
-	#thirteenth{ background-attachment:fixed;}
+	.unmobile #fv_eightth,
+	.unmobile #twelveth,
+	.unmobile #thirteenth{ background-attachment:fixed;}
 }

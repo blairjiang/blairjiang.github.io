@@ -115,7 +115,7 @@
 	background-size:48%,22%,40%;
 }
 @media (min-width: 1200px){
-	#index_intro{ background-attachment:fixed;}
+	.unmobile #index_intro{ background-attachment:fixed;}
 }
 #index_intro .story{ padding-bottom:1%; padding-top:3%}
 #index_intro .container{}
@@ -229,7 +229,7 @@
 #index_second .story{ padding-top:1%; padding-bottom:4%}
 
 @media (min-width: 1200px){
-	#index_second{ background-attachment:fixed;}
+	.unmobile #index_second{ background-attachment:fixed;}
 }
 
 /*abouttxt*/
@@ -250,7 +250,7 @@
 #index_third .story{}
 
 @media (min-width: 1200px){
-	#index_third{ background-attachment:fixed;}
+	.unmobile #index_third{ background-attachment:fixed;}
 }
 
 /*contacttxt*/
