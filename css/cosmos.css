@@ -1,4 +1,5 @@
 body{ background-color:#000;}
+.container-fluid{ width:100%; overflow-x:hidden;}
 
 .txtcontent{ font-size:.875rem;}
 .txtcontent h2{ margin:0; padding:1.5em 0 .5em; font-size:2em}
