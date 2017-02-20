@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=44bd3ff5a4de2a0f8d755ebc42d45bc7)
- * Config saved to config.json and https://gist.github.com/44bd3ff5a4de2a0f8d755ebc42d45bc7
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=9077abc296a940391b2c86dbc5c51a72)
+ * Config saved to config.json and https://gist.github.com/9077abc296a940391b2c86dbc5c51a72
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -793,9 +793,9 @@ pre code {
     width: 690px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .container {
-    width: 1180px;
+    width: 1000px;
   }
 }
 @media (min-width: 1600px) {
@@ -1133,7 +1133,7 @@ pre code {
     margin-left: 0%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -2994,7 +2994,7 @@ input[type="button"].btn-block {
     display: inline-block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .visible-sm {
     display: block !important;
   }
@@ -3009,22 +3009,22 @@ input[type="button"].btn-block {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .visible-sm-block {
     display: block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .visible-sm-inline {
     display: inline !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .visible-sm-inline-block {
     display: inline-block !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1599px) {
+@media (min-width: 1000px) and (max-width: 1599px) {
   .visible-md {
     display: block !important;
   }
@@ -3039,17 +3039,17 @@ input[type="button"].btn-block {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1599px) {
+@media (min-width: 1000px) and (max-width: 1599px) {
   .visible-md-block {
     display: block !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1599px) {
+@media (min-width: 1000px) and (max-width: 1599px) {
   .visible-md-inline {
     display: inline !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1599px) {
+@media (min-width: 1000px) and (max-width: 1599px) {
   .visible-md-inline-block {
     display: inline-block !important;
   }
@@ -3089,12 +3089,12 @@ input[type="button"].btn-block {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .hidden-sm {
     display: none !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1599px) {
+@media (min-width: 1000px) and (max-width: 1599px) {
   .hidden-md {
     display: none !important;
   }

@@ -100,7 +100,7 @@
 	.headnav .option .item .lk{ font-size:1.5em;}
 	.headnav .option .item .lk:hover{ color:#ff5151}
 }
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 }
 @media (min-width: 1600px){
 	.headnav{ font-size:1rem}
@@ -114,7 +114,7 @@
 	background-repeat:no-repeat;
 	background-size:48%,22%,40%;
 }
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 	.unmobile #index_intro{ background-attachment:fixed;}
 }
 #index_intro .story{ padding-bottom:1%; padding-top:3%}
@@ -215,6 +215,7 @@
 .works .item .lk:hover ~ .desc time{
 	transform:translateX(0);
 }
+.roll{ width:850%}
 
 /* #index_second
 ----------------------------------------------------------------*/
@@ -228,7 +229,7 @@
 }
 #index_second .story{ padding-top:1%; padding-bottom:4%}
 
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 	.unmobile #index_second{ background-attachment:fixed;}
 }
 
@@ -249,7 +250,7 @@
 }
 #index_third .story{}
 
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 	.unmobile #index_third{ background-attachment:fixed;}
 }
 
@@ -317,6 +318,8 @@
 	.works .guideWrap{ display:block;}
 	.works .item{ padding:0.7%;}
 
+	.roll{ width:100%}
+
 	/*abouttxt*/
 	.abouttxt{ font-size:1rem;}
 
@@ -328,7 +331,7 @@
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 
 	.switcher_l,
 	.switcher_r{ font-size:.875rem;}
@@ -378,8 +381,4 @@
 
 	.pagefoot{ font-size:1rem;}
 	
-}
-@media (max-width: 768px){
-
-	.roll{ width:850%}
 }

@@ -53,7 +53,7 @@ body{ background-color:#000;}
 ----------------------------------------------------------------*/
 #co_fourth{ padding:3.75em 0; background:#191721}
 
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 	.n_row_sen .c2{ padding-top:50px;}
 	.n_row_sen .c3{ z-index:1}
 	.n_row_sen .c4{ margin-top:-5em}
@@ -67,7 +67,7 @@ body{ background-color:#000;}
 	#co_intro .desc2 br{ display:inline;}
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 	#co_intro .desc1{ font-size:1.5em}
 	#co_intro .desc2{ font-size:2em;}
 }

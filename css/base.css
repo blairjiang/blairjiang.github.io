@@ -2,8 +2,11 @@
 ----------------------------------------------------------------*/
 
 html{ font-size:100%}
-@media screen and (min-width:1200px){
-  html{ font-size:1.09rem}
+@media screen and (min-width:1000px){
+  html{ font-size:.91rem}
+}
+@media screen and (min-width:1600px){
+  html{ font-size:1.06rem}
 }
 body{ line-height:1.7}
 input,textarea,select,button{ outline: none; resize:none; font:16px/1.7 Helvetica,Arial,sans-serif;}
@@ -310,7 +313,7 @@ body .pl0{ padding-left:0!important}
   .btn2:hover{ font-size:.85em; }
   
 }
-@media screen and (min-width:1200px){
+@media screen and (min-width:1000px){
   
 }
 @media screen and (min-width:1600px){

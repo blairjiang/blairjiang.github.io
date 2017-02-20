@@ -121,7 +121,7 @@
     "@screen-sm": "768px",
     "@screen-sm-min": "@screen-sm",
     "@screen-tablet": "@screen-sm-min",
-    "@screen-md": "1200px",
+    "@screen-md": "1000px",
     "@screen-md-min": "@screen-md",
     "@screen-desktop": "@screen-md-min",
     "@screen-lg": "1600px",
@@ -136,7 +136,7 @@
     "@grid-float-breakpoint-max": "(@grid-float-breakpoint - 1)",
     "@container-tablet": "(670px + @grid-gutter-width)",
     "@container-sm": "@container-tablet",
-    "@container-desktop": "(1160px + @grid-gutter-width)",
+    "@container-desktop": "(980px + @grid-gutter-width)",
     "@container-md": "@container-desktop",
     "@container-large-desktop": "(1520px + @grid-gutter-width)",
     "@container-lg": "@container-large-desktop",
@@ -395,5 +395,5 @@
   "js": [
     "carousel.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=44bd3ff5a4de2a0f8d755ebc42d45bc7"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=9077abc296a940391b2c86dbc5c51a72"
 }

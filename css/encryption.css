@@ -37,7 +37,7 @@ body{ background-color:#343434}
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1000px){
 
 	#enc_intro{	background-size:contain; background-position:center bottom}
 
