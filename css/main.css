@@ -318,7 +318,7 @@
 	.works .guideWrap{ display:block;}
 	.works .item{ padding:0.7%;}
 
-	.roll{ width:100%}
+	.roll{ width:690px}
 
 	/*abouttxt*/
 	.abouttxt{ font-size:1rem;}
@@ -349,6 +349,8 @@
 
 	#index_third .story{ padding:10% 0}
 
+	.roll{ width:980px}
+
 	/*abouttxt*/
 	.abouttxt{ padding:10% 0 20%;}
 	
@@ -376,6 +378,8 @@
 	/*works*/
 	.works .guide{ font-size:1rem;}
 	.works .item .e_desc_1{ font-size:1rem;}
+
+	.roll{ width:1540px}
 
 	.contacttxt p{ font-size:1em;}
 
