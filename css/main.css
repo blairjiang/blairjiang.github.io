@@ -166,14 +166,14 @@
 .works .item .inner{ position:relative;}
 .works .item .pic{ position:relative; overflow:hidden;}
 .works .item .pic img{ width:100%}
-.works .item .pic p{ width:200%; min-height:8em; margin:0 0 0 -100%;
+.works .item .pic p{ width:200%; min-height:5em; margin:0 0 0 -100%;
 	background-image: repeating-linear-gradient(45deg, transparent, transparent 1.5rem, #edf2f5 1.5rem, #edf2f5 3rem);
 	animation:bgbar .5s linear infinite;
 	animation-fill-mode:both;
 }
 @keyframes bgbar{
 	0%{ background-position:0 0}
-	100%{ background-position:8rem 0}
+	100%{ background-position:4rem 0}
 }
 .works .item .lk{ position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; text-indent:-9999em;}
 .works .selected .lk + .pic p,
