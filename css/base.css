@@ -3,13 +3,13 @@
 
 html{ font-size:100%}
 @media screen and (min-width:1000px){
-  html{ font-size:.91rem}
+  html{ font-size:1rem}
 }
 @media screen and (min-width:1600px){
-  html{ font-size:1.06rem}
+  html{ font-size:1.25rem}
 }
-body{ line-height:1.7}
-input,textarea,select,button{ outline: none; resize:none; font:16px/1.7 Helvetica,Arial,sans-serif;}
+body{ line-height:1.5}
+input,textarea,select,button{ outline: none; resize:none; font:16px/1.5 Helvetica,Arial,sans-serif;}
 a{ text-decoration: none; outline: none; cursor: pointer;}
 a:link,label,body{ -webkit-focus-ring-color:transparent;}
 a:hover{ text-decoration:none;}

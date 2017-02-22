@@ -39,12 +39,12 @@ body{ background-color:#000;}
 #co_intro .container-fluid{ padding-top:7.5em}
 #co_intro .desc1{ margin-bottom:0; color:#ffab18; font-size:1.25em}
 
-.selfIntro{ margin:0 auto; font-size:.875em}
+.selfIntro{ margin:0 auto; font-size:1rem}
 .selfIntro ul,
 .selfIntro li{ list-style:none; padding:0; margin:0;}
 .selfIntro .item{ color:#fff;}
 
-#co_intro .desc2{ margin-top:1.5em; font-size:1.5em; line-height:1.2em; color:#27b47f}
+#co_intro .desc2{ margin-top:1.5em; font-size:2rem; line-height:1.2em; color:#27b47f}
 #co_intro .desc2 br{ display:none;}
 
 .videoWrap{ position:relative; z-index:2;
@@ -159,8 +159,6 @@ body{ background-color:#000;}
 }
 
 @media (min-width: 1600px){
-	#co_intro .desc1{ font-size:1.5em}
-	#co_intro .desc2{ font-size:2em;}
 	.selfIntro{ font-size:1rem;}
 	.para_tar{ font-size:2em;}
 	#co_seven{ padding-bottom:12em}

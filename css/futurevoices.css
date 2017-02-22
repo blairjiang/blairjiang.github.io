@@ -46,7 +46,7 @@ img{ width:100%}
 	.n_row_curr .c2 .txtcontent .bd,
 	.n_row_curr .c2 .txtcontent .bd p:first-child{ margin-top:0}
 	.n_row_curr .c1 .txtcontent{ text-align:right;}
-	.n_row_curr .c2 .txtcontent p{ height:26em;
+	.n_row_curr .c2 .txtcontent p{ height:32em;
 		-webkit-column-count:2;
 		-moz-column-count:2;
 		column-count:2;
@@ -61,10 +61,10 @@ img{ width:100%}
 	.n_row_curr .picWrap .item1{ float:left; margin-right:20px}
 	.n_row_curr .picWrap .item2{ overflow:hidden;}
 
-	.n_row_curr2 .c2{ margin-top:-7em}
+	.n_row_curr2 .c2{ margin-top:-10em}
 }
 @media (min-width: 1600px){
-	.n_row_curr .c2 .txtcontent p{ height:30em;}
+	.n_row_curr .c2 .txtcontent p{ height:28em;}
 }
 
 /*n_row_ref*/
@@ -197,11 +197,11 @@ img{ width:100%}
 /*txtcontent*/
 .txtcontent{ font-size:1rem; padding-bottom:1em}
 .txtcontent .hd{ font-size:1.125em; margin:0; text-transform:uppercase;}
-.txtcontent .hd:before{ content:''; display:inline-block; vertical-align:middle; width:3.5em; height:.125em; background-color:#000}
+.txtcontent .hd:before{ content:''; display:inline-block; vertical-align:middle; width:3em; height:.125em; background-color:#000}
 .txtcontent .hd .t{ display:inline-block; vertical-align:middle; padding-left:.5em}
-.txtcontent h2{ margin:0; font-size:1.75em; text-transform:uppercase;}
+.txtcontent h2{ margin:0; font-size:1.6em; text-transform:uppercase;}
 .txtcontent .bd{ margin-top:.5em}
-.txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify; line-height:1.2}
+.txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify; line-height:1.5em; font-size:.78rem}
 .txtcontent .bd p strong{ font-weight:normal}
 
 @media (min-width: 768px){
@@ -212,11 +212,11 @@ img{ width:100%}
 }
 @media (min-width: 1600px){
 	.txtcontent h2{ font-size:2em}
-	.txtcontent .bd p{ line-height:2}
+	.txtcontent .bd p{ font-size:1rem}
 }
 
-.e_txtcontent_1{ padding:1.2em 1.5em; border:#000 .3em solid;}
-.e_txtcontent_2{ padding:1.2em 2.2em; border:#4848ff .3em solid;}
+.e_txtcontent_1{ padding:1.2em; border:#000 .3em solid;}
+.e_txtcontent_2{ padding:1.2em; border:#4848ff .3em solid;}
 .e_txtcontent_3{ color:#fff}
 .e_txtcontent_3 .hd:before{ background-color:#fff}
 .n_txtcontent_big h2{ font-size:2.5em}
@@ -239,19 +239,19 @@ img{ width:100%}
 }
 #fv_intro .story{ position:relative; background:url(../assets/images/fv_banner.jpg) center bottom no-repeat; background-size:cover;}
 #fv_intro .container{ padding-top:6.875em; padding-bottom:2em}
-#fv_intro .banner{ font-size:.75rem;}
+#fv_intro .banner{ font-size:1rem;}
 #fv_intro .banner .pjlogoWrap{ display:none}
 #fv_intro .banner .pjlogo{ width:73%;}
-#fv_intro .banner .title{ margin:0; font-size:4.5em;}
+#fv_intro .banner .title{ margin:0; font-size:3.75em;}
 #fv_intro .banner p{ margin:0; line-height:1}
 #fv_intro .banner .desc1{ margin-top:.75em;}
-#fv_intro .banner .desc1 .t{ font-size:2em; line-height:1.5em; margin-top:.375em; background:rgba(255,255,255,.8); word-wrap:break-word;}
+#fv_intro .banner .desc1 .t{ font-size:2.25em; line-height:1.5em; margin-top:.375em; background:rgba(255,255,255,.8); word-wrap:break-word;}
 #fv_intro .banner .desc1 .t:first-child{ margin-top:0;}
 #fv_intro .banner .desc2{ margin-top:1em}
-#fv_intro .banner .desc2 .t{ display:inline-block; font-size:2em; line-height:1.25}
+#fv_intro .banner .desc2 .t{ display:inline-block; font-size:2.25em; line-height:1.25em}
 #fv_intro .banner .selfIntro{ margin-top:1em}
 #fv_intro .banner .selfIntro ul{ padding-left:0; list-style:none; margin:0;}
-#fv_intro .banner .selfIntro .item{ font-size:1.25em}
+#fv_intro .banner .selfIntro .item{ font-size:1em}
 
 @media (min-width: 768px){
 	#fv_intro .container{ padding-top:7.5em;}
@@ -261,8 +261,7 @@ img{ width:100%}
 	#fv_intro .banner .desc1,
 	#fv_intro .banner .desc2,
 	#fv_intro .banner .selfIntro{ margin-left:-2.25em}
-	#fv_intro .banner .desc1 .t{ padding:0 .375em; font-size:3em}
-	#fv_intro .banner .desc2 .t{ font-size:3em}
+	#fv_intro .banner .desc1 .t{ padding:0 .375em;}
 }
 @media (min-width: 1000px){
 }
