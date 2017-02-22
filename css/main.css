@@ -17,6 +17,10 @@
 
 .page{ margin:0 auto}
 
+.navfoot{ background:#efefef;}
+.navfoot .works{ padding-top:0; padding-bottom:20px}
+.navfoot .item{ margin-top:20px}
+
 /*sidenav*/
 .sidenav{ display:none; position:fixed; bottom:0; height:0; left:0; right:0; z-index:999;}
 #nav,
@@ -135,13 +139,18 @@
 
 /*works*/
 .works{ padding-top:2%;
-	width:100%; overflow-x:auto; overflow-y:hidden;
-	-webkit-overflow-scrolling:touch;
+
+	/*for carousel*/
+	/*width:100%; overflow-x:auto; overflow-y:hidden;
+	-webkit-overflow-scrolling:touch;*/
 }
 .works ul,
 .works li{ list-style:none}
 .works ul{ padding-left:0; margin-bottom:0;
-	float:left; width:33.3%;
+	
+	/*for carousel*/
+	/*float:left;*/
+	/*width:33.3%;*/
 }
 
 /*guide*/
@@ -162,7 +171,7 @@
 .works .guide .device{ position:absolute; left:50%; top:7.3em; width:2.8em; margin-left:-1.4em; text-align:center;}
 .works .guide .device .iconfont{ font-size:2.8em;}
 
-.works .item{ padding:0.9%;}
+.works li.item{ padding:0.9%;}
 .works .item .inner{ position:relative;}
 .works .item .pic{ position:relative; overflow:hidden;}
 .works .item .pic img{ width:100%}
@@ -170,10 +179,6 @@
 	background-image: repeating-linear-gradient(45deg, transparent, transparent 1.5rem, #edf2f5 1.5rem, #edf2f5 3rem);
 	animation:bgbar .5s linear infinite;
 	animation-fill-mode:both;
-}
-@keyframes bgbar{
-	0%{ background-position:0 0}
-	100%{ background-position:4rem 0}
 }
 .works .item .lk{ position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; text-indent:-9999em;}
 .works .selected .lk + .pic p,
@@ -196,6 +201,7 @@
 
 .works .item .e_desc_1{ font-size:1rem;}
 .works .item .e_desc_1 dt{ width:100%;}
+.works .item .n_desc_foot{ font-size:.75rem}
 
 .works .item .desc dt,
 .works .item .desc dd .c1,
@@ -223,7 +229,9 @@
 .works .item .lk:hover ~ .desc time{
 	transform:translateX(0);
 }
-.roll{ width:850%}
+
+/* for carousel */
+/*.roll{ width:850%}*/
 
 /* #index_second
 ----------------------------------------------------------------*/
@@ -271,15 +279,15 @@
 .contactlist li{ padding-left:0; list-style:none}
 .contactlist{ font-size:.875rem; margin-bottom:0; padding-top:1em; letter-spacing:.08em}
 .contactlist strong{ font-weight:100; text-transform:uppercase;}
-.contactlist .item{ position:relative; padding-left:2.5em; margin-top:1em}
+.contactlist .item{ position:relative; padding-left:2.5rem; margin-top:1em}
 .contactlist .item:first-child{ margin-top:0}
-.contactlist .item:before{ position:absolute; left:0; font-size:1.25em; padding-top:.5rem; font-family: 'icomoon';
+.contactlist .item:before{ position:absolute; left:0; width:2.5rem; line-height: 2.5rem; text-align:center; font-size:1.25em; padding-top:.5rem; font-family: 'icomoon';
 	transform:scale(.7);
-	transform-origin:center 0;
+	transform-origin:0 0;
 }
-.contactlist .e_contact_mobile:before{ content:'\e902'; font-size:2em}
-.contactlist .e_contact_email:before{ content:'\e901'; font-size:.954em}
-.contactlist .e_contact_wechat:before{ content:'\e905'; font-size:1.236em}
+.contactlist .e_contact_mobile:before{ content:'\e902'; font-size:1.75em}
+.contactlist .e_contact_email:before{ content:'\e901'; font-size:1em}
+.contactlist .e_contact_wechat:before{ content:'\e905'; font-size:1.25em}
 .contactlist p{ margin:0; line-height:1.2em}
 
 /* pagefoot
@@ -324,9 +332,10 @@
 	.works .item .lk:hover + .pic p{ margin:0}
 
 	.works .guideWrap{ display:block;}
-	.works .item{ padding:0.7%;}
+	.works li.item{ padding:0.7%;}
 
-	.roll{ width:690px}
+	/* for carousel */
+	/*.roll{ width:690px}*/
 
 	/*abouttxt*/
 	.abouttxt{ font-size:1rem;}
@@ -393,4 +402,8 @@
 
 	.pagefoot{ font-size:1rem;}
 	
+}
+@keyframes bgbar{
+	0%{ background-position:0rem 0}
+	100%{ background-position:4rem 0}
 }

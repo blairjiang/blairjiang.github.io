@@ -145,6 +145,9 @@ body .pl0{ padding-left:0!important}
 .tx_br{ word-wrap:break-word; word-break:break-all}
 .tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 
+/*line height*/
+.lh15{ line-height:1.5em}
+
 /* form */
 .inputTxt input,
 .inputTxt textarea{ font-size:1em; width:100%; background:#fff; border:#afb7bc 1px solid; padding:1em; vertical-align:top;

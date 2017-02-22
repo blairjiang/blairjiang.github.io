@@ -1,6 +1,8 @@
 body{ background-color:#000;}
 .container-fluid{ width:100%; overflow-x:hidden;}
 
+.line{ width:7.5em; height:4em; margin:0 auto; background:url(../assets/images/line.png) left center repeat-x;}
+
 .txtcontent{ font-size:.875rem;}
 .txtcontent h2{ margin:0; padding:1.5em 0 .5em; font-size:2em}
 .txtcontent h3{ position:relative; display:inline-block; margin:20px 0 0; padding-top:.5em}
@@ -8,10 +10,27 @@ body{ background-color:#000;}
 .txtcontent h3.c_t8:before{ background-color:#3dcf9d}
 .txtcontent p{ margin-bottom:0; text-align:justify;}
 
+.e_txtcontent_gray{ color:#b4b4b5}
+.e_txtcontent_gray i{ color:#fdfeff}
+
 .dotlist,
 .dotlist li{ margin:0; padding:0;}
 .dotlist{ padding-left:2.5em}
 .dotlist li{ padding-left:.5em; list-style:disc; text-align:justify;}
+
+.midbar{ font-size:.875rem;}
+.midbar .inner{ position:relative; display:inline-block; line-height:2.5em; background-color:#3dcf9d}
+.midbar .inner span{ position:relative; z-index:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.midbar .inner:before,
+.midbar .inner:after{ content:''; position:absolute; top:0; width:2em; height:100%; background-color:#3dcf9d;}
+.midbar .inner:before{ left:0;
+	transform:skewX(30deg);
+	transform-origin:right bottom;
+}
+.midbar .inner:after{ right:0;
+	transform:skewX(-30deg);
+	transform-origin:left bottom;
+}
 
 /* co_intro
 ----------------------------------------------------------------*/
@@ -20,7 +39,7 @@ body{ background-color:#000;}
 #co_intro .container-fluid{ padding-top:7.5em}
 #co_intro .desc1{ margin-bottom:0; color:#ffab18; font-size:1.25em}
 
-.selfIntro{ margin:0 auto;}
+.selfIntro{ margin:0 auto; font-size:.875em}
 .selfIntro ul,
 .selfIntro li{ list-style:none; padding:0; margin:0;}
 .selfIntro .item{ color:#fff;}
@@ -28,7 +47,13 @@ body{ background-color:#000;}
 #co_intro .desc2{ margin-top:1.5em; font-size:1.5em; line-height:1.2em; color:#27b47f}
 #co_intro .desc2 br{ display:none;}
 
-.videoWrap{ position:relative; z-index:2; background-color:#000;}
+.videoWrap{ position:relative; z-index:2;
+	background-color:#000;
+	background-image: repeating-linear-gradient(40deg, transparent, transparent 10%, #3e3a4d 10%, #3e3a4d 20%);
+	background-size:25%;
+	animation:bgbar .5s linear infinite;
+	animation-fill-mode:both;
+}
 .videoWrap iframe{ position:absolute; left:0; top:0; width:100%; height:100%}
 
 /* co_second
@@ -59,6 +84,61 @@ body{ background-color:#000;}
 	.n_row_sen .c4{ margin-top:-5em}
 }
 
+/* co_fifth
+----------------------------------------------------------------*/
+#co_fifth{ position:relative; z-index:1; padding:1em 0; background:#fff}
+#co_fifth img{ width:100%}
+#co_fifth .bg_skew1{ position:absolute; left:0; top:0; background-color:#fff; height:100%; width:100%;
+	transform:skewY(6deg);
+	transform-origin:0 top;
+}
+.n_row_exp .c2{ margin-top:20px; margin-bottom:-2em}
+
+/* co_sixth
+----------------------------------------------------------------*/
+#co_sixth{ padding:3em 0; background:#232120 url(../assets/images/co_bg3.jpg) center top no-repeat; background-size:cover;}
+.para_tar{ font-size:1.5em;}
+
+/* co_seven
+----------------------------------------------------------------*/
+#co_seven{ position:relative; padding:1rem 0 4rem; z-index:1;}
+#co_seven .bg_skew1{ position:absolute; left:0; top:0; height:100%; width:100%;
+	background:#3c374c url(../assets/images/co_bg4.jpg) center top no-repeat; background-size:cover;
+	transform:skewY(-6deg);
+	transform-origin:0 top;
+}
+.n_row_con{ margin-top:-1rem}
+
+/* co_eight
+----------------------------------------------------------------*/
+#co_eight{ position:relative; padding:2rem 0; z-index:2; background-color:#f3f3f5}
+#co_eight img{ width:100%}
+#co_eight .bg_skew1,
+#co_eight .bg_skew2{ position:absolute; left:0; top:0; height:100%; width:100%;
+	background:#f3f3f5;
+}
+#co_eight .bg_skew1{
+	transform:skewY(-6deg);
+	transform-origin:0 top;
+}
+#co_eight .bg_skew2{
+	transform:skewY(6deg);
+	transform-origin:0 bottom;
+}
+
+/* co_nineth
+----------------------------------------------------------------*/
+#co_nineth{ position:relative; z-index:1; padding:1rem 0; background-color:#2fc18f}
+#co_nineth .bg_skew2{ position:absolute; left:0; top:0; background-color:#2fc18f; height:100%; width:100%;}
+#co_nineth .bg_skew2{
+	transform:skewY(-6deg);
+	transform-origin:right bottom;
+}
+
+/* co_tenth
+----------------------------------------------------------------*/
+#co_tenth{ padding:3em 0 2em; background-color:#fff}
+
 /* bootstrap & media query
 ----------------------------------------------------------------*/
 
@@ -68,13 +148,27 @@ body{ background-color:#000;}
 }
 
 @media (min-width: 1000px){
-	#co_intro .desc1{ font-size:1.5em}
-	#co_intro .desc2{ font-size:2em;}
+	.n_row_exp .c2{ margin-top:0; margin-bottom:-15em}
+	#co_fifth{ padding:5em 0;}
+	#co_sixth{ padding:8.5em 0;}
+	.n_row_con{ margin-top:-4rem}
+	#co_seven{ padding-bottom:9em}
+	#co_eight{ padding-bottom:2em}
+	#co_nineth{ padding-top:5em}
+	#co_tenth{ padding-top:7em; padding-bottom:5em}
 }
 
 @media (min-width: 1600px){
 	.txtcontent{ font-size:1rem;}
+	#co_intro .desc1{ font-size:1.5em}
+	#co_intro .desc2{ font-size:2em;}
+	.selfIntro{ font-size:1rem;}
+	.para_tar{ font-size:2em;}
+	#co_seven{ padding-bottom:12em}
 }
 
 .unmobile #co_intro,
-.unmobile #co_third{ background-attachment:fixed;}
+.unmobile #co_third,
+.unmobile #co_sixth,
+.unmobile #co_seven .bg_skew1{ background-attachment:fixed;}
+
