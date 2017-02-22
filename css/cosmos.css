@@ -3,12 +3,12 @@ body{ background-color:#000;}
 
 .line{ width:7.5em; height:4em; margin:0 auto; background:url(../assets/images/line.png) left center repeat-x;}
 
-.txtcontent{ font-size:.875rem;}
+.txtcontent{ font-size:1rem;}
 .txtcontent h2{ margin:0; padding:1.5em 0 .5em; font-size:2em}
 .txtcontent h3{ position:relative; display:inline-block; margin:20px 0 0; padding-top:.5em}
 .txtcontent h3:before{ content:''; position:absolute; left:0; top:0; width:2.5em; height:.08em; background-color:currentColor}
 .txtcontent h3.c_t8:before{ background-color:#3dcf9d}
-.txtcontent p{ margin-bottom:0; text-align:justify;}
+.txtcontent p{ margin-bottom:0; line-height:1.5em; text-align:justify;}
 
 .e_txtcontent_gray{ color:#b4b4b5}
 .e_txtcontent_gray i{ color:#fdfeff}
@@ -18,7 +18,7 @@ body{ background-color:#000;}
 .dotlist{ padding-left:2.5em}
 .dotlist li{ padding-left:.5em; list-style:disc; text-align:justify;}
 
-.midbar{ font-size:.875rem;}
+.midbar{ font-size:1rem;}
 .midbar .inner{ position:relative; display:inline-block; line-height:2.5em; background-color:#3dcf9d}
 .midbar .inner span{ position:relative; z-index:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .midbar .inner:before,
@@ -159,7 +159,6 @@ body{ background-color:#000;}
 }
 
 @media (min-width: 1600px){
-	.txtcontent{ font-size:1rem;}
 	#co_intro .desc1{ font-size:1.5em}
 	#co_intro .desc2{ font-size:2em;}
 	.selfIntro{ font-size:1rem;}

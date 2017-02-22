@@ -77,7 +77,7 @@ img{ width:100%}
 .n_row_ref .c7{ margin-top:1.25em}
 
 @media (min-width: 1000px){
-	.n_row_ref .c2 .txtcontent .hd{ padding-top:3.5em}
+	.n_row_ref .c2 .txtcontent .hd{ padding-top:2em}
 	.n_row_ref .c2 .txtcontent .bd,
 	.n_row_ref .c2 .txtcontent .bd p{ margin-top:0}
 	.n_row_ref .c3{ margin-top:1.25em}
@@ -195,13 +195,13 @@ img{ width:100%}
 }
 
 /*txtcontent*/
-.txtcontent{ font-size:.875rem; padding-bottom:1em}
+.txtcontent{ font-size:1rem; padding-bottom:1em}
 .txtcontent .hd{ font-size:1.125em; margin:0; text-transform:uppercase;}
 .txtcontent .hd:before{ content:''; display:inline-block; vertical-align:middle; width:3.5em; height:.125em; background-color:#000}
 .txtcontent .hd .t{ display:inline-block; vertical-align:middle; padding-left:.5em}
-.txtcontent h2{ margin:0; font-size:2em; text-transform:uppercase;}
+.txtcontent h2{ margin:0; font-size:1.75em; text-transform:uppercase;}
 .txtcontent .bd{ margin-top:.5em}
-.txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify; line-height:1.45}
+.txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify; line-height:1.2}
 .txtcontent .bd p strong{ font-weight:normal}
 
 @media (min-width: 768px){
@@ -211,15 +211,15 @@ img{ width:100%}
 	.txtcontent{ padding-bottom:0}
 }
 @media (min-width: 1600px){
-	.txtcontent{ font-size:1rem}
+	.txtcontent h2{ font-size:2em}
 	.txtcontent .bd p{ line-height:2}
 }
 
-.e_txtcontent_1{ padding:1.2em 2.2em; border:#000 .3em solid;}
+.e_txtcontent_1{ padding:1.2em 1.5em; border:#000 .3em solid;}
 .e_txtcontent_2{ padding:1.2em 2.2em; border:#4848ff .3em solid;}
 .e_txtcontent_3{ color:#fff}
 .e_txtcontent_3 .hd:before{ background-color:#fff}
-.n_txtcontent_big h2{ font-size:3em}
+.n_txtcontent_big h2{ font-size:2.5em}
 
 /*videoWrap1*/
 .videoWrap1{ position:relative;
