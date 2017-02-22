@@ -46,7 +46,7 @@ img{ width:100%}
 	.n_row_curr .c2 .txtcontent .bd,
 	.n_row_curr .c2 .txtcontent .bd p:first-child{ margin-top:0}
 	.n_row_curr .c1 .txtcontent{ text-align:right;}
-	.n_row_curr .c2 .txtcontent p{ height:32em;
+	.n_row_curr .c2 .txtcontent p{ height:27em;
 		-webkit-column-count:2;
 		-moz-column-count:2;
 		column-count:2;
