@@ -201,7 +201,7 @@ img{ width:100%}
 .txtcontent .hd .t{ display:inline-block; vertical-align:middle; padding-left:.5em}
 .txtcontent h2{ margin:0; font-size:1.6em; text-transform:uppercase;}
 .txtcontent .bd{ margin-top:.5em}
-.txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify; line-height:1.5em; font-size:.78rem}
+.txtcontent .bd p{ margin:0; margin-top:1em; text-align:justify; line-height:1.5em; font-size:1rem}
 .txtcontent .bd p strong{ font-weight:normal}
 
 @media (min-width: 768px){
@@ -209,6 +209,7 @@ img{ width:100%}
 }
 @media (min-width: 1000px){
 	.txtcontent{ padding-bottom:0}
+	.txtcontent .bd p{ font-size:.78rem}
 }
 @media (min-width: 1600px){
 	.txtcontent h2{ font-size:2em}
