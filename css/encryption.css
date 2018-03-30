@@ -28,8 +28,8 @@ body{ background-color:#343434}
 }
 .videoWrap iframe{ position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%}
 
-@media(min-width:768px){
-	.videoWrap iframe{ margin-left:-1px}
+@media(min-width:1000px){
+	.videoWrap iframe{ margin-left:-1px}/*solve vimeo's bug of 1px left in responsive mode*/
 }
 
 #enc_second .v_c2 .desc .seemore{ text-align:center;}
