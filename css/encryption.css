@@ -20,17 +20,17 @@ body{ background-color:#343434}
 #enc_second .v_c2 .desc p{ margin-top:1.5em; text-align:justify;}
 
 .videoWrap{position:relative;
-	background-color:#000;
+	/*background-color:#000;
 	background-image: repeating-linear-gradient(40deg, transparent, transparent 10%, #69f1f3 10%, #69f1f3 20%);
 	background-size:25%;
 	animation:bgbar .5s linear infinite;
-	animation-fill-mode:both;
+	animation-fill-mode:both;*/
 }
 .videoWrap iframe{ position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%}
 
-@media(min-width:1000px){
-	.videoWrap iframe{ margin-left:-1px}/*solve vimeo's bug of 1px left in responsive mode*/
-}
+/*@media(min-width:1000px){
+	.videoWrap iframe{ margin-left:-1px}
+}*/
 
 #enc_second .v_c2 .desc .seemore{ text-align:center;}
 .seemore a:link,
