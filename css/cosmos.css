@@ -48,11 +48,11 @@ body{ background-color:#000;}
 #co_intro .desc2 br{ display:none;}
 
 .videoWrap{ position:relative; z-index:2;
-	background-color:#000;
+	/*background-color:#000;
 	background-image: repeating-linear-gradient(40deg, transparent, transparent 10%, #3e3a4d 10%, #3e3a4d 20%);
 	background-size:25%;
 	animation:bgbar .5s linear infinite;
-	animation-fill-mode:both;
+	animation-fill-mode:both;*/
 }
 .videoWrap iframe{ position:absolute; left:0; top:0; width:100%; height:100%}
 
