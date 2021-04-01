@@ -38,7 +38,7 @@
 #nav .lk i{ display:inline-block; vertical-align:top; text-indent:-9999em; width:.5em; height:.5em; line-height:.5em; border-radius:50%; background-color:#afb7bc; overflow:hidden;
 	transition:background .2s ease-in-out;
 }
-#nav .lk span{ position:absolute; opacity:0; overflow:hidden; top:50%; padding-left:1em; margin-top:-.5em; white-space:nowrap; color:#000; font-size:1em; line-height:1em; text-transform:uppercase; letter-spacing:.08em;
+#nav .lk span{ position:absolute; opacity:0; top:50%; padding-left:1em; margin-top:-.5em; white-space:nowrap; color:#000; font-size:1em; line-height:1em; text-transform:uppercase; letter-spacing:.08em;
 	transition:all .2s ease-in-out;
 }
 
