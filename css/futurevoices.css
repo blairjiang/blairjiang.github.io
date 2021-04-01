@@ -224,10 +224,9 @@ img{ width:100%}
 
 /*videoWrap1*/
 .videoWrap1{ position:relative;
-	background-color:#000;
-	background-image: repeating-linear-gradient(40deg, transparent, transparent 10%, #fff 10%, #fff 20%);
-	background-size:25%;
-	animation:bgbar .5s linear infinite;
+	background:#000 linear-gradient(45deg, #000 0%,#000 25%,#fff 25%,#fff 50%,#000,50%,#000 75%,#fff 75%,#fff 100%) 0px 0 repeat;
+	background-size:3rem 3rem;
+	animation:bgbar 3000s linear infinite;
 	animation-fill-mode:both;
 }
 .videoWrap1 img{ width:100%; opacity:0}
