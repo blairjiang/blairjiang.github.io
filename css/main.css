@@ -176,8 +176,10 @@
 .works .item .pic{ position:relative; overflow:hidden;}
 .works .item .pic img{ width:100%}
 .works .item .pic p{ width:200%; min-height:2em; margin:0 0 0 -100%;
-	background-image: repeating-linear-gradient(45deg, transparent, transparent 1.5rem, #edf2f5 1.5rem, #edf2f5 3rem);
-	animation:bgbar .5s linear infinite;
+
+	background:#000 linear-gradient(45deg, #edf2f5 0%,#edf2f5 25%,#fff 25%,#fff 50%,#edf2f5,50%,#edf2f5 75%,#fff 75%,#fff 100%) 0px 0 repeat;
+	background-size:3rem 3rem;
+	animation:bgbar 3000s linear infinite;
 	animation-fill-mode:both;
 }
 .works .item .lk{ position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; text-indent:-9999em;}
